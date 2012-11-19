@@ -1,0 +1,69 @@
+
+%%%%%%%%% MASTER -- compiles the 4 sections
+
+\documentclass[11pt,letterpaper]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{plain}                                                      %%
+%%%%%%%%%% EXACT 1in MARGINS %%%%%%%                                   %%
+\setlength{\textwidth}{6.5in}     %%                                   %%
+\setlength{\oddsidemargin}{0in}   %% (It is recommended that you       %%
+\setlength{\evensidemargin}{0in}  %%  not change these parameters,     %%
+\setlength{\textheight}{8.5in}    %%  at the risk of having your       %%
+\setlength{\topmargin}{0in}       %%  proposal dismissed on the basis  %%
+\setlength{\headheight}{0in}      %%  of incorrect formatting!!!)      %%
+\setlength{\headsep}{0in}         %%                                   %%
+\setlength{\footskip}{.5in}       %%                                   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                                   %%
+\newcommand{\required}[1]{\section*{\hfil #1\hfil}}                    %%
+\renewcommand{\refname}{\hfil References Cited\hfil}                   %%
+%\bibliographystyle{apsr}                                              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%PUT YOUR MACROS HERE
+
+%\newcommand{\bm}[1]{\boldsymbol{#1}} %makes bold math symbols easier
+\newcommand{\R}{\textsf{R}\space} %R in textsf font
+\newcommand{\X}{\bm{\mathcal{X}}} %shorthand for iid
+\renewcommand{\P}{\mathcal{P}}
+\newcommand{\bt}{\pmb{\theta}}
+\newcommand{\bl}{\pmb{\lambda}}
+\newcommand{\bL}{\pmb{\Lambda}}
+%\newcommand{\bG}{\pmb{\Gamma}}
+\newcommand{\bh}{\pmb{\text{h}}}
+\newcommand{\h}{\pmb{\text{h}}}
+\usepackage{amsmath,amssymb}
+\def\citeapos#1{\citeauthor{#1}'s (\citeyear{#1})}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+
+\usepackage{color}
+\usepackage[english]{babel}
+\usepackage[table]{xcolor}
+\usepackage{colortbl}
+\usepackage{array}
+\usepackage{graphicx}% Include figure files
+\usepackage{algorithmic}
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+
+\usepackage[sectionbib]{natbib}
+
+%\includeonly{NSFsumm}
+
+\begin{document}
+
+\include{NSFsumm}
+\setcounter{page}{1}
+\include{NSFdesc}
+\setcounter{page}{1}
+\include{NSFrefs}
+\setcounter{page}{1}
+\include{NSF-DMP}
+\setcounter{page}{1}
+\include{NSFbioDesmarais}
+\setcounter{page}{1}
+\include{NSFbioCranmer}
+\setcounter{page}{1}
+\include{NSFjustification}
+\end{document}
