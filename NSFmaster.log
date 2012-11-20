@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  19 NOV 2012 14:27
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  20 NOV 2012 16:54
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -215,7 +215,7 @@ LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count106
 )
 (./NSFmaster.aux (./NSFsumm.aux) (./NSFdesc.aux) (./NSFrefs.aux) (./NSF-DMP.aux
-) (./NSFbioDesmarais.aux) (./NSFbioCranmer.aux) (./NSFjustification.aux))
+) (./NSFbioDesmarais.aux) (./NSFjustification.aux))
 \openout1 = `NSFmaster.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
@@ -321,13 +321,9 @@ No file NSFmaster.bbl.
 
 
 ]) [2]
-\openout2 = `NSFbioCranmer.aux'.
-
-
-No file NSFbioCranmer.tex.
 \openout2 = `NSFjustification.aux'.
 
-(./NSFjustification.tex
+ (./NSFjustification.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
@@ -358,8 +354,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--16
  []
 
 [1
-
-
 
 
 ]
@@ -393,23 +387,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--32
  []
 
 ) [2] (./NSFmaster.aux (./NSFsumm.aux) (./NSFdesc.aux) (./NSFrefs.aux)
-(./NSF-DMP.aux) (./NSFbioDesmarais.aux) (./NSFbioCranmer.aux)
-(./NSFjustification.aux)) ) 
+(./NSF-DMP.aux) (./NSFbioDesmarais.aux) (./NSFjustification.aux)) ) 
 Here is how much of TeX's memory you used:
- 3620 strings out of 493747
- 45597 string characters out of 3143546
- 117613 words of memory out of 3000000
- 6820 multiletter control sequences out of 15000+200000
+ 3614 strings out of 493747
+ 45496 string characters out of 3143546
+ 117281 words of memory out of 3000000
+ 6819 multiletter control sequences out of 15000+200000
  5972 words of font info for 22 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 41i,5n,35p,1424b,244s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2010/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr10.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmti10.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmtt10.pfb>
-Output written on NSFmaster.pdf (7 pages, 94037 bytes).
+ 41i,5n,35p,1438b,242s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/
+texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/t
+exlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/te
+xlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
+ive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texli
+ve/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on NSFmaster.pdf (7 pages, 96358 bytes).
 PDF statistics:
  48 PDF objects out of 1000 (max. 8388607)
  33 compressed objects within 1 object stream
