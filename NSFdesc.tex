@@ -40,19 +40,44 @@ We endeavor to answer these questions and more. Using fine-grained textual and c
 
 \section{Background: Public Records Data}
 
-At the national, state and local levels, the US is the global leader in the scope and reliability of freedom of information. The seminal legislation in this area is the federal Freedom of Information Act, which marks all information produced by executive agencies as public, unless the information meets at least one of seven criteria for exemption. All US states have laws that mimic the federal legislation {\bf CITE}, and most state laws subject localities (i.e, cities and counties) to public records archiving and disclosure requirements. North Carolina offers one of the broadest laws. For instance, email communications among local government officials are established by statute to be public record. 
+At the national, state and local levels, the US is the global leader in the scope and reliability of laws that guarantee access to information on government {\bf CITE}. The seminal legislation in this area is the federal Freedom of Information Act, which marks all information produced by executive agencies as public, unless the information meets at least one of seven criteria for exemption. All US states have laws that mimic the federal legislation {\bf CITE}, and most state laws subject localities (i.e, cities and counties) to public records archiving and disclosure requirements. North Carolina offers one of the broadest laws. For instance, email communications among local government officials are established by statute to be public record. 
 
 Public record disclosure requirements establish a treasure trove for researchers. Many government organizations post significant text streams - from email communications with elected officials to meeting minutes - directly on websites. For categories of information not posted to the web, it is possible to make requests for the data. At all stages of the democratic process, local governments are required to archive textual records and provide them to the public upon request. This constitutes the primary advantage for focusing on government organizations in developing multi-stream models of the input-response-feedback cycle. 
 
 \section{Project Team}
 
-\section{Description of Pilot Work}
+This project will be completed by a multidisciplinary team of computer scientist (Wallach) with background in developing machine learning methods for the statistical analysis of text and networks and a political scientist (Desmarais) with background in developing large scale statistical and network analytic models of political decision-making within US government institutions. The team is part of the UMass Amherst Computational Social Science Initiative and has already successfully completed and published pilot research that is highly relevant to the proposed project. This project will combine large-scale data collection, innovative methods development and social scientific analysis, resulting in the following deliverables.
 
-Here we describe the pilot work, publication and data collection, as well as related research.
+\begin{itemize}
+\item We will develop machine learning methods of statistical text analysis capable of characterizing the relationships between topics in separate dynamic corpora. In addition to extending dynamic topic models to multi-corpora relations, we will integrate corpora-specific-contextual data models. These methods will integrate several separate innovations in statistical topic modeling and provide a comprehensive textual and contextual data modeling framework that captures cross-domain migration of topics. 
+\item We will provide a first-of-its kind, exhaustive micro-level assessment of the function of  democratic representation at the local level. The research we have on democratic responsiveness in the US focuses mainly on the federal or state governments. Our research will address local politics. Also, existing research on democratic representation addresses highly aggregated measures: e.g., showing that legislators from highly conservative districts vote, on average, more conservatively than those from more liberal districts. Our work will provide a fine-grained characterization of government responsiveness to the rise of public demands for action on specific public policy topics.
+\end{itemize}
 
-\section{Proposed New Work}
 
-Here we describe the methods we intend to develop, datasets we intend to create and applications we intend to develop.
+
+\section{Description of Pilot Research}
+
+As an initial phase of research for this project, the team endeavored to leverage its expertise in the computational and social sciences, as well as the availability of rich data sources through the public record to address a challenge in the study of communication networks. A substantial body of research finds that the structure of a communication network has a substantial influence on the problem-solving abilities of the network as a whole and the performance of the individuals in the network {\bf CITES}. Moreover, recent research indicates that the topic or context of communication is important, meaning the measurement of a communication network should involve topic-of-discussion specificity {\bf CITES}. Thus, in order for an organization to diagnose and design its internal communication network, it must first be able to discern topic-specific communication networks.
+
+Our pilot research addresses this problem. Noting that email constitutes the cornerstone of most organizations' electronic communications, we focused on measuring and analyzing topic-specific communication networks using email archives. Using a public records request, we collected one months worth of in and out-box contents for all managerial-level employees of New Hanover County, North Carolina. We then developed a model that combined statistical topic modeling and the latent space model of social networks (a model that projects a network into a Euclidean space, within which actors who are close are more likely to connect than those who are far apart). Specifically, the model learns topic-specific latent spaces. This produces a coherent probabilistic generative model of corpus of messages annotated with sender-receiver information that permits intuitive visualization and analysis of the underlying topic-specific communication networks.
+
+\section{Proposed Research}
+
+We will advance machine learning methods for dynamic natural language processing and, using the methods we develop, provide a novel and insightful analysis of democratic responsiveness at the county level of government in the US. The tools we develop will be applicable to any level of government and other organization types. Our analysis of county governments will serve as a proof of concept and prototype for the use of our methods. Also, we will assemble a comprehensive multifaceted database of textual data on county governments that will prove useful to other researchers in natural language processing and the social sciences.
+
+In the following sections we describe our approach to modeling the multi-domain cycle of input-response-feedback by first describing proposed datatypes and domain-specific model specifications then discussing our approach to tying the different domains together into a multi-component system.
+
+\subsection{Modeling Outside Input}
+
+To define a model for citizen input it is important to first identify the form of the data we will gather on citizen input. Via public records requests, we will collect all emails sent to county government officials by those outside of government. Though some government organizations have experimented with different electronic input modes, the email message is still the workhorse of direct advocacy {\bf cite}. We actually do not need to submit a separate request for this data, as they come with the in and out-boxes of government officials. 
+
+We will model citizen input with a dynamic author-recipient topic model. The author-recipient topic model learns an overall topic model for the entire corpus as well as deviations for author-recipient pair {\bf CITE}. We will consider both complete-email-address identifiers of 'authors' as well as email address domains as author signature - which may better handle input sent from the same organization but different people. The dynamic component will be handled with a logistic-normal model of topic dynamics akin to {\bf CITE}. This approach will permit us to understand (1) the overall content of citizen input, (2) source-specific peculiarities in the content of input, (3) recipient-specific peculiarities of input content and (4) the over-time change in the content of input.
+
+\subsection{Modeling Informal intra-governmental Communications}
+
+The data for informal intra-governmental communications will also utilize the email data collected through public records requests. Since we will have all email for the officials, we will be able to model the complete communication network over time. In this phase of the model we will make the most explicit use of the team's pilot research. The model will constitute a dynamic topic-specific model of communication networks with the networks projected into Euclidean latent spaces. The topic dynamics will again be modeled using a logistic-normal specification. This characterization will permit us to understand how the content and network context of intra-governmental communications evolve.
+
+
 
 \section{Timeline and Division of Labor}
 
