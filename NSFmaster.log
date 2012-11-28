@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  27 NOV 2012 14:07
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  28 NOV 2012 13:45
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -113,6 +113,14 @@ Package color Info: Driver file: pdftex.def on input line 130.
 File: pdftex.def 2010/02/14 v0.04n Graphics/color for pdfTeX
 \Gread@gobject=\count99
 ))
+(/usr/local/texlive/2010/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen112
+\WF@size=\dimen113
+\c@WF@wrappedlines=\count100
+\WF@box=\box28
+\WF@everypar=\toks19
+Package: wrapfig 2003/01/31  v 3.6
+)
 (/usr/local/texlive/2010/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2008/07/06 v3.8l The Babel package
 
@@ -121,8 +129,8 @@ Language: english 2005/03/30 v3.3o English support from the babel system
 
 (/usr/local/texlive/2010/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2008/07/06 v3.8l Babel common definitions
-\babel@savecnt=\count100
-\U@D=\dimen112
+\babel@savecnt=\count101
+\U@D=\dimen114
 )
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
@@ -141,17 +149,17 @@ Package: colortbl 2001/02/13 v0.1j Color table columns (DPC)
 
 (/usr/local/texlive/2010/texmf-dist/tex/latex/tools/array.sty
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen113
-\extrarowheight=\dimen114
-\NC@list=\toks19
+\col@sep=\dimen115
+\extrarowheight=\dimen116
+\NC@list=\toks20
 \extratabsurround=\skip46
 \backup@length=\skip47
 )
-\everycr=\toks20
+\everycr=\toks21
 \minrowclearance=\skip48
 )
 LaTeX Info: Redefining \color on input line 702.
-\rownum=\count101
+\rownum=\count102
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
 Package xcolor Info: Model `RGB' extended on input line 1353.
@@ -167,7 +175,7 @@ Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
-\KV@toks@=\toks21
+\KV@toks@=\toks22
 )
 (/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
@@ -180,8 +188,8 @@ File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 )
-\Gin@req@height=\dimen115
-\Gin@req@width=\dimen116
+\Gin@req@height=\dimen117
+\Gin@req@width=\dimen118
 )
 (/usr/local/texlive/2010/texmf-dist/tex/latex/algorithms/algorithmic.sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
@@ -189,10 +197,10 @@ Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 (/usr/local/texlive/2010/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@ALC@unique=\count102
-\c@ALC@line=\count103
-\c@ALC@rem=\count104
-\c@ALC@depth=\count105
+\c@ALC@unique=\count103
+\c@ALC@line=\count104
+\c@ALC@rem=\count105
+\c@ALC@depth=\count106
 \ALC@tlm=\skip49
 \algorithmicindent=\skip50
 )
@@ -206,43 +214,36 @@ Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
 \symboldsymbols=\mathgroup8
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
 LaTeX Info: Redefining \bm on input line 204.
-)
-(/usr/local/texlive/2010/texmf-dist/tex/latex/natbib/natbib.sty
-Package: natbib 2009/11/07 8.31a (PWD, AO)
-\bibhang=\skip51
-\bibsep=\skip52
-LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count106
-)
-(./NSFmaster.aux (./NSFsumm.aux) (./NSFdesc.aux) (./NSFrefs.aux) (./NSF-DMP.aux
-) (./NSFbioDesmarais.aux) (./NSFjustification.aux))
+) (./NSFmaster.aux
+(./NSFsumm.aux) (./NSFdesc.aux) (./NSFrefs.aux) (./NSF-DMP.aux)
+(./NSFbioDesmarais.aux) (./NSFjustification.aux))
 \openout1 = `NSFmaster.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
 
 (/usr/local/texlive/2010/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count107
-\scratchdimen=\dimen117
-\scratchbox=\box28
+\scratchdimen=\dimen119
+\scratchbox=\box29
 \nofMPsegments=\count108
 \nofMParguments=\count109
-\everyMPshowfont=\toks22
+\everyMPshowfont=\toks23
 \MPscratchCnt=\count110
-\MPscratchDim=\dimen118
+\MPscratchDim=\dimen120
 \MPnumerator=\count111
-\everyMPtoPDFconversion=\toks23
+\everyMPtoPDFconversion=\toks24
 ) (/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2010/04/01 v0.9 Utility functions of pdfTeX for LuaTeX (HO)
 
@@ -298,35 +299,53 @@ e
 {/usr/local/texlive/2010/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 \openout2 = `NSFdesc.aux'.
 
- (./NSFdesc.tex [1
+ (./NSFdesc.tex <cycle.jpg, id=9, 467.7475pt x 414.54875pt>
+File: cycle.jpg Graphic file (type jpg)
+
+<use cycle.jpg>
+Overfull \hbox (10.68648pt too wide) in paragraph at lines 22--23
+ [] 
+ []
+
+[1
 
 
-] [2] [3]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 52.
+ <./cycle.jpg>] [2] [3]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 71.
 
 (/usr/local/texlive/2010/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 52.
- [4] [5] [6])
-[7]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 71.
+ [4] [5] [6]
+LaTeX Font Info:    Try loading font information for U+msa on input line 117.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 117.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+) [7] [8])
+[9] [10]
 \openout2 = `NSFrefs.aux'.
 
- (./NSFrefs.tex
-No file NSFmaster.bbl.
-)
+ (./NSFrefs.tex (./NSFmaster.bbl)) [1
+
+
+]
 \openout2 = `NSF-DMP.aux'.
 
  (./NSF-DMP.tex) [1
 
 
-
-
 ]
 \openout2 = `NSFbioDesmarais.aux'.
 
- (./NSFbioDesmarais.tex [1
+
+(./NSFbioDesmarais.tex [1
 
 
 ]) [2]
@@ -398,24 +417,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--32
 ) [2] (./NSFmaster.aux (./NSFsumm.aux) (./NSFdesc.aux) (./NSFrefs.aux)
 (./NSF-DMP.aux) (./NSFbioDesmarais.aux) (./NSFjustification.aux)) ) 
 Here is how much of TeX's memory you used:
- 3632 strings out of 493747
- 45819 string characters out of 3143546
- 118281 words of memory out of 3000000
- 6834 multiletter control sequences out of 15000+200000
- 6229 words of font info for 23 fonts, out of 3000000 for 9000
+ 3455 strings out of 493747
+ 43911 string characters out of 3143546
+ 113556 words of memory out of 3000000
+ 6627 multiletter control sequences out of 15000+200000
+ 12782 words of font info for 47 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 41i,5n,35p,1438b,242s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,9n,35p,1486b,246s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/
 texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/t
 exlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/te
-xlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
-ive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
-ve/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texliv
-e/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on NSFmaster.pdf (13 pages, 123940 bytes).
+xlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
+live/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texli
+ve/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
+e/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive
+/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on NSFmaster.pdf (17 pages, 216753 bytes).
 PDF statistics:
- 71 PDF objects out of 1000 (max. 8388607)
- 49 compressed objects within 1 object stream
+ 88 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
