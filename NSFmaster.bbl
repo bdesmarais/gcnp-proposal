@@ -1,0 +1,55 @@
+\begin{thebibliography}{10}
+
+\bibitem{Linders2012}
+D.~Linders, ``From e-government to we-government: Defining a typology for
+  citizen coproduction in the age of social media,'' {\em Government
+  Information Quarterly}, vol.~29, no.~4, pp.~446 -- 454, 2012.
+
+\bibitem{Blei2003}
+D.~Blei, A.~Ng, and M.~Jordan, ``{Latent Dirichlet allocation},'' {\em {JOURNAL
+  OF MACHINE LEARNING RESEARCH}}, vol.~{3}, no.~{4-5}, pp.~{993--1022}, {2003}.
+
+\bibitem{Blei2010}
+D.~Blei, L.~Carin, and D.~Dunson, ``Probabilistic topic models,'' {\em Signal
+  Processing Magazine, IEEE}, vol.~27, pp.~55 --65, nov. 2010.
+
+\bibitem{Steyvers2004}
+M.~Steyvers, P.~Smyth, M.~Rosen-Zvi, and T.~Griffiths, ``Probabilistic
+  author-topic models for information discovery,'' in {\em Proceedings of the
+  tenth ACM SIGKDD international conference on Knowledge discovery and data
+  mining}, KDD '04, pp.~306--315, 2004.
+
+\bibitem{McCallum2005}
+A.~Mccallum, A.~Corrada-emmanuel, and X.~Wang, ``Topic and role discovery in
+  social networks,'' in {\em In IJCAI}, pp.~786--791, 2005.
+
+\bibitem{Krafft2012}
+P.~Krafft, J.~Moore, H.~Wallach, and B.~Desmarais, ``{Topic-Partitioned
+  Multinetwork Embeddings},'' in {\em {Proceedings of the 26th Annual
+  Conference on Neural Information Processing Systems}}, {Forthcoming, 2012}.
+
+\bibitem{Mimno2008}
+D.~Mimno and A.~McCallum, ``Topic models conditioned on arbitrary features with
+  dirichlet-multinomial regression,'' in {\em UAI}, 2008.
+
+\bibitem{Yildiz2007}
+M.~Yildiz, ``E-government research: Reviewing the literature, limitations, and
+  ways forward,'' {\em Government Information Quarterly}, vol.~24, no.~3,
+  pp.~646 -- 665, 2007.
+
+\bibitem{Canes-Wrone2002}
+B.~Canes-Wrone, D.~W. Brady, and J.~F. Cogan, ``Out of step, out of office:
+  Electoral accountability and {H}ouse members' voting,'' {\em American
+  Political Science Review}, vol.~96, no.~1, pp.~127--140, 2002.
+
+\bibitem{Baumgartner1993}
+F.~R. Baumgartner and B.~D. Jones, {\em Agendas and Instability in American
+  Politics}.
+\newblock Chicago: University of Chicago Press, 1993.
+
+\bibitem{Hough2012}
+R.~Hough, ``Do legislative petitions systems enhance the relationship between
+  parliament and citizen?,'' {\em The Journal of Legislative Studies}, vol.~18,
+  no.~3-4, pp.~479--495, 2012.
+
+\end{thebibliography}

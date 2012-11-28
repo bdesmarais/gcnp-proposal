@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d (TeX Live 2010)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: NSFmaster.aux
+A level-1 auxiliary file: NSFsumm.aux
+A level-1 auxiliary file: NSFdesc.aux
+A level-1 auxiliary file: NSFrefs.aux
+The style file: ieeetr.bst
+A level-1 auxiliary file: NSF-DMP.aux
+A level-1 auxiliary file: NSFbioDesmarais.aux
+A level-1 auxiliary file: NSFjustification.aux
+Database file #1: nsfbib.bib
+You've used 11 entries,
+            1876 wiz_defined-function locations,
+            567 strings with 5473 characters,
+and the built_in function-call counts, 3329 in all, are:
+= -- 336
+> -- 100
+< -- 0
++ -- 38
+- -- 27
+* -- 226
+:= -- 446
+add.period$ -- 12
+call.type$ -- 11
+change.case$ -- 10
+chr.to.int$ -- 0
+cite$ -- 11
+duplicate$ -- 184
+empty$ -- 330
+format.name$ -- 27
+if$ -- 833
+int.to.chr$ -- 0
+int.to.str$ -- 11
+missing$ -- 12
+newline$ -- 37
+num.names$ -- 11
+pop$ -- 40
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 131
+stack$ -- 0
+substring$ -- 260
+swap$ -- 81
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 30
+width$ -- 13
+write$ -- 111
