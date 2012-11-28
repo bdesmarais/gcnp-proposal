@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  28 NOV 2012 13:45
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  28 NOV 2012 16:42
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -328,24 +328,34 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 117.
 
 (/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-) [7] [8])
-[9] [10]
+)
+
+LaTeX Warning: Citation `Banbura2010' on page 7 undefined on input line 117.
+
+
+LaTeX Warning: Citation `Banbura2010' on page 7 undefined on input line 119.
+
+[7] [8]) [9] [10]
 \openout2 = `NSFrefs.aux'.
 
- (./NSFrefs.tex (./NSFmaster.bbl)) [1
+ (./NSFrefs.tex (./NSFmaster.bbl
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+ [1
 
 
-]
+])) [2]
 \openout2 = `NSF-DMP.aux'.
 
- (./NSF-DMP.tex) [1
+ (./NSF-DMP.tex)
+[1
 
 
 ]
 \openout2 = `NSFbioDesmarais.aux'.
 
-
-(./NSFbioDesmarais.tex [1
+ (./NSFbioDesmarais.tex [1
 
 
 ]) [2]
@@ -415,27 +425,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--32
  []
 
 ) [2] (./NSFmaster.aux (./NSFsumm.aux) (./NSFdesc.aux) (./NSFrefs.aux)
-(./NSF-DMP.aux) (./NSFbioDesmarais.aux) (./NSFjustification.aux)) ) 
+(./NSF-DMP.aux) (./NSFbioDesmarais.aux) (./NSFjustification.aux))
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3455 strings out of 493747
- 43911 string characters out of 3143546
- 113556 words of memory out of 3000000
- 6627 multiletter control sequences out of 15000+200000
+ 3468 strings out of 493747
+ 44078 string characters out of 3143546
+ 113616 words of memory out of 3000000
+ 6640 multiletter control sequences out of 15000+200000
  12782 words of font info for 47 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  41i,9n,35p,1486b,246s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/
-texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/t
-exlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/te
-xlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
-live/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texli
-ve/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
-e/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive
-/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on NSFmaster.pdf (17 pages, 216753 bytes).
+</usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
+sr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
+r/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr
+/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on NSFmaster.pdf (18 pages, 221152 bytes).
 PDF statistics:
- 88 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
+ 91 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
