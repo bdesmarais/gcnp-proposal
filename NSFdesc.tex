@@ -96,6 +96,43 @@ We will model citizen input with a dynamic author-recipient topic model. The aut
 
 The data for informal intra-governmental communications will also utilize the email data collected through public records requests. Since we will have all email for the officials, we will be able to model the complete communication network over time. In this phase of the model we will make the most explicit use of the team's pilot research. The model will constitute a dynamic topic-specific model of communication networks with the networks projected into Euclidean latent spaces. The topic dynamics will again be modeled using a logistic-normal specification. This characterization will permit us to understand how the content and network context of intra-governmental communications evolve.
 
+Figure \ref{Figure:LatentSpace} illustrates the results from topic-partitioned communication network analysis. The dataset under analysis is a corpus of all emails among department managers from New Hanover County, North Carolina in the month of February, 2011. These are four selected topic-network-spaces. The word tokens listed at the top of the plots are the five most likely for the respective topic. Nodes are placed closer together in the inferred latent space if they are more likely to exchange emails on the respective topic. This modeling approach provides estimates that permit intuitive exploration of the structure of a communication network within a given topic.
+
+\begin{figure*}[t]
+\begin{minipage}[b]{0.5\linewidth}
+\centering
+\begin{tabular}{cc}
+{\bf Public Signage} &
+{\bf Broadcast Messages}\\
+{\small change signs sign process ordinance}  &
+{\small fw fyi bulletin summary week legislative} \\
+\includegraphics[scale=.29, trim=.4in .6in .4in .8in, clip=true]{latent_space_15} &
+\includegraphics[scale=.29, trim=.4in .6in .4in .8in, clip=true]{latent_space_17} \\
+{\bf Public Relations} &
+{\bf Meeting Scheduling} \\
+{\small city breakdown information give} &
+{\small meeting march board agenda week} \\
+\includegraphics[scale=.29, trim=.4in .6in .4in .8in, clip=true]{latent_space_31} &
+ \includegraphics[scale=.29, trim=.4in .6in .4in .8in, clip=true]{latent_space_63} \\
+\end{tabular}
+\end{minipage}
+\begin{minipage}{0.5\linewidth}
+\hspace{3.25cm}\vspace{-0.4cm} \includegraphics[scale=.85]{department_key}
+\end{minipage}
+\caption{Four topic-specific communication patterns inferred from the
+  NHC email network. Each pattern is labeled with a human-selected
+  name for the corresponding topic, along with that topic's most
+  probable words in order of decreasing probability. The size of each
+  manager's acronym in topic $t$'s pattern (given by $0.45 +
+  1.25\,\sqrt{d^{(t)}_a \,/\, \max_a d^{(t)}_a}$, where $d^{(t)}_a$ is
+  the degree of actor $a$ in that subnetwork) indicates how often that
+  manager communicates about that topic.  Managers' acronyms are
+  colored according to their respective division in the New
+  Hanover County organizational chart. The acronym ``AM'' appears
+  twice in all plots because there are two assistant county managers.}
+\label{Figure:LatentSpace}
+\end{figure*}
+
 \subsection{Modeling Formal intra-governmental Communications}
 
 Policy development that takes place at the county level occurs within county legislatures. Digitized archives of legislative meeting minutes are typically available on the web, but are certainly accessible via public records requests. If public records requests are fulfilled via paper delivery, we will use OCR to digitize the meeting minutes. This data will offer a window into whether issues that are being communicated to the government from outside actors and/or topics that arise through informal intra-governmental communications make their way to the legislative agenda. 
@@ -106,9 +143,24 @@ We will implement an integrated version of the correlated topic model \cite{Blei
 
 \subsection{Modeling Legislative Output}
 
-We will gather data on the statutes created by each county in order to examine implementation of topics that arise in the public, informal intra-governmental communications, and on the legislative agenda. These data are available on the web for most counties, and are certainly a matter of public record and would be available upon request. For some counties, it is straightforward to extract how legislators voted on a measure from the meeting minutes (e.g., see {\bf Figure 2}). For other counties, however, this is not as simple and may not be feasible. 
+\begin{figure}[h]
+\vspace{-.6cm}
+\begin{center}
+\begin{tabular}{m{2.5in}m{2.5in}} 
+\includegraphics[scale=.65]{fixef} & \includegraphics[scale=.75]{infnet}\\
+(a) Estimates of Justices' Ideal Points & (b) Significant Associations Between Justices \\  
+\end{tabular}
+\end{center}
+\vspace{-.3cm}
+\caption{The bars in (a) span 95\% confidence intervals. In (b) an edge is drawn if the association parameter has the respective sign in at least  95\% of the bootstrap samples.}
+\label{Figure:boltz}
+\end{figure}
 
-Regardless of whether we can extract votes on legislation, we will use a dynamic topic model with a logistic-normal autocorrelation structure  to model the content of legislation. If the votes are available, we will augment the dynamic topic model with a topic-specific network structure. The network will, however, take on a different form. The fully-visible Boltzmann Machine constitutes a probability model of jointly observed binary switches that is parameterized to model the tendency for each switch to be 'on' as well as the pairwise association between the states of each dyad of switches \cite{Gunawardana2008}. This can be used to model binary votes with voters akin to switches \cite{Desmarais2010}. This will allow us to jointly model the attention to topics in legislation as well as the associations among legislators' final votes on policy.
+
+We will gather data on the statutes created by each county in order to examine implementation of topics that arise in the public, informal intra-governmental communications, and on the legislative agenda. These data are available on the web for most counties, and are certainly a matter of public record and would be available upon request. For some counties, it is straightforward to extract how legislators voted on a measure from the meeting minutes. For other counties, however, this is not as simple and may not be feasible. 
+
+Regardless of whether we can extract votes on legislation, we will use a dynamic topic model with a logistic-normal autocorrelation structure  to model the content of legislation. If the votes are available, we will augment the dynamic topic model with a topic-specific network structure. The network will, however, take on a different form. The fully-visible Boltzmann Machine constitutes a probability model of jointly observed binary switches that is parameterized to model the tendency for each switch to be 'on' as well as the pairwise association between the states of each dyad of switches \cite{Gunawardana2008}. This can be used to model binary votes with voters akin to switches \cite{Desmarais2010}. This will allow us to jointly model the attention to topics in legislation as well as the associations among legislators' final votes on policy. Figure \ref{Figure:boltz} illustrates the results from applying a fully visible Boltzmann machine to vote data. Specifically, the data modeled are the votes of the nine justices in each US Supreme Court case from the 2007 and 2008 terms. The data are coded as 0 for a conservative vote and 1 for a liberal vote. Panel (a) gives the estimated tendencies of each justice to vote liberal and panel (b) depicts the strong positive and negative associations between justices. The Boltzmann machine offers a powerful approach to representing the individual and interactive tendencies among a group of decision-makers.
+
 
 \subsection{Integrating Domain-Specific Models}
 
@@ -133,7 +185,7 @@ Altogether, this proposed three year project will result in up to ten discrete p
 We propose to complete this research within a period of three years. The four major tasks will be (1) derivation and implementation of the NLP methods, (2) data collection and cleaning, (3) application of methods and assessment on empirical data, (4) social scientific analysis of results. We divide the project period into quarters and in Table 1, we provide a breakdown of the primary activities of the project, along with an assessment of when the tasks will be completed.
 
 
-\begin{table}[htdp]
+\begin{table}[h]
 \caption{Schedule of Project Activities}
 \begin{center}
 \begin{tabular}{|l|l|l|l|}
