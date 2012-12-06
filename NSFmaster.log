@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  4 DEC 2012 20:53
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  5 DEC 2012 17:46
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -299,32 +299,32 @@ e
 {/usr/local/texlive/2010/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 \openout2 = `NSFdesc.aux'.
 
- (./NSFdesc.tex <cycle.jpg, id=9, 467.7475pt x 414.54875pt>
+ (./NSFdesc.tex [1
+
+
+] <cycle.jpg, id=13, 467.7475pt x 414.54875pt>
 File: cycle.jpg Graphic file (type jpg)
 
 <use cycle.jpg>
-Overfull \hbox (10.68648pt too wide) in paragraph at lines 22--23
+Overfull \hbox (10.68648pt too wide) in paragraph at lines 30--31
  [] 
  []
 
-[1
-
-
- <./cycle.jpg>] [2] [3]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 71.
+[2 <./cycle.jpg>] [3]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 58.
 
 (/usr/local/texlive/2010/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 71.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 58.
  [4] [5]
-LaTeX Font Info:    Try loading font information for U+msa on input line 104.
+LaTeX Font Info:    Try loading font information for U+msa on input line 111.
 
 (/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 104.
+LaTeX Font Info:    Try loading font information for U+msb on input line 111.
 
 (/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
@@ -341,14 +341,14 @@ File: latent_space_31.pdf Graphic file (type pdf)
 <latent_space_63.pdf, id=34, 505.89pt x 505.89pt>
 File: latent_space_63.pdf Graphic file (type pdf)
  <use latent_space_63.pdf>
-Overfull \hbox (120.15088pt too wide) in paragraph at lines 104--118
+Overfull \hbox (120.15088pt too wide) in paragraph at lines 111--125
  [][] 
  []
 
 <department_key.pdf, id=36, 126.4725pt x 289.08pt>
 File: department_key.pdf Graphic file (type pdf)
  <use department_key.pdf>
-Overfull \hbox (2.43332pt too wide) in paragraph at lines 102--132
+Overfull \hbox (2.43332pt too wide) in paragraph at lines 109--139
 [][] $[]$ 
  []
 
@@ -360,18 +360,19 @@ File: fixef.pdf Graphic file (type pdf)
 <infnet.pdf, id=151, 289.08pt x 216.81pt>
 File: infnet.pdf Graphic file (type pdf)
  <use infnet.pdf>
-Overfull \hbox (36.13448pt too wide) in paragraph at lines 150--151
+Overfull \hbox (36.13448pt too wide) in paragraph at lines 157--158
 []|[]| 
  []
 
-[8 <./fixef.pdf> <./infnet.pdf>] [9] [10]) [11]
+[8 <./fixef.pdf> <./infnet.pdf>] [9] [10]) [11] [12]
 \openout2 = `NSFrefs.aux'.
 
- (./NSFrefs.tex (./NSFmaster.bbl
+ (./NSFrefs.tex
+(./NSFmaster.bbl
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
-[1
+ [1
 
 
 ])) [2]
@@ -386,11 +387,11 @@ Missing character: There is no “ in font cmr10!
  (./NSFbioDesmarais.tex [1
 
 
-]) [2]
+])
+[2]
 \openout2 = `NSFjustification.aux'.
 
-
-(./NSFjustification.tex
+ (./NSFjustification.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
@@ -458,11 +459,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--32
 Here is how much of TeX's memory you used:
  3506 strings out of 493747
  44814 string characters out of 3143546
- 114638 words of memory out of 3000000
+ 115638 words of memory out of 3000000
  6670 multiletter control sequences out of 15000+200000
  12782 words of font info for 47 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 41i,17n,35p,1984b,372s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,17n,35p,2181b,372s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/
 texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/t
 exlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/te
@@ -474,10 +475,10 @@ e/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/
 0/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2010
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2010/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on NSFmaster.pdf (19 pages, 288728 bytes).
+Output written on NSFmaster.pdf (20 pages, 289556 bytes).
 PDF statistics:
- 228 PDF objects out of 1000 (max. 8388607)
- 179 compressed objects within 2 object streams
+ 231 PDF objects out of 1000 (max. 8388607)
+ 181 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  65 words of extra memory for PDF output out of 10000 (max. 10000000)
 
