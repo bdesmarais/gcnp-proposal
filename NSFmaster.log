@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  5 DEC 2012 17:46
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  5 DEC 2012 21:00
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -318,57 +318,68 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 58.
- [4] [5]
-LaTeX Font Info:    Try loading font information for U+msa on input line 111.
+ [4]
+Overfull \hbox (15.57397pt too wide) in paragraph at lines 81--82
+\OT1/cmr/m/n/10.95 ter-iz-ing the re-la-tion-ships be-tween top-ics in sep-a-ra
+te dy-namic cor-pora and the socio-organizational
+ []
 
-(/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsa.fd
+[5] [6]
+LaTeX Font Info:    Try loading font information for U+msa on input line 114.
+ (/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 111.
+LaTeX Font Info:    Try loading font information for U+msb on input line 114.
 
 (/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-<latent_space_15.pdf, id=28, 505.89pt x 505.89pt>
+<latent_space_15.pdf, id=32, 505.89pt x 505.89pt>
 File: latent_space_15.pdf Graphic file (type pdf)
  <use latent_space_15.pdf>
-<latent_space_17.pdf, id=30, 505.89pt x 505.89pt>
+<latent_space_17.pdf, id=34, 505.89pt x 505.89pt>
 File: latent_space_17.pdf Graphic file (type pdf)
  <use latent_space_17.pdf>
-<latent_space_31.pdf, id=32, 505.89pt x 505.89pt>
+<latent_space_31.pdf, id=36, 505.89pt x 505.89pt>
 File: latent_space_31.pdf Graphic file (type pdf)
  <use latent_space_31.pdf>
-<latent_space_63.pdf, id=34, 505.89pt x 505.89pt>
+<latent_space_63.pdf, id=38, 505.89pt x 505.89pt>
 File: latent_space_63.pdf Graphic file (type pdf)
  <use latent_space_63.pdf>
-Overfull \hbox (120.15088pt too wide) in paragraph at lines 111--125
+Overfull \hbox (120.15088pt too wide) in paragraph at lines 114--128
  [][] 
  []
 
-<department_key.pdf, id=36, 126.4725pt x 289.08pt>
+<department_key.pdf, id=40, 126.4725pt x 289.08pt>
 File: department_key.pdf Graphic file (type pdf)
  <use department_key.pdf>
-Overfull \hbox (2.43332pt too wide) in paragraph at lines 109--139
+Overfull \hbox (2.43332pt too wide) in paragraph at lines 112--142
 [][] $[]$ 
  []
 
-[6] [7 <./latent_space_15.pdf> <./latent_space_17.pdf> <./latent_space_31.pdf> 
-<./latent_space_63.pdf> <./department_key.pdf>]
-<fixef.pdf, id=150, 216.81pt x 289.08pt>
+<fixef.pdf, id=41, 216.81pt x 289.08pt>
 File: fixef.pdf Graphic file (type pdf)
  <use fixef.pdf>
-<infnet.pdf, id=151, 289.08pt x 216.81pt>
+<infnet.pdf, id=42, 289.08pt x 216.81pt>
 File: infnet.pdf Graphic file (type pdf)
  <use infnet.pdf>
-Overfull \hbox (36.13448pt too wide) in paragraph at lines 157--158
+Overfull \hbox (36.13448pt too wide) in paragraph at lines 160--161
 []|[]| 
  []
 
-[8 <./fixef.pdf> <./infnet.pdf>] [9] [10]) [11] [12]
+[7]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[8 <./latent_space_15.pdf> <./latent_space_17.pdf> <./latent_space_31.pdf> <./l
+atent_space_63.pdf> <./department_key.pdf>] [9 <./fixef.pdf> <./infnet.pdf>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[10] [11]) [12]
 \openout2 = `NSFrefs.aux'.
 
- (./NSFrefs.tex
-(./NSFmaster.bbl
+ (./NSFrefs.tex (./NSFmaster.bbl
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
@@ -378,7 +389,8 @@ Missing character: There is no “ in font cmr10!
 ])) [2]
 \openout2 = `NSF-DMP.aux'.
 
- (./NSF-DMP.tex) [1
+ (./NSF-DMP.tex)
+[1
 
 
 ]
@@ -387,8 +399,7 @@ Missing character: There is no “ in font cmr10!
  (./NSFbioDesmarais.tex [1
 
 
-])
-[2]
+]) [2]
 \openout2 = `NSFjustification.aux'.
 
  (./NSFjustification.tex
@@ -475,7 +486,7 @@ e/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/
 0/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2010
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2010/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on NSFmaster.pdf (20 pages, 289556 bytes).
+Output written on NSFmaster.pdf (20 pages, 291055 bytes).
 PDF statistics:
  231 PDF objects out of 1000 (max. 8388607)
  181 compressed objects within 2 object streams
