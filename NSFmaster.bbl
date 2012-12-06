@@ -32,6 +32,11 @@ P.~Krafft, J.~Moore, H.~Wallach, and B.~Desmarais, ``{Topic-Partitioned
 D.~Mimno and A.~McCallum, ``Topic models conditioned on arbitrary features with
   dirichlet-multinomial regression,'' in {\em UAI}, 2008.
 
+\bibitem{Blei2006}
+D.~M. Blei and J.~D. Lafferty, ``Dynamic topic models,'' in {\em Proceedings of
+  the 23rd international conference on Machine learning}, ICML '06,
+  pp.~113--120, 2006.
+
 \bibitem{Yildiz2007}
 M.~Yildiz, ``E-government research: Reviewing the literature, limitations, and
   ways forward,'' {\em Government Information Quarterly}, vol.~24, no.~3,
@@ -85,10 +90,9 @@ W.~A. Mason, A.~Jones, and R.~L. Goldstone, ``Propogation of innovations in
   networked groups,'' {\em Journal of Experimental Psychology: General},
   vol.~137, no.~3, pp.~422--433, 2008.
 
-\bibitem{Blei2006}
-D.~M. Blei and J.~D. Lafferty, ``Dynamic topic models,'' in {\em Proceedings of
-  the 23rd international conference on Machine learning}, ICML '06,
-  pp.~113--120, 2006.
+\bibitem{Sarkar2005}
+P.~Sarkar and A.~W. Moore, ``Dynamic social network analysis using latent space
+  models,'' {\em SIGKDD Explorations}, vol.~7, pp.~31--40, Dec. 2005.
 
 \bibitem{Aldrich1995}
 J.~H. Aldrich, {\em Why Parties? The Origin and Transformation of Political

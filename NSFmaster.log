@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  5 DEC 2012 21:00
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  6 DEC 2012 14:00
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -325,58 +325,58 @@ te dy-namic cor-pora and the socio-organizational
  []
 
 [5] [6]
-LaTeX Font Info:    Try loading font information for U+msa on input line 114.
+LaTeX Font Info:    Try loading font information for U+msa on input line 104.
  (/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 114.
+LaTeX Font Info:    Try loading font information for U+msb on input line 104.
 
 (/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-)
-<latent_space_15.pdf, id=32, 505.89pt x 505.89pt>
+) [7]
+<latent_space_15.pdf, id=36, 505.89pt x 505.89pt>
 File: latent_space_15.pdf Graphic file (type pdf)
  <use latent_space_15.pdf>
-<latent_space_17.pdf, id=34, 505.89pt x 505.89pt>
+<latent_space_17.pdf, id=38, 505.89pt x 505.89pt>
 File: latent_space_17.pdf Graphic file (type pdf)
  <use latent_space_17.pdf>
-<latent_space_31.pdf, id=36, 505.89pt x 505.89pt>
+<latent_space_31.pdf, id=40, 505.89pt x 505.89pt>
 File: latent_space_31.pdf Graphic file (type pdf)
  <use latent_space_31.pdf>
-<latent_space_63.pdf, id=38, 505.89pt x 505.89pt>
+<latent_space_63.pdf, id=42, 505.89pt x 505.89pt>
 File: latent_space_63.pdf Graphic file (type pdf)
  <use latent_space_63.pdf>
-Overfull \hbox (120.15088pt too wide) in paragraph at lines 114--128
+Overfull \hbox (120.15088pt too wide) in paragraph at lines 137--151
  [][] 
  []
 
-<department_key.pdf, id=40, 126.4725pt x 289.08pt>
+<department_key.pdf, id=44, 126.4725pt x 289.08pt>
 File: department_key.pdf Graphic file (type pdf)
  <use department_key.pdf>
-Overfull \hbox (2.43332pt too wide) in paragraph at lines 112--142
+Overfull \hbox (2.43332pt too wide) in paragraph at lines 135--165
 [][] $[]$ 
  []
 
-<fixef.pdf, id=41, 216.81pt x 289.08pt>
+[8] [9 <./latent_space_15.pdf> <./latent_space_17.pdf> <./latent_space_31.pdf> 
+<./latent_space_63.pdf> <./department_key.pdf>]
+<fixef.pdf, id=156, 216.81pt x 289.08pt>
 File: fixef.pdf Graphic file (type pdf)
  <use fixef.pdf>
-<infnet.pdf, id=42, 289.08pt x 216.81pt>
+<infnet.pdf, id=157, 289.08pt x 216.81pt>
 File: infnet.pdf Graphic file (type pdf)
  <use infnet.pdf>
-Overfull \hbox (36.13448pt too wide) in paragraph at lines 160--161
+Overfull \hbox (36.13448pt too wide) in paragraph at lines 196--197
 []|[]| 
  []
 
-[7]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[8 <./latent_space_15.pdf> <./latent_space_17.pdf> <./latent_space_31.pdf> <./l
-atent_space_63.pdf> <./department_key.pdf>] [9 <./fixef.pdf> <./infnet.pdf>]
+[10] [11 <./fixef.pdf> <./infnet.pdf>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[10] [11]) [12]
+[12] [13]) [14]
 \openout2 = `NSFrefs.aux'.
 
  (./NSFrefs.tex (./NSFmaster.bbl
@@ -468,10 +468,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--32
 ) [2] (./NSFmaster.aux (./NSFsumm.aux) (./NSFdesc.aux) (./NSFrefs.aux)
 (./NSF-DMP.aux) (./NSFbioDesmarais.aux) (./NSFjustification.aux)) ) 
 Here is how much of TeX's memory you used:
- 3506 strings out of 493747
- 44814 string characters out of 3143546
- 115638 words of memory out of 3000000
- 6670 multiletter control sequences out of 15000+200000
+ 3507 strings out of 493747
+ 44826 string characters out of 3143546
+ 115644 words of memory out of 3000000
+ 6671 multiletter control sequences out of 15000+200000
  12782 words of font info for 47 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  41i,17n,35p,2181b,372s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -486,10 +486,10 @@ e/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/
 0/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2010
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2010/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on NSFmaster.pdf (20 pages, 291055 bytes).
+Output written on NSFmaster.pdf (22 pages, 297137 bytes).
 PDF statistics:
- 231 PDF objects out of 1000 (max. 8388607)
- 181 compressed objects within 2 object streams
+ 237 PDF objects out of 1000 (max. 8388607)
+ 185 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  65 words of extra memory for PDF output out of 10000 (max. 10000000)
 
