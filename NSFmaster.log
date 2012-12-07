@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  6 DEC 2012 22:19
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  7 DEC 2012 08:38
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -433,6 +433,10 @@ File: pgflibraryshapes.multipart.code.tex 2008/01/15 v2.00 (rcs-revision 1.7)
 s/tikzlibrarytrees.code.tex
 File: tikzlibrarytrees.code.tex 2008/01/09 v2.00 (rcs-revision 1.1)
 )
+(/usr/local/texlive/2010/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write4
+
+Excluding comment 'comment')
 (/usr/local/texlive/2010/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen157
 \WF@size=\dimen158
@@ -498,18 +502,18 @@ LaTeX Info: Redefining \bm on input line 204.
 (./NSFbioDesmarais.aux) (./NSFjustification.aux))
 \openout1 = `NSFmaster.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
 
 (/usr/local/texlive/2010/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -603,65 +607,56 @@ Overfull \hbox (15.57397pt too wide) in paragraph at lines 81--82
 te dy-namic cor-pora and the socio-organizational
  []
 
-[5] [6]
-LaTeX Font Info:    Try loading font information for U+msa on input line 104.
+[5]
+LaTeX Font Info:    Try loading font information for U+msa on input line 95.
  (/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 104.
+LaTeX Font Info:    Try loading font information for U+msb on input line 95.
 
 (/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-) [7] [8]
-<latent_space_15.pdf, id=42, 505.89pt x 505.89pt>
+)
+<latent_space_15.pdf, id=31, 505.89pt x 505.89pt>
 File: latent_space_15.pdf Graphic file (type pdf)
  <use latent_space_15.pdf>
-<latent_space_17.pdf, id=44, 505.89pt x 505.89pt>
+<latent_space_17.pdf, id=33, 505.89pt x 505.89pt>
 File: latent_space_17.pdf Graphic file (type pdf)
  <use latent_space_17.pdf>
-<latent_space_31.pdf, id=46, 505.89pt x 505.89pt>
+<latent_space_31.pdf, id=35, 505.89pt x 505.89pt>
 File: latent_space_31.pdf Graphic file (type pdf)
  <use latent_space_31.pdf>
-<latent_space_63.pdf, id=48, 505.89pt x 505.89pt>
+<latent_space_63.pdf, id=37, 505.89pt x 505.89pt>
 File: latent_space_63.pdf Graphic file (type pdf)
  <use latent_space_63.pdf>
-Overfull \hbox (120.15088pt too wide) in paragraph at lines 204--218
+Overfull \hbox (120.15088pt too wide) in paragraph at lines 95--109
  [][] 
  []
 
-<department_key.pdf, id=50, 126.4725pt x 289.08pt>
+<department_key.pdf, id=39, 126.4725pt x 289.08pt>
 File: department_key.pdf Graphic file (type pdf)
  <use department_key.pdf>
-Overfull \hbox (2.43332pt too wide) in paragraph at lines 202--232
+Overfull \hbox (2.43332pt too wide) in paragraph at lines 93--123
 [][] $[]$ 
  []
 
-[9 <./latent_space_15.pdf> <./latent_space_17.pdf> <./latent_space_31.pdf> <./l
-atent_space_63.pdf> <./department_key.pdf>]
-<fixef.pdf, id=159, 216.81pt x 289.08pt>
-File: fixef.pdf Graphic file (type pdf)
- <use fixef.pdf>
-<infnet.pdf, id=160, 289.08pt x 216.81pt>
-File: infnet.pdf Graphic file (type pdf)
- <use infnet.pdf>
-Overfull \hbox (36.13448pt too wide) in paragraph at lines 263--264
-[]|[]| 
- []
+[6 <./latent_space_15.pdf> <./latent_space_17.pdf> <./latent_space_31.pdf> <./l
+atent_space_63.pdf> <./department_key.pdf>] [7] [8] [9] [10]
+
+LaTeX Warning: Reference `Figure:boltz' on page 11 undefined on input line 280.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+[11]
 
-[10] [11 <./fixef.pdf> <./infnet.pdf>] [12]
+LaTeX Warning: Reference `screens' on page 12 undefined on input line 303.
 
-LaTeX Warning: Reference `screens' on page 13 undefined on input line 299.
-
-<AlachuaBOCC.jpg, id=179, 967.615pt x 550.055pt>
+[12] <AlachuaBOCC.jpg, id=170, 967.615pt x 550.055pt>
 File: AlachuaBOCC.jpg Graphic file (type jpg)
  <use AlachuaBOCC.jpg>
-<CorvallisOR.jpg, id=180, 966.61125pt x 473.77pt>
+<CorvallisOR.jpg, id=171, 966.61125pt x 473.77pt>
 File: CorvallisOR.jpg Graphic file (type jpg)
  <use CorvallisOR.jpg>
-[13] [14 <./AlachuaBOCC.jpg> <./CorvallisOR.jpg>] [15]) [16]
+[13] [14 <./AlachuaBOCC.jpg> <./CorvallisOR.jpg>]) [15] [16]
 \openout2 = `NSFrefs.aux'.
 
  (./NSFrefs.tex
@@ -756,15 +751,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 11072 strings out of 493747
- 203424 string characters out of 3143546
- 283661 words of memory out of 3000000
- 14031 multiletter control sequences out of 15000+200000
+ 11105 strings out of 493747
+ 203984 string characters out of 3143546
+ 287277 words of memory out of 3000000
+ 14062 multiletter control sequences out of 15000+200000
  12782 words of font info for 47 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 47i,17n,56p,2181b,472s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 47i,17n,56p,2181b,575s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
@@ -773,12 +771,13 @@ usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
 r/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
 local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loc
 al/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
-l/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local
-/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on NSFmaster.pdf (24 pages, 876042 bytes).
+l/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/
+texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/t
+exlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on NSFmaster.pdf (24 pages, 875786 bytes).
 PDF statistics:
- 248 PDF objects out of 1000 (max. 8388607)
- 192 compressed objects within 2 object streams
+ 242 PDF objects out of 1000 (max. 8388607)
+ 187 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 87 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 77 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -89,6 +89,41 @@ The PIs in this project are global leaders in the emerging field of computationa
 As an initial phase of research for this project, we endeavored to leverage our expertise in the computational and social sciences, as well as the availability of rich data sources through the public record to address a challenge in the study of communication networks. this work has been presented at
 a variety of computational social science workshops---including the Workshop on Information in Networks, New Directions in Analyzing Text as Data, and the Annual Political Networks Conference---and appeared at Neural Information Processing Systems conference (one of the top machine learning conferences) in late 2012. A substantial body of research finds that the structure of a communication network has a substantial influence on the problem-solving abilities of the network as a whole and the performance of the individuals in the network \cite{Mason2012}. Moreover, recent research indicates that the topic or context of communication is important, meaning the measurement of a communication network should involve topic-of-discussion specificity \cite{Mason2008}. Thus, in order for an organization to diagnose and design its internal communication network, it must first be able to discern topic-specific communication networks.
 
+\begin{figure*}[t]
+\begin{minipage}[b]{0.5\linewidth}
+\centering
+\begin{tabular}{cc}
+{\bf Public Signage} &
+{\bf Broadcast Messages}\\
+{\small change signs sign process ordinance}  &
+{\small fw fyi bulletin summary week legislative} \\
+\includegraphics[scale=.29, trim=.4in .6in .4in .8in, clip=true]{latent_space_15} &
+\includegraphics[scale=.29, trim=.4in .6in .4in .8in, clip=true]{latent_space_17} \\
+{\bf Public Relations} &
+{\bf Meeting Scheduling} \\
+{\small city breakdown information give} &
+{\small meeting march board agenda week} \\
+\includegraphics[scale=.29, trim=.4in .6in .4in .8in, clip=true]{latent_space_31} &
+ \includegraphics[scale=.29, trim=.4in .6in .4in .8in, clip=true]{latent_space_63} \\
+\end{tabular}
+\end{minipage}
+\begin{minipage}{0.5\linewidth}
+\hspace{3.25cm}\vspace{-0.4cm} \includegraphics[scale=.85]{department_key}
+\end{minipage}
+\caption{Four topic-specific communication patterns inferred from the
+  NHC email network. Each pattern is labeled with a human-selected
+  name for the corresponding topic, along with that topic's most
+  probable words in order of decreasing probability. The size of each
+  manager's acronym in topic $t$'s pattern (given by $0.45 +
+  1.25\,\sqrt{d^{(t)}_a \,/\, \max_a d^{(t)}_a}$, where $d^{(t)}_a$ is
+  the degree of actor $a$ in that subnetwork) indicates how often that
+  manager communicates about that topic.  Managers' acronyms are
+  colored according to their respective division in the New
+  Hanover County organizational chart. The acronym ``AM'' appears
+  twice in all plots because there are two assistant county managers.}
+\label{Figure:LatentSpace}
+\end{figure*}
+
 Our pilot research addresses this problem \cite{Krafft2012}. Noting that email constitutes the cornerstone of most organizations' electronic communications, we focused on measuring and analyzing topic-specific communication networks using email archives. Using a public records request, we collected one months worth of in and out-box contents for all managerial-level employees of New Hanover County, North Carolina. We then developed a model that combined statistical topic modeling and the latent space model of social networks (a model that projects a network into a Euclidean space, within which actors who are close are more likely to connect than those who are far apart). Specifically, the model learns topic-specific latent spaces. This produces a coherent probabilistic generative model of corpus of messages annotated with sender-receiver information that permits intuitive visualization and analysis of the underlying topic-specific communication networks.
 
 \section{Proposed Research}
@@ -99,12 +134,16 @@ In the following sections we describe our approach to modeling the multi-domain 
 
 \subsection{Integrating Domain-Specific Models}
 
-Below we describe several domain-specific models which would constitute innovative model derivations for individual domains of governance-related textual data. However, before delving into domain-specific models, we describe a general approach to tying the domains together into an all-encompassing probabilistic model that incorporates interdependence. The overarching objective of our research is to model cross-domain relationships in topical attention throughout the input-response-feedback cycle underlying the democratic process. At the core of each domain-specific model is a statistical topic model of the domain-specific textual content. We seek to understand the relationships among the topic distributions, while also modeling the decision context in each domain. This will permit us to identify the points of tight coupling as well as breaking points in topic movement across domains.
+Below we describe several domain-specific model families that constitute innovative analytic representations of textual data connected to individual phases in the governance process. Before delving into domain-specific modeling frameworks, we describe a general approach to tying the domains together into an all-encompassing probabilistic model that incorporates cros-domain and over-time interdependence. At the core of each domain-specific model family is a statistical topic model of the domain-specific textual content. We seek to understand the relationships among the topic distributions, which will provide insight into the ways in which topics progress through the different phases of governance.  In addition to textual content, each class of domain-specific model represents the organizational structural context unique to each domain. This enables the overall modeling framework to assess the relationships between content and context.  
 
-The use of logistic-normal distributions in the construction of domain-specific topic distributions to model cross-domain relationships will constitute a highly flexible, illuminating and principled approach to tying the domains together in a complete cycle. We will derive models with a common set of topics across domains, but varying attention to topics in each domain. The attention to each topic will be given by a logistic transformation of Gaussian-distributed attention parameters. For each topic $t$, there will be four domain-specific attentiveness parameters. The four Gaussian attention parameters will be modeled as a vector autoregression \cite{Banbura2010}. This will permit topics to be related across domains. Thus, the attention level to a topic in each domain will be related to the attention level to a topic in every other domain, up to a selected number of periods into the past. 
+We work through the description of our overall modeling framework using a graphical depiction of the most important aspects of the structure provided in Figure \ref{plates}. Let $K$ be the number of topics. Each topic is constituted by a multinomial distribution over words ($w$) with natural parameter $\beta$. The topic proportions ($\theta$) constituting the multinomial distribution over topics in a selected document are given by the mean transformation of the natural multinomial parameter ($\eta$). Inter-temporal and inter-domain dependence is constructed by drawing $\eta$ from a Gaussian vector autoregressiion model \cite{Banbura2010} (i.e., $\eta \sim \mathcal{N}\left(\alpha_t,\sigma^2I \right)$). Given $M$ domains, the mean natural parameter corresponding to topic $k$ in domain $m$ at time $t$ is $$ \alpha_{(t,m,k)} = \lambda_{(0,m,k)} + \lambda_{(1,1,k)}\alpha_{(t-1,1,k)}+ \lambda_{(2,m,k)}\alpha_{(t-1,2,k)}+\hdots+\lambda_{(M,m,k)}\alpha_{(t-1,M,k)},$$ where $ \lambda_{(0,m,k)}$ is an over-time intercept for the natural parameter corresponding to topic $k$ in domain $m$ and $\lambda_{(v,m,k)}$ is a real-valued parameter that gives the regression relationship between the natural parameter of topic $k$ in domain $v$ at time $t-1$ and the natural parameter of topic $k$ in domain $m$ at time $t$. This parameterization renders the natural parameter corresponding to a given topic (i.e., the prominence of a given topic) in a selected domain dependent upon the natural parameter of that same topic across all other domains in the immediate past. Through $\lambda$, this vector autoregressive model represents the dynamics of topic progression across domains.
 
-A vector autoregression model is a classic linear regression model for time serial data. The estimated parameters of the vector autoregression model will be assessed in order to understand relationships across domains. This is a highly flexible framework for integrating domain-specific models. It works whenever a common set of topics is used to model the dynamic corpora across domains. Thus, this approach permits flexibility in tuning or possibly changing the form of the domain-specific models proposed above. Another major advantage of the vector autoregressive framework is that it constitutes an effective predictive forecasting model \cite{Banbura2010}. This would permit a forecast of, e.g., legislative attention to an issue in the future given current and past legislative, informal intra-governmental and outside input attention to an issue.
+use logistic-normal distributions in the construction of domain-specific topic distributions to model cross-domain relationships will constitute a highly flexible, modular and principled approach to tying the domains together and modeling the interdependencies among them. We will derive models with a common set of topics across domains, but varying attention to topics in each domain. The attention to each topic will be given by a logistic transformation of Gaussian-distributed attention parameters. For each topic $t$, there will be four domain-specific attentiveness parameters. The four Gaussian attention parameters will be modeled as a vector autoregression \cite{Banbura2010}. This will permit topics to be related across domains. Thus, the attention level to a topic in each domain will be related to the attention level to a topic in every other domain, up to a selected number of periods into the past. 
 
+\begin{wrapfigure}{r}{.45\textwidth}
+%\includegraphics[scale=.25]{plates}
+\vspace{-.4cm}
+\begin{center}
 \begin{tikzpicture}
 
 %%%%%% Time 1 %%%%%%%
@@ -171,6 +210,17 @@ A vector autoregression model is a classic linear regression model for time seri
 \node at (.7+4,-4.25){$K$};
 
 \end{tikzpicture}
+\end{center}
+\vspace{-.3cm}
+\caption{Graphical representation of a dynamic multi-corpus model of text ($w$) and context ($y$) over two time periods. Each topic's natural parameters ($\beta$) evolve over time. The logistic normal determinants of topic proportions ($\alpha$) co-evolve across the $M$ domains.}
+\vspace{-.5cm}
+
+\label{plates}
+\end{wrapfigure}
+
+A vector autoregression model is a classic linear regression model for time serial data. The estimated parameters of the vector autoregression model will be assessed in order to understand relationships across domains. This is a highly flexible framework for integrating domain-specific models. It works whenever a common set of topics is used to model the dynamic corpora across domains. Thus, this approach permits flexibility in tuning or possibly changing the form of the domain-specific models proposed above. Another major advantage of the vector autoregressive framework is that it constitutes an effective predictive forecasting model \cite{Banbura2010}. This would permit a forecast of, e.g., legislative attention to an issue in the future given current and past legislative, informal intra-governmental and outside input attention to an issue.
+
+
 
 \subsection{Modeling Outside Input}
 
@@ -198,40 +248,7 @@ A vector autoregression model is a classic linear regression model for time seri
 ~\\
 \noindent {\bf Political Science contribution:} The primary political science contribution offered by the application of this model will be an analysis of how government communication network structure and the content of communications co-evolve. This will provide an opportunity to understand when, in the lifecycle of topic attention, network structure changes. Given the literature on the optimal configuration of communication networks \cite{Mason2008,Mason2012}, these results will permit us to assess how long it takes  a government communication network structure around a given topic to configure into an efficient network.
 
-\begin{figure*}[t]
-\begin{minipage}[b]{0.5\linewidth}
-\centering
-\begin{tabular}{cc}
-{\bf Public Signage} &
-{\bf Broadcast Messages}\\
-{\small change signs sign process ordinance}  &
-{\small fw fyi bulletin summary week legislative} \\
-\includegraphics[scale=.29, trim=.4in .6in .4in .8in, clip=true]{latent_space_15} &
-\includegraphics[scale=.29, trim=.4in .6in .4in .8in, clip=true]{latent_space_17} \\
-{\bf Public Relations} &
-{\bf Meeting Scheduling} \\
-{\small city breakdown information give} &
-{\small meeting march board agenda week} \\
-\includegraphics[scale=.29, trim=.4in .6in .4in .8in, clip=true]{latent_space_31} &
- \includegraphics[scale=.29, trim=.4in .6in .4in .8in, clip=true]{latent_space_63} \\
-\end{tabular}
-\end{minipage}
-\begin{minipage}{0.5\linewidth}
-\hspace{3.25cm}\vspace{-0.4cm} \includegraphics[scale=.85]{department_key}
-\end{minipage}
-\caption{Four topic-specific communication patterns inferred from the
-  NHC email network. Each pattern is labeled with a human-selected
-  name for the corresponding topic, along with that topic's most
-  probable words in order of decreasing probability. The size of each
-  manager's acronym in topic $t$'s pattern (given by $0.45 +
-  1.25\,\sqrt{d^{(t)}_a \,/\, \max_a d^{(t)}_a}$, where $d^{(t)}_a$ is
-  the degree of actor $a$ in that subnetwork) indicates how often that
-  manager communicates about that topic.  Managers' acronyms are
-  colored according to their respective division in the New
-  Hanover County organizational chart. The acronym ``AM'' appears
-  twice in all plots because there are two assistant county managers.}
-\label{Figure:LatentSpace}
-\end{figure*}
+
 
 
 \subsection{Modeling Formal intra-governmental Communications}
@@ -255,19 +272,6 @@ We will develop a topic model building upon the correlated topic model \cite{Ble
 
 
 \subsection{Modeling Legislative Output}
-
-\begin{figure}[h]
-\vspace{-.6cm}
-\begin{center}
-\begin{tabular}{m{2.5in}m{2.5in}} 
-\includegraphics[scale=.65]{fixef} & \includegraphics[scale=.75]{infnet}\\
-(a) Estimates of Justices' Ideal Points & (b) Significant Associations Between Justices \\  
-\end{tabular}
-\end{center}
-\vspace{-.3cm}
-\caption{The bars in (a) span 95\% confidence intervals. In (b) an edge is drawn if the association parameter has the respective sign in at least  95\% of the bootstrap samples.}
-\label{Figure:boltz}
-\end{figure}
 
 
 \noindent {\bf Data description:}  We will gather data on the statutes created by each county in order to examine implementation of topics that arise in the public, informal intra-governmental communications, and on the legislative agenda. These data are available on the web for most counties, and are certainly a matter of public record and would be available upon request. For some counties, it is straightforward to extract how legislators voted on a measure from the meeting minutes. For other counties, however, this is not as simple and may not be feasible. 
@@ -360,7 +364,7 @@ The proposed project will support a graduate student in computer science and one
 
 \subsection{Broadening Participation of Underrepresented Groups}
 
-Both PIs Wallach and Desmarais have records of making concerted efforts to broaden the participation of underrepresented groups. PI Wallach (co?) founded the Women in Machine Learning Workshops -- an ongoing annual meeting and related group of scholars that bolsters the small network of female researchers in machine learning. In 2011, preceding the NSF-sponsored `Visions in Methodology' conference for women in political methodology at The Ohio State University, PI Desmarais offered a one day workshop on statistical inference with network data (featuring the methods he has developed and applied in his research). Given the results of the proposed projects, both PIs will continue to pursue training opportunities that focus on underrepresented groups.
+Both PIs Wallach and Desmarais have records of making concerted efforts to broaden the participation of underrepresented groups. PI Wallach (co?) founded the Women in Machine Learning Workshops -- an ongoing annual meeting and related group of scholars that bolsters the small network of female researchers in machine learning. In 2011, preceding the NSF-sponsored `Visions in Methodology' conference for women in political methodology at The Ohio State University, PI Desmarais offered a one day workshop on statistical inference with network data (featuring the methods he has developed and applied in his research). Given the results of the proposed projects, both PIs will continue to pursue training opportunities that focus on underrepresented groups. 
 
 
 
@@ -379,5 +383,25 @@ Both PIs Wallach and Desmarais have records of making concerted efforts to broad
 % $100,000, 2005-2008), resulted in 3 papers [1],[2],[3], demonstrating..."
 
 % if requesting postdoctoral research salary, a supplemental 1-page document
-% called "Postdoc Mentoring Plan" will be required 
+% called "Postdoc Mentoring Plan" will be require
+
+\begin{comment}
+
+\begin{figure}[h]
+\vspace{-.6cm}
+\begin{center}
+\begin{tabular}{m{2.5in}m{2.5in}} 
+\includegraphics[scale=.65]{fixef} & \includegraphics[scale=.75]{infnet}\\
+(a) Estimates of Justices' Ideal Points & (b) Significant Associations Between Justices \\  
+\end{tabular}
+\end{center}
+\vspace{-.3cm}
+\caption{The bars in (a) span 95\% confidence intervals. In (b) an edge is drawn if the association parameter has the respective sign in at least  95\% of the bootstrap samples.}
+\label{Figure:boltz}
+\end{figure}
+
+\end{comment}
+
+
+
 
