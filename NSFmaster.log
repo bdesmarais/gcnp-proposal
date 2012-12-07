@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  7 DEC 2012 08:41
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  7 DEC 2012 09:39
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -433,6 +433,10 @@ File: pgflibraryshapes.multipart.code.tex 2008/01/15 v2.00 (rcs-revision 1.7)
 s/tikzlibrarytrees.code.tex
 File: tikzlibrarytrees.code.tex 2008/01/09 v2.00 (rcs-revision 1.1)
 )
+(/usr/local/texlive/2010/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
+\@enLab=\toks25
+)
 (/usr/local/texlive/2010/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write4
 
@@ -442,7 +446,7 @@ Excluding comment 'comment')
 \WF@size=\dimen158
 \c@WF@wrappedlines=\count120
 \WF@box=\box40
-\WF@everypar=\toks25
+\WF@everypar=\toks26
 Package: wrapfig 2003/01/31  v 3.6
 )
 (/usr/local/texlive/2010/texmf-dist/tex/generic/babel/babel.sty
@@ -467,11 +471,11 @@ Package: colortbl 2001/02/13 v0.1j Color table columns (DPC)
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen160
 \extrarowheight=\dimen161
-\NC@list=\toks26
+\NC@list=\toks27
 \extratabsurround=\skip46
 \backup@length=\skip47
 )
-\everycr=\toks27
+\everycr=\toks28
 \minrowclearance=\skip48
 )
 (/usr/local/texlive/2010/texmf-dist/tex/latex/algorithms/algorithmic.sty
@@ -502,18 +506,18 @@ LaTeX Info: Redefining \bm on input line 204.
 (./NSFbioDesmarais.aux) (./NSFjustification.aux))
 \openout1 = `NSFmaster.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
 
 (/usr/local/texlive/2010/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -522,11 +526,11 @@ LaTeX Font Info:    ... okay on input line 57.
 \scratchbox=\box41
 \nofMPsegments=\count127
 \nofMParguments=\count128
-\everyMPshowfont=\toks28
+\everyMPshowfont=\toks29
 \MPscratchCnt=\count129
 \MPscratchDim=\dimen163
 \MPnumerator=\count130
-\everyMPtoPDFconversion=\toks29
+\everyMPtoPDFconversion=\toks30
 ) (/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2010/04/01 v0.9 Utility functions of pdfTeX for LuaTeX (HO)
 
@@ -641,9 +645,19 @@ Overfull \hbox (2.43332pt too wide) in paragraph at lines 93--123
  []
 
 [6 <./latent_space_15.pdf> <./latent_space_17.pdf> <./latent_space_31.pdf> <./l
-atent_space_63.pdf> <./department_key.pdf>] [7] [8] [9] [10]
+atent_space_63.pdf> <./department_key.pdf>] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 217--218
 
-LaTeX Warning: Reference `Figure:boltz' on page 11 undefined on input line 280.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--218
+
+ []
+
+[8] [9] [10]
+
+LaTeX Warning: Reference `Figure:boltz' on page 11 undefined on input line 310.
 
 
 [11] <AlachuaBOCC.jpg, id=166, 967.615pt x 550.055pt>
@@ -653,7 +667,7 @@ File: AlachuaBOCC.jpg Graphic file (type jpg)
 File: CorvallisOR.jpg Graphic file (type jpg)
  <use CorvallisOR.jpg>
 
-LaTeX Warning: Reference `screens' on page 12 undefined on input line 316.
+LaTeX Warning: Reference `screens' on page 12 undefined on input line 346.
 
 [12] [13 <./AlachuaBOCC.jpg> <./CorvallisOR.jpg>] [14]) [15] [16]
 \openout2 = `NSFrefs.aux'.
@@ -750,15 +764,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 11105 strings out of 493747
- 203984 string characters out of 3143546
- 287277 words of memory out of 3000000
- 14062 multiletter control sequences out of 15000+200000
+ 11124 strings out of 493747
+ 204266 string characters out of 3143546
+ 289453 words of memory out of 3000000
+ 14079 multiletter control sequences out of 15000+200000
  12782 words of font info for 47 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  47i,17n,56p,2181b,575s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -773,7 +784,7 @@ al/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
 l/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/
 texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/t
 exlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on NSFmaster.pdf (24 pages, 875790 bytes).
+Output written on NSFmaster.pdf (24 pages, 878091 bytes).
 PDF statistics:
  242 PDF objects out of 1000 (max. 8388607)
  187 compressed objects within 2 object streams
