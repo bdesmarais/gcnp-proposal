@@ -90,6 +90,11 @@ W.~A. Mason, A.~Jones, and R.~L. Goldstone, ``Propogation of innovations in
   networked groups,'' {\em Journal of Experimental Psychology: General},
   vol.~137, no.~3, pp.~422--433, 2008.
 
+\bibitem{Banbura2010}
+M.~Banbura, D.~Giannone, and L.~Reichlin, ``Large bayesian vector auto
+  regressions,'' {\em Journal of Applied Econometrics}, vol.~25, no.~1,
+  pp.~71--92, 2010.
+
 \bibitem{Sarkar2005}
 P.~Sarkar and A.~W. Moore, ``Dynamic social network analysis using latent space
   models,'' {\em SIGKDD Explorations}, vol.~7, pp.~31--40, Dec. 2005.
@@ -113,10 +118,5 @@ B.~A. Desmarais and S.~J. Cranmer, ``{Consistent Confidence Intervals for
   Maximum Pseudolikelihood Estimators},'' {\em {Neural Information Processing
   Systems 2010 Workshop on Computational Social Science and the Wisdom of
   Crowds}}, {2010}.
-
-\bibitem{Banbura2010}
-M.~Banbura, D.~Giannone, and L.~Reichlin, ``Large bayesian vector auto
-  regressions,'' {\em Journal of Applied Econometrics}, vol.~25, no.~1,
-  pp.~71--92, 2010.
 
 \end{thebibliography}

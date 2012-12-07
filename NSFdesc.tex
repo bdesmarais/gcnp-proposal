@@ -105,6 +105,73 @@ The use of logistic-normal distributions in the construction of domain-specific 
 
 A vector autoregression model is a classic linear regression model for time serial data. The estimated parameters of the vector autoregression model will be assessed in order to understand relationships across domains. This is a highly flexible framework for integrating domain-specific models. It works whenever a common set of topics is used to model the dynamic corpora across domains. Thus, this approach permits flexibility in tuning or possibly changing the form of the domain-specific models proposed above. Another major advantage of the vector autoregressive framework is that it constitutes an effective predictive forecasting model \cite{Banbura2010}. This would permit a forecast of, e.g., legislative attention to an issue in the future given current and past legislative, informal intra-governmental and outside input attention to an issue.
 
+\begin{tikzpicture}
+
+%%%%%% Time 1 %%%%%%%
+
+\node (theta) at (0,.4) [circle, draw] {$\theta$};
+\node (z) at (0,-.65) [circle, draw] {$z$};
+\node (y) at (1.25,-.05) [circle, draw,fill=lightgray] {$y$};
+\node (tau) at (1.25,.-1.25) [circle, draw] {$\tau$};
+\node (w) at (0,-1.55)  [circle, draw,fill=lightgray] {$w$};
+\node (alpha) at (0,1.6) [circle, draw] {$\alpha$};
+\node (b) at (0,-4) [circle, draw] {$\beta$};
+
+\draw[->] (alpha) -- (theta);
+\draw[->] (b.north) -- (w.south);
+
+\draw[->] (theta.south) -- (z.north);
+\draw[->] (z.south) -- (w.north);
+\draw[->] (z.east) -- (y.west);
+\draw[->] (z.east) -- (tau.west);
+\draw[->] (tau.north) -- (y.south);
+
+\draw (-.8,-3) rectangle (2,2.15);
+\draw (-.7,-2.75) rectangle (1.85,1);
+\draw (-.6,-2.25) rectangle (.6,-.15);
+
+
+\node at (1.6,-2.5) {$D$};
+\node at (.4,-2.05){$N$};
+\node at (1.75,1.95){$M$};
+
+%%%%%% Time 2 %%%%%%%
+
+\node (theta1) at (0+4,.4) [circle, draw] {$\theta$};
+\node (z1) at (0+4,-.65) [circle, draw] {$z$};
+\node (y1) at (1.25+4,-.05) [circle, draw,fill=lightgray] {$y$};
+\node (tau1) at (1.25+4,.-1.25) [circle, draw] {$\tau$};
+\node (w1) at (0+4,-1.55)  [circle, draw,fill=lightgray] {$w$};
+\node (alpha1) at (0+4,1.6) [circle, draw] {$\alpha$};
+\node (b1) at (0+4,-4) [circle, draw] {$\beta$};
+
+\draw[->] (alpha1) -- (theta1);
+\draw[->] (b1.north) -- (w1.south);
+
+\draw[->] (theta1.south) -- (z1.north);
+\draw[->] (z1.south) -- (w1.north);
+\draw[->] (z1.east) -- (y1.west);
+\draw[->] (z1.east) -- (tau1.west);
+\draw[->] (tau1.north) -- (y1.south);
+
+\draw (-.8+4,-3) rectangle (2+4,2.15);
+\draw (-.7+4,-2.75) rectangle (1.85+4,1);
+\draw (-.6+4,-2.25) rectangle (.6+4,-.15);
+
+
+\node at (1.6+4,-2.5) {$D$};
+\node at (.4+4,-2.05){$N$};
+\node at (1.75+4,1.95){$M$};
+
+%%%%% Tying Together %%%%%
+\draw[->] (alpha) -- (alpha1);
+\draw[->] (b) -- (b1);
+
+\draw (-.8,-4.5) rectangle (.9+4,-3.5);
+\node at (.7+4,-4.25){$K$};
+
+\end{tikzpicture}
+
 \subsection{Modeling Outside Input}
 
 \noindent {\bf Data description:} To define a model for citizen input it is important to first identify the form of the data we will gather on citizen input. Via public records requests, we will collect all emails sent to county government officials by those outside of government. Though some government organizations have experimented with different electronic input modes, the email message is still the workhorse of direct advocacy {\bf cite}. We actually do not need to submit a separate request for this data, as they come with the in and out-boxes of government officials. 
