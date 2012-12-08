@@ -9,46 +9,44 @@ A level-1 auxiliary file: NSF-DMP.aux
 A level-1 auxiliary file: NSFbioDesmarais.aux
 A level-1 auxiliary file: NSFjustification.aux
 Database file #1: nsfbib.bib
-Warning--I didn't find a database entry for "Canes-Wrone2002:Levendusky2008"
-You've used 25 entries,
+You've used 28 entries,
             1876 wiz_defined-function locations,
-            665 strings with 7807 characters,
-and the built_in function-call counts, 7223 in all, are:
-= -- 746
-> -- 206
+            686 strings with 8298 characters,
+and the built_in function-call counts, 8494 in all, are:
+= -- 893
+> -- 229
 < -- 0
-+ -- 79
-- -- 54
-* -- 485
-:= -- 966
-add.period$ -- 27
-call.type$ -- 25
-change.case$ -- 23
++ -- 88
+- -- 60
+* -- 562
+:= -- 1113
+add.period$ -- 30
+call.type$ -- 28
+change.case$ -- 26
 chr.to.int$ -- 0
-cite$ -- 25
-duplicate$ -- 399
-empty$ -- 718
-format.name$ -- 54
-if$ -- 1815
+cite$ -- 28
+duplicate$ -- 472
+empty$ -- 829
+format.name$ -- 60
+if$ -- 2148
 int.to.chr$ -- 0
-int.to.str$ -- 25
-missing$ -- 27
-newline$ -- 80
-num.names$ -- 25
-pop$ -- 78
+int.to.str$ -- 28
+missing$ -- 30
+newline$ -- 89
+num.names$ -- 28
+pop$ -- 81
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 288
+skip$ -- 364
 stack$ -- 0
-substring$ -- 552
-swap$ -- 173
+substring$ -- 688
+swap$ -- 222
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 72
-width$ -- 27
-write$ -- 253
-(There was 1 warning)
+while$ -- 81
+width$ -- 30
+write$ -- 286
