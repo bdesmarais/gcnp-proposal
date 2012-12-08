@@ -9,9 +9,10 @@ A level-1 auxiliary file: NSF-DMP.aux
 A level-1 auxiliary file: NSFbioDesmarais.aux
 A level-1 auxiliary file: NSFjustification.aux
 Database file #1: nsfbib.bib
+Warning--I didn't find a database entry for "Canes-Wrone2002:Levendusky2008"
 You've used 25 entries,
             1876 wiz_defined-function locations,
-            663 strings with 7747 characters,
+            665 strings with 7807 characters,
 and the built_in function-call counts, 7223 in all, are:
 = -- 746
 > -- 206
@@ -50,3 +51,4 @@ warning$ -- 0
 while$ -- 72
 width$ -- 27
 write$ -- 253
+(There was 1 warning)
