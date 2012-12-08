@@ -110,6 +110,16 @@ M.~Banbura, D.~Giannone, and L.~Reichlin, ``Large bayesian vector auto
   regressions,'' {\em Journal of Applied Econometrics}, vol.~25, no.~1,
   pp.~71--92, 2010.
 
+\bibitem{Wallach2008}
+H.~Wallach, {\em Structured Topic Models for Language}.
+\newblock PhD thesis, University of Cambridge, 2008.
+
+\bibitem{Wallach2010}
+H.~Wallach, S.~Jensen, L.~Dicker, and K.~Heller, ``An alternative prior process
+  for nonparametric bayesian clustering,'' in {\em Proceedings of the
+  Thirteenth International Conference on Artificial Intelligence and
+  Statistics}, 2010.
+
 \bibitem{Sarkar2005}
 P.~Sarkar and A.~W. Moore, ``Dynamic social network analysis using latent space
   models,'' {\em SIGKDD Explorations}, vol.~7, pp.~31--40, Dec. 2005.

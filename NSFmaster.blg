@@ -9,44 +9,44 @@ A level-1 auxiliary file: NSF-DMP.aux
 A level-1 auxiliary file: NSFbioDesmarais.aux
 A level-1 auxiliary file: NSFjustification.aux
 Database file #1: nsfbib.bib
-You've used 28 entries,
+You've used 30 entries,
             1876 wiz_defined-function locations,
-            686 strings with 8298 characters,
-and the built_in function-call counts, 8494 in all, are:
-= -- 893
-> -- 229
+            696 strings with 8647 characters,
+and the built_in function-call counts, 8817 in all, are:
+= -- 920
+> -- 247
 < -- 0
-+ -- 88
-- -- 60
-* -- 562
-:= -- 1113
-add.period$ -- 30
-call.type$ -- 28
-change.case$ -- 26
++ -- 95
+- -- 65
+* -- 582
+:= -- 1167
+add.period$ -- 33
+call.type$ -- 30
+change.case$ -- 27
 chr.to.int$ -- 0
-cite$ -- 28
-duplicate$ -- 472
-empty$ -- 829
-format.name$ -- 60
-if$ -- 2148
+cite$ -- 30
+duplicate$ -- 492
+empty$ -- 864
+format.name$ -- 65
+if$ -- 2222
 int.to.chr$ -- 0
-int.to.str$ -- 28
-missing$ -- 30
-newline$ -- 89
-num.names$ -- 28
-pop$ -- 81
+int.to.str$ -- 30
+missing$ -- 31
+newline$ -- 96
+num.names$ -- 30
+pop$ -- 91
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 364
+skip$ -- 368
 stack$ -- 0
 substring$ -- 688
-swap$ -- 222
+swap$ -- 224
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 81
-width$ -- 30
-write$ -- 286
+while$ -- 83
+width$ -- 32
+write$ -- 304
