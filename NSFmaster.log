@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  10 DEC 2012 12:02
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  10 DEC 2012 12:59
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -758,10 +758,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 11134 strings out of 493747
- 204392 string characters out of 3143546
- 290001 words of memory out of 3000000
- 14089 multiletter control sequences out of 15000+200000
+ 11135 strings out of 493747
+ 204407 string characters out of 3143546
+ 290006 words of memory out of 3000000
+ 14090 multiletter control sequences out of 15000+200000
  12782 words of font info for 47 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  47i,17n,56p,2450b,575s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -776,7 +776,7 @@ al/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
 l/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/
 texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/t
 exlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on NSFmaster.pdf (25 pages, 881624 bytes).
+Output written on NSFmaster.pdf (25 pages, 881833 bytes).
 PDF statistics:
  246 PDF objects out of 1000 (max. 8388607)
  190 compressed objects within 2 object streams
