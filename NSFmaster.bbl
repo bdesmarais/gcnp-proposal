@@ -110,6 +110,11 @@ M.~Banbura, D.~Giannone, and L.~Reichlin, ``Large bayesian vector auto
   regressions,'' {\em Journal of Applied Econometrics}, vol.~25, no.~1,
   pp.~71--92, 2010.
 
+\bibitem{Mimno08}
+D.~Mimno, H.~Wallach, and A.~McCallum, ``Gibbs sampling for logistic normal
+  topic models with graph-based priors,'' in {\em Proceedings of the NIPS
+  Workshop on "Analyzing Graphs"}, 2008.
+
 \bibitem{Wallach2008}
 H.~Wallach, {\em Structured Topic Models for Language}.
 \newblock PhD thesis, University of Cambridge, 2008.

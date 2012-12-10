@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.6.20)  9 DEC 2012 16:02
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.6.20)  9 DEC 2012 16:33
 entering extended mode
  %&-line parsing enabled.
 **NSFmaster.tex
@@ -606,18 +606,18 @@ Overfull \hbox (2.43332pt too wide) in paragraph at lines 93--123
 
 [6 <./latent_space_15.pdf> <./latent_space_17.pdf> <./latent_space_31.pdf> <./l
 atent_space_63.pdf> <./department_key.pdf>] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 287--288
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--288
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
 
  []
 
 [8] [9] [10]
 
-LaTeX Warning: Reference `Figure:boltz' on page 11 undefined on input line 487.
+LaTeX Warning: Reference `Figure:boltz' on page 11 undefined on input line 486.
 
 
 [11] <AlachuaBOCC.jpg, id=164, 967.615pt x 550.055pt>
@@ -628,7 +628,7 @@ File: CorvallisOR.jpg Graphic file (type jpg)
  <use CorvallisOR.jpg>
 [12] [13 <./AlachuaBOCC.jpg> <./CorvallisOR.jpg>]
 
-LaTeX Warning: Reference `screens' on page 14 undefined on input line 537.
+LaTeX Warning: Reference `screens' on page 14 undefined on input line 536.
 
 [14] [15]) [16]
 \openout2 = `NSFrefs.aux'.
@@ -726,10 +726,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 13132 strings out of 495061
- 257138 string characters out of 1182621
- 342163 words of memory out of 3000000
- 15975 multiletter control sequences out of 15000+50000
+ 13133 strings out of 495061
+ 257147 string characters out of 1182621
+ 342125 words of memory out of 3000000
+ 15976 multiletter control sequences out of 15000+50000
  12782 words of font info for 47 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  56i,17n,56p,2181b,596s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -743,7 +743,7 @@ cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb>
 /texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texli
 ve/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/ty
 pe1/public/amsfonts/cm/cmtt10.pfb>
-Output written on NSFmaster.pdf (24 pages, 902865 bytes).
+Output written on NSFmaster.pdf (24 pages, 903157 bytes).
 PDF statistics:
  239 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
