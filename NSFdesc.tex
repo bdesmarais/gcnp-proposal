@@ -14,7 +14,9 @@
 
 \section{Introduction}
 
-Nearly every organization strives to respond in a timely and accurate manner to the needs and demands of some external constituency. Firms respond to customers, governments respond to citizens and educational institutions respond to students. The rapid advancement in communications technology over the last two decades has forever transformed the nature, volume and sources of input and feedback available to organizations. In addition, electronic communications have drastically improved the ability of organizations to document and communicate their internal developments. These complimentary developments have ushered into governance what has been termed 'we government' \cite{Linders2012}. Most elected officials can be directly contacted electronically through simple internet tools. Citizens can advertise and sign petitions on the web and attend internet 'town meetings' with their representatives. Regarding the internal activities of government, citizens can access electronic communications of their officials through public records requests, access meeting minutes on the web and, e.g., watch the floor activities of the US House of Representatives on HouseLive.gov. The emerging field of computational social science seeks to address the most pressing social scientific problems through the development of computational and statistical methods that are ideally tailored to the research task at hand. We propose to develop machine learning methods that are precisely tailored to modeling the {\em complete} input, deliberation, policy formation and implementation cycle documented in the electronic record surrounding an organization. Critically, the models we develop will jointly represent the content of relevant streams of text (i.e., topics) and the socio-organizational structure surrounding text generation (i.e., networks). In this collaborative project, which brings together researchers from computer science and political science, we will develop novel methods and apply them to the analysis of government responsiveness to public input across many US county and city governments.
+Nearly every organization strives to respond in a timely and accurate manner to the needs and demands of some external constituency. Firms respond to customers, governments respond to citizens and educational institutions respond to students. The rapid advancement in communications technology over the last two decades has forever transformed the nature, volume and sources of input and feedback available to organizations. In addition, electronic communications have drastically improved the ability of organizations to document and communicate their internal proceedings. These complimentary developments have ushered into governance what has been termed 'we government' \cite{Linders2012}. Most elected officials can be directly contacted electronically through simple internet tools. Citizens can advertise and sign petitions on the web and attend internet 'town meetings' with their representatives \cite{Kavanaugh2010} . Regarding the internal activities of government, citizens can access electronic communications of their officials through public records requests, access meeting minutes on the web and, e.g., watch the floor activities of the US House of Representatives on HouseLive.gov. 
+
+The unprecedented scale, regularity and flexibility of external-internal relations available to contemporary organizations presents an enormous opportunity for systematic, real-time, deep analytics. The emerging field of computational social science seeks to address the most pressing social scientific problems through the development of computational and statistical methods that are ideally tailored to the research task at hand. We propose to develop machine learning methods that are precisely tailored to modeling the {\em complete} input, deliberation, policy formation and implementation cycle documented in the electronic record surrounding an organization. Critically, the models we develop will jointly represent the content of relevant streams of text (i.e., topics) and the socio-organizational structure surrounding text generation (i.e., networks). In this collaborative project, which brings together researchers from computer science and political science, we will develop novel methods and apply them to the analysis of government responsiveness to public input across many US county and city governments.
 
 
 In this project we will develop and apply novel quantitative methods for identifying the cycle of input, response and feedback that leaves its fingerprint on the electronic communications record. We will focus on the nexus between government organizations and their constituents, but the methods we develop will be portable to other types of organizations. Government responsiveness to citizen input offers an ideal venue within which to model the relationship between streams of textual records embedded in different socio-organizational structural contexts (e.g., activist messages sent from independent citizens and regulations produced by a legislative body).  First, in democratic societies there is a common expectation that the government will respond to public demands. Second, the input mode on which we will focus-- direct email from the public to government officials -- is regularly central to government efforts to encourage direct input to the policy creation and implementation processes. Third, and perhaps of greatest practical importance, due to the scope of freedom of information laws in the US, we as researchers can access the public input and internal communications data associated with a multitude of government organizations.
@@ -22,7 +24,7 @@ In this project we will develop and apply novel quantitative methods for identif
 
 
 
-We frame this project by associating different phases in the cycle of governance with four different types of textual streams and sociopolitical organizational contexts: public input (e.g., emails from citizens to government officials, informal internal communications (e.g., emails among officials), formal deliberations (e.g., legislative meeting minutes) and policy outputs (e.g., regulations, laws). We seek to understand these textual themes through the lens of multi-scale multi-corpora dynamic Bayesian latent variable models of textual content (i.e., topics \cite{Blei2003}) and organizational structural contexts (i.e., networks). We will develop (1) several domain-specific models of dynamic content and structure that are tailored to the unique characteristics of each corpus and (2) develop a flexible framework for constructing multi-corpora dynamic models that tie the individual domains together in a modular, extensible manner. The result will be an analytical approach that permits an organization to distill and investigate the dynamics of input, responsiveness and feedback through a common framework of statistical text analysis.  The methods we develop will offer answers regarding several pertinent questions about organizational management of outside input, e.g., is organizational attention to a topic proportional to its attention in outside input, how does an organization adapt to the rise of issues that are novel relative to its current foci, is responsiveness timely?
+We frame this project by associating four different phases in the cycle of governance -- illustrated in Figure \ref{cycle} -- with four different types of textual streams and sociopolitical organizational contexts: public input (e.g., emails from citizens to government officials, informal internal communications (e.g., emails among officials), formal deliberations (e.g., legislative meeting minutes) and policy outputs (e.g., regulations, laws). We seek to understand these textual themes through the lens of multi-scale multi-corpora dynamic Bayesian latent variable models of textual content (i.e., topics \cite{Blei2003}) and organizational structural contexts (i.e., networks). We will develop (1) several domain-specific models of dynamic content and structure that are tailored to the unique characteristics of each corpus and (2) develop a flexible framework for constructing multi-corpora dynamic models that tie the individual domains together within a modular, extensible framework. The result will be an analytical approach that enables the systematic investigation of the dynamics of input, responsiveness and feedback surrounding an organization through a common framework of statistical text analysis.  The methods we develop will offer answers regarding several pertinent questions about organizational management of outside input, e.g., does organizational attention to a topic respond to outside input, how does an organization adapt to the rise of issues that are novel relative to its current foci, is external input being routed to those in the organization who focus on the topics of the input, are those within the organization who talk about the same topics talking to each other?
 
 \begin{wrapfigure}{r}{.5\textwidth}
 \vspace{-.5cm}
@@ -34,18 +36,15 @@ We frame this project by associating different phases in the cycle of governance
 \label{cycle}
 \end{wrapfigure}
 
-Statistical topic models automatically infer groups of semantically-related words, known as topics, from word co-occurrence patterns within documents. A single topic is characterized by a discrete distribution over some vocabulary. Thus every word in the vocabulary is associated with every topic, albeit with varying probabilities. Given a corpus of documents, statistical topic models simultaneously infer the composition of the topics that best describe that corpus, as well a document-specific distribution over these set of topics for each document. In this way, every document is probabilistically associated with every topic.  \cite{Blei2010}. Statistical topic models provide a dually qualitative and quantitative inferential summary of textual corpora. They are qualitative in that the textual content of a corpus is maintained and quantitative in that the summary of the content is built through large-scale quantitative analysis of patterns in the content.  Since the seminal work on statistical topic models \cite{Blei2003}, the basic framework has been extended and adapted to focus on several aspects of textual corpora; including author-specific distributions over shared topics \cite{Steyvers2004}, dyadic (i.e., author-recipient) aspects of messages \cite{McCallum2005}, the underlying communication network \cite{Krafft2012}, and joint text-metadata models of documents \cite{Mimno2008}. Dynamic topic models \cite{Blei2006} provide an excellent framework within which to understand input to, output from and feedback to organizations that document their activities at various stages in a textual format . In the current project, we propose to develop new Bayesian latent variable models that draw upon the now robust framework of specifying complex topic models that represent textual content of corpora and contextual structure surrounding the generation of the text. This ambitious agenda will involve jointly modeling separate streams of text that influence each other, are informed by rich meta-data, incorporate the underlying communication network, and characterize the over-time aspect of the text streams.
+Statistical topic models automatically infer groups of semantically-related words, known as topics, from word co-occurrence patterns within documents. A single topic is characterized by a discrete distribution over some vocabulary. Thus every word in the vocabulary is associated with every topic, albeit with varying probabilities. Given a corpus of documents, statistical topic models simultaneously infer the composition of the topics that best describe that corpus, as well a document-specific distribution over these set of topics for each document. In this way, every document is probabilistically associated with every topic.  \cite{Blei2010}. Since the seminal work on statistical topic models \cite{Blei2003}, the basic framework has been extended and adapted to model additional structures and features relevant to textual corpora; including author-specific distributions over shared topics \cite{Steyvers2004}, dyadic (i.e., author-recipient) aspects of messages \cite{McCallum2005}, the underlying communication network \cite{Krafft2012}, and joint text-metadata models of documents \cite{Mimno2008}. Dynamic topic models \cite{Blei2006} provide an excellent framework within which to understand input to, output from and feedback to organizations that document their activities at various stages in a textual format . In the current project, we propose to develop new Bayesian latent variable models that draw upon the now robust framework of specifying complex topic models that represent textual content of corpora and contextual structure surrounding the generation of the text. This ambitious agenda will involve jointly modeling separate streams of text that influence each other, are informed by rich meta-data, incorporate the underlying communication network, and characterize the over-time aspect of the text streams.
 
 
 %The benefit from connecting these innovations in statistical topic modeling is that we will leverage a medium common to each domain relevant to a cycle of organizational feedback and responsiveness - textual documentation to connect the domains as well as domain-specific metadata types. For example, in the case of governance, we will tie together the identities of citizens and groups providing outside input, the structure of communication networks underlying informal communications within government and voting coalition patterns within legislatures; all through the medium of the co-evolving, domain-specific text streams.
 
 
-Figure \ref{cycle} illustrates the cycle of organizational responsiveness that we intend to model through the guise of co-evolving textual streams. Considering the case of governance, substantial research exists that focuses on parts of this cycle. For example, a large body of research exists that documents recent developments in tools for citizens to provide precise, timely and voluminous input to government officials  \cite{Yildiz2007}. There is also a large body of research focusing on legislative adaptation to broad ideological trends among constituents \cite{Canes-Wrone2002}.  And yet another literature that addresses the processes by which topics rise from informal awareness among officials and outside parties to the legislative agenda \cite{Baumgartner1993}. However, due to the historical inaccessibility of timely and common data modes related to each component of the governance cycle, little research has endeavored to connect all of the dots in a data-driven, mathematically principled manner. We will provide such a complete picture, leveraging the common, available, and timely mode of text streams.
+Figure \ref{cycle} illustrates the cycle of organizational responsiveness that we intend to model through the guise of co-evolving textual streams. The black arrows indicate the normal progress of an issue from an external stimulus to a formal policy implementation. However, virtually any domain-domain connection is possible, and to understand the whole process of external-internal relations, it is critical to simultaneously incorporate all pathways of topical flow. Considering the case of governance, substantial research exists that focuses on parts of this cycle. For example, a large body of research exists that documents recent developments in tools for citizens to provide precise, timely and voluminous input to government officials  \cite{Tatkeiho2002,Andersen2006,Yildiz2007}. There is also a large body of research focusing on legislative adaptation to broad ideological trends among constituents \cite{MIller1963,Canes-Wrone2002,Levendusky2008}.  And yet another literature that addresses the processes by which topics rise from informal awareness among officials (i.e., bureaucratic agency employees) and outside parties to the legislative agenda \cite{Baumgartner1993,Wood1991,Furlong1998}. However, little -- indeed, as far as we are aware, no -- research has endeavored to build a complete model of the democratic process. The disadvantage of analyzing relationships between domains in a separate, pairwise manner is that it is impossible to reconstruct a complete picture of the cycle of input, response and feedback relevant to an organization.  For instance, in the example of governance, analysis of public input and any one government domain could provide a misleading account of government responsiveness. It may be the case that legislative meeting minutes document consideration of issues that are the subject of considerable public input. However, if final legislation is not responsive, democratic representation has not run its complete course. More practically, if common input topics arise in several corners of government, but internal officials do not connect regarding those topics, an issue may never rise to the legislative agenda. And, initial research indicates that even the most advanced designs for encouraging direct input (i.e., e-petitions that trigger mandatory legislative attention) may end up having little to no policy influence \cite{Hough2012}.
 
-
-In this project we will develop and apply a framework for deriving a complete, multivariate, and interdependent model of external input, internal deliberation and organizational response. Considering government organizations, substantial research has focused on the relationship between public opinion and legislative output  \cite{Canes-Wrone2002,Levendusky2008}, and yet another literature has focused on modeling the relationships between bureaucratic agencies and the legislative agenda \cite{Wood1991,Furlong1998}. However, little -- indeed, as far as we are aware, no -- research has endeavored to build a complete model of the democratic process. The disadvantage of analyzing relationships between domains in a separate, pairwise manner is that it is impossible to reconstruct a complete picture of the cycle of input, response and feedback relevant to an organization.  For instance, in the example of governance, analysis of public input and any one government domain could provide a misleading account of government responsiveness. It may be the case that legislative meeting minutes document consideration of issues that are the subject of considerable public input. However, if final legislation is not responsive, it is not the case that democratic representation has run its complete course. And, initial research indicates that even the most advanced designs for encouraging direct input (i.e., e-petitions that trigger mandatory legislative attention) may end up having little to no policy influence \cite{Hough2012}.
-
-The advantage of our approach will be that we will tap multi-channel input and response processes. This will allow us to identify fast-tracks and bottlenecks in the representation cycle. Identifying the dynamics of the entire system would inform those interested in providing outside input, those seeking to understand the overall responsiveness of an organization and those interested in affecting the organization's responsiveness.
+In this project we will develop and apply a framework for deriving a complete, multivariate, and interdependent model of external input, internal deliberation and organizational response.  We will use topics represented in texts related to each domain of governance as the binding substance - building bridges between stages of organizational activity and decision-making. The advantage of our approach will be that we will tap multi-channel input and response processes. This will allow us to identify fast-tracks and bottlenecks in the representation cycle. Identifying the dynamics of the entire system would inform those interested in providing outside input, those seeking to understand the overall responsiveness of an organization and those interested in affecting the organization's responsiveness.
 
 
 
@@ -61,16 +60,7 @@ At every level of government in the US, substantial resources have been dedicate
 \end{itemize} All of these questions are critical to determining the value of these e-government or 'we-government' technologies.
 
 
-We endeavor to answer these questions and more. Using fine-grained textual and contextual data on several stages of the input-response-feedback cycle, we will assess the dynamics of government responsiveness to open outside input on public policy. This will be made possible through the development of machine learning tools that connect multiple textual streams and a massive database of US county government records assembled through public records requests. This project is headed by a multidisciplinary team, which has already realized success in developing innovative machine learning tools to analyze novel databases on government communication networks. We have successfully gathered and processed one-month archives of government officials' in and out-box contents from North Carolina counties including New Hanover, McDowell, Transylvania, Columbus and Moore. With dedicated resources, we are confident we would collect additional data from each county and expand coverage to most of the 100 counties in North Carolina.
-
-
-\section{Background: Public Records Data}
-
-At the national, state and local levels, the US is the global leader in the scope and reliability of laws that guarantee access to information on government \cite{Halstuk2006}. The seminal legislation in this area is the federal Freedom of Information Act, which marks all information produced by executive agencies as public, unless the information meets at least one of seven criteria for exemption. Most US states have laws that mimic the federal legislation \cite{Braverman1980}, and most state laws subject localities (i.e, cities and counties) to public records archiving and disclosure requirements. North Carolina offers one of the broadest laws. For instance, email communications among local government officials are established by statute to be public record.
-
-Public record disclosure requirements establish a treasure trove for researchers. Many government organizations post significant text streams - from email communications with elected officials to meeting minutes - directly on websites. For categories of information not posted to the web, it is possible to make requests for the data. At all stages of the democratic process, local governments are required to archive textual records and provide them to the public upon request. This constitutes the primary advantage for focusing on government organizations in developing multi-stream models of the input-response-feedback cycle.
-
-For most localities, legislative proceedings and legislative output are available on the city and county websites. Archives of external emails sent to government officials and internal emails are typically not posted on websites, though some counties and cities do indeed post them all. The single data source that we plan to use in this project, which requires government officials' compliance with public records requests is government email. We have had considerable success in gathering email corpora via public records requests for our pilot research (described below). For the pilot data collection, we focused on county governments in North Carolina. The counties whic
+We endeavor to answer these questions and more. Using fine-grained textual and socio-organizational contextual data on several stages of the input-response-feedback cycle, we will assess the dynamics of government responsiveness to open outside input on public policy. This will be made possible through the development of Bayesian latent variable models and corresponding inference algorithms that connect multiple textual streams and a massive database of US local government records. 
 
 
 \section{Project Team}
@@ -86,8 +76,7 @@ The PIs in this project are global leaders in the emerging field of computationa
 
 \section{Description of Pilot Research}
 
-As an initial phase of research for this project, we endeavored to leverage our expertise in the computational and social sciences, as well as the availability of rich data sources through the public record to address a challenge in the study of communication networks. this work has been presented at
-a variety of computational social science workshops---including the Workshop on Information in Networks, New Directions in Analyzing Text as Data, and the Annual Political Networks Conference---and appeared at Neural Information Processing Systems conference (one of the top machine learning conferences) in late 2012. A substantial body of research finds that the structure of a communication network has a substantial influence on the problem-solving abilities of the network as a whole and the performance of the individuals in the network \cite{Mason2012}. Moreover, recent research indicates that the topic or context of communication is important, meaning the measurement of a communication network should involve topic-of-discussion specificity \cite{Mason2008}. Thus, in order for an organization to diagnose and design its internal communication network, it must first be able to discern topic-specific communication networks.
+As an initial phase of research for this project, we endeavored to leverage our expertise in the computational and social sciences, as well as the availability of rich data sources through the public record to address a challenge in the study of communication networks. this work has been presented at a variety of computational social science workshops---including the Workshop on Information in Networks, New Directions in Analyzing Text as Data, and the Annual Political Networks Conference---and appeared at Neural Information Processing Systems conference (one of the top machine learning conferences) in late 2012. A substantial body of research finds that the structure of a communication network has a substantial influence on the problem-solving abilities of the network as a whole and the performance of the individuals in the network \cite{Mason2012}. Moreover, recent research indicates that the topic or context of communication is important, meaning the measurement of a communication network should involve topic-of-discussion specificity \cite{Mason2008}. Thus, in order for an organization to diagnose and design its internal communication network, it must first be able to discern topic-specific communication networks.
 
 \begin{figure*}[t]
 \begin{minipage}[b]{0.5\linewidth}
@@ -124,7 +113,18 @@ a variety of computational social science workshops---including the Workshop on 
 \label{Figure:LatentSpace}
 \end{figure*}
 
-Our pilot research addresses this problem \cite{Krafft2012}. Noting that email constitutes the cornerstone of most organizations' electronic communications, we focused on measuring and analyzing topic-specific communication networks using email archives. Using a public records request, we collected one months worth of in and out-box contents for all managerial-level employees of New Hanover County, North Carolina. We then developed a model that combined statistical topic modeling and the latent space model of social networks (a model that projects a network into a Euclidean space, within which actors who are close are more likely to connect than those who are far apart). Specifically, the model learns topic-specific latent spaces. This produces a coherent probabilistic generative model of corpus of messages annotated with sender-receiver information that permits intuitive visualization and analysis of the underlying topic-specific communication networks.
+Our pilot research addresses this problem \cite{Krafft2012}. Noting that email constitutes the cornerstone of most organizations' electronic communications, we focused on measuring and analyzing topic-specific communication networks using email archives. Using a public records request, we collected one month's worth of in and out-box contents for all managerial-level employees of New Hanover County, North Carolina. We then developed a model that combined statistical topic modeling and the latent space model of social networks (a model that projects a network into a Euclidean space, within which actors who are close are more likely to connect than those who are far apart). Specifically, the model learns topic-specific latent spaces. This produces a coherent probabilistic generative model of corpus of messages annotated with sender-receiver information that permits intuitive visualization and analysis of the underlying topic-specific communication networks.
+
+\section{Public Records Data Collection}
+
+\noindent {\bf Background:} At the national, state and local levels, the US is the global leader in the scope and reliability of laws that guarantee access to information on government \cite{Halstuk2006}. The seminal legislation in this area is the federal Freedom of Information Act, which marks all information produced by executive agencies as public, unless the information meets at least one of seven criteria for exemption. Most US states have laws that mimic the federal legislation \cite{Braverman1980}, and most state laws subject localities (i.e, cities and counties) to electronic public records archiving and disclosure requirements \cite{Byrne2010}. 
+
+\noindent {\bf Benefits:}  Public record disclosure requirements establish a treasure trove for researchers. Many government organizations post significant text streams - from email communications with elected officials to meeting minutes - directly on websites. For categories of information not posted to the web, it is possible to make requests for the data. At all stages of the democratic process, local governments are required to archive textual records and provide them to the public upon request \cite{Byrne2010}. This constitutes the primary advantage for focusing on government organizations in developing multi-stream models of the input-response-feedback cycle.
+
+\noindent {\bf Procedure:}  For most localities, legislative proceedings and legislative output are available on the city and county websites. Archives of external emails sent to government officials and internal emails are typically not posted on websites, though some counties and cities do indeed post them all. The single data source that we plan to use in this project, which requires government officials' compliance with public records requests is government email. We have had considerable success in gathering email corpora via public records requests for our pilot research (described below). For the pilot data collection, we have successfully gathered and processed one-month archives of government officials' in and out-box contents from North Carolina counties including New Hanover, McDowell, Transylvania, Columbus and Moore. With dedicated resources, we are confident we would collect data from most of the 100 counties in North Carolina as well as county and city governments in other states. 
+
+\noindent {\bf Robustness:} However unlikely, it is certainly within the realm of possibility that the demeanor of local governments toward large scale public records requests will change course. If this happens, we will still be able to gather more than enough data to carry out the project. This is because for many localities, including several counties in Florida and cities in North Carolina, California and Oregon, all of the communication records that are required for our research are available on government websites. These sources include emails to and between government officials, minutes of legislative meetings, and records of adopted policies. Figure \ref{screens} illustrates the web interfaces to this data for two such localities, Alachua County, Florida and the City of Corvallis Oregon. As can be seen from these intuitive and open web interfaces, ample data required to model the interrelationships among domain-specific corpora are readily available.
+
 
 \section{Proposed Research}
 
@@ -150,6 +150,9 @@ to develop and deploy over the course of the proposed project.
 
 \subsection{Integrating Domain-Specific Models}
 
+
+
+
 Below we describe several types of domain-specific models that
 constitute innovative analytic representations of textual data
 connected to individual phases in the governance process. Before
@@ -168,6 +171,8 @@ content, each class of domain-specific models also represents the
 organizational structural context unique to that domain. This approach
 enables us to assess the relationships between textual content and
 structural context.
+
+
 
 We work through the description of our proposed integrated modeling
 framework using the graphical model shown in Figure \ref{plates}. Let
@@ -206,6 +211,7 @@ parameters of the multinomial distribution over topics. We will
 investigate both variational and sampling-based inference algorithms
 for this framework, drawing on previous work of PI Wallach and
 others~\cite{Blei2006, Mimno08}.
+
 
 \begin{wrapfigure}{r}{.45\textwidth}
 %\includegraphics[scale=.25]{plates}
@@ -283,9 +289,23 @@ others~\cite{Blei2006, Mimno08}.
 \vspace{-.5cm}
 
 \label{plates}
-~\\~\\
 
-{\bf Generative Process}
+
+\vspace{-1.6cm}
+\end{wrapfigure}
+
+
+Another important feature of our framework is that each
+domain-specific model family incorporates an integrated probabilistic
+representation of domain-specific metadata describing the
+organizational structural context ($y$) and a generic metadata
+$\tau$. Generally, $\tau$ will be topic-dependent (e.g.,
+topic-specific network structure, as in our pilot work); however, in
+figure~\ref{plates} we leave these two components without complete
+specification, since the structure and parameterization
+will vary considerably over the $M$ domains, as described below. \vspace{.1cm}
+
+\noindent {\bf Generative Process}
 \begin{enumerate}
 \item Draw $\alpha_t | \alpha_{t-1} \sim  \mathcal{N}(\mu_t,\sigma^2I)$
 \item Draw topics $\beta_t|\beta_{t-1}\sim \mathcal{N}\left(\beta_{t-1},\delta^2I \right)$
@@ -305,23 +325,10 @@ others~\cite{Blei2006, Mimno08}.
 \end{enumerate}
 \end{enumerate}
 
-\vspace{-1.6cm}
-\end{wrapfigure}
-
-Another important feature of our framework is that each
-domain-specific model family incorporates an integrated probabilistic
-representation of domain-specific metadata describing the
-organizational structural context ($y$) and a generic metadata
-$\tau$. Generally, $\tau$ will be topic-dependent (e.g.,
-topic-specific network structure, as in our pilot work); however, in
-figure~\ref{plates} we leave these two components without complete
-specification, since the structure and parameterization
-will vary considerably over the $M$ domains, as described below.
-
 Although we will likely need to adapt this integrated modeling
 framework for each government organization, we anticipate that that
 the key properties of the generative process will be similar to those
-summarized in figure~\ref{plates}.
+summarized above.
 
 
 %We will derive models with a common set of topics across domains, but varying attention to topics in each domain. The attention to each topic will be given by a logistic transformation of Gaussian-distributed attention parameters. For each topic $t$, there will be four domain-specific attentiveness parameters. The four Gaussian attention parameters will be modeled as a vector autoregression \cite{Banbura2010}. This will permit topics to be related across domains. Thus, the attention level to a topic in each domain will be related to the attention level to a topic in every other domain, up to a selected number of periods into the past.
@@ -330,6 +337,17 @@ summarized in figure~\ref{plates}.
 %A vector autoregression model is a classic linear regression model for time serial data. The estimated parameters of the vector autoregression model will be assessed in order to understand relationships across domains. This is a highly flexible framework for integrating domain-specific models. It works whenever a common set of topics is used to model the dynamic corpora across domains. Thus, this approach permits flexibility in tuning or possibly changing the form of the domain-specific models proposed above. Another major advantage of the vector autoregressive framework is that it constitutes an effective predictive forecasting model \cite{Banbura2010}. This would permit a forecast of, e.g., legislative attention to an issue in the future given current and past legislative, informal intra-governmental and outside input attention to an issue.
 
 
+\begin{figure}
+\begin{center}
+{\bf Alachua County, Florida} \\
+ {\bf url:} \texttt{http://www.alachuacounty.us/Depts/BOCC/Pages/CommissionerEmailArchive.aspx} \\
+ \includegraphics[scale=.45]{AlachuaBOCC.jpg} \\~\\
+ {\bf Corvallis, Oregon} \\
+ {\bf url:} \texttt{http://www.corvallisoregon.gov/index.aspx?page=65} \\
+  \includegraphics[scale=.45]{CorvallisOR.jpg}
+\end{center}
+\caption{Web Interfaces to local government email archives. Links to legislative deliberations (i.e., meeting minutes) and legislative outputs (i.e., ordinances and resolutions) are circled in yellow.}
+\end{figure}
 
 \subsection{Modeling Outside Input}
 
@@ -483,16 +501,7 @@ votes with voters akin to switches, as illustrated by work co-authored
 by PI Desmarais that analyzes voting on the US Supreme Court
 \cite{Desmarais2010}. This will allow us to jointly model the
 attention to topics in legislation as well as the associations among
-legislators' final votes on policy. Figure \ref{Figure:boltz}
-illustrates the results from applying a fully visible Boltzmann
-machine to vote data. Specifically, the data modeled are the votes of
-the nine justices in each US Supreme Court case from the 2007 and 2008
-terms. The data are coded as 0 for a conservative vote and 1 for a
-liberal vote. Panel (a) gives the estimated tendencies of each justice
-to vote liberal and panel (b) depicts the strong positive and negative
-associations between justices. The Boltzmann machine offers a powerful
-approach to representing the individual and interactive tendencies
-among a group of decision-makers.
+legislators' final votes on policy. 
 
 ~\\
 \noindent {\bf Computer science contribution:} The primary computer
@@ -516,24 +525,12 @@ Another, particularly notable, machine learning contribution of this project wil
 
 The major social scientific contributions will come in the form of several analyses of how the sociopolitical contexts and textual content co-evolve. The domain-specific models will individually provide for important innovations in our understanding of government and local government processes. For instance, the analysis of email networks will permit us to assess whether government communication networks are structured to effectively solve problems. As a second example, the legislative meeting minute models will be useful in assessing whether political discussion is as factional at the local level as it is in the US Congress \cite{}. The biggest contribution to political science offered by this project will be the analysis of the cross-domain relationships inferred using the vector autoregressive logistic-normal model. We will be able to speak in precise detail to a fundamental question of growing important to political scientists and practitioners alike -- how do governments respond to open outside input?
 
-\begin{figure}
-\begin{center}
-{\bf Alachua County, Florida} \\
- {\bf url:} \texttt{http://www.alachuacounty.us/Depts/BOCC/Pages/CommissionerEmailArchive.aspx} \\
- \includegraphics[scale=.45]{AlachuaBOCC.jpg} \\~\\
- {\bf Corvallis, Oregon} \\
- {\bf url:} \texttt{http://www.corvallisoregon.gov/index.aspx?page=65} \\
-  \includegraphics[scale=.45]{CorvallisOR.jpg}
-\end{center}
-\caption{Web Interfaces to local government email archives. Links to legislative deliberations (i.e., meeting minutes) and legislative outputs (i.e., ordinances and resolutions) are circled in yellow.}
-\end{figure}
 
+%\subsection{Robustness of Data Collection Plan}
 
-\subsection{Robustness of Data Collection Plan}
+%One encouraging aspect of our proposed project is that the data collection is highly scalable and adaptable, but we are more than assured to have access to several government data sources. As proposed, we will lean heavily on public records requests in an ambitious effort to gather data from hundreds or even thousands of localities. This broad coverage would permit us to derive highly generalizable empirical findings and test our statistical models on governments that vary in structure, region, population size and several other demographics. In our experience during the pilot data collection phase, local governments have been more than happy to comply with our requests.
 
-One encouraging aspect of our proposed project is that the data collection is highly scalable and adaptable, but we are more than assured to have access to several government data sources. As proposed, we will lean heavily on public records requests in an ambitious effort to gather data from hundreds or even thousands of localities. This broad coverage would permit us to derive highly generalizable empirical findings and test our statistical models on governments that vary in structure, region, population size and several other demographics. In our experience during the pilot data collection phase, local governments have been more than happy to comply with our requests.
-
-However unlikely, it is certainly within the realm of possibility that the demeanor of local governments toward large scale public records requests will change course. If this happens, we will still be able to gather more than enough data to carry out the project. This is because for many localities, including several counties in Florida and cities in North Carolina, California and Oregon, all of the communication records that are required for our research are available on government websites. These sources include emails to and between government officials, minutes of legislative meetings, and records of adopted policies. Figure \ref{screens} illustrates the web interfaces to this data for two such localities, Alachua County, Florida and the City of Corvallis Oregon. As can be seen from these intuitive and open web interfaces, ample data required to model the interrelationships among domain-specific corpora are readily available.
+%However unlikely, it is certainly within the realm of possibility that the demeanor of local governments toward large scale public records requests will change course. If this happens, we will still be able to gather more than enough data to carry out the project. This is because for many localities, including several counties in Florida and cities in North Carolina, California and Oregon, all of the communication records that are required for our research are available on government websites. These sources include emails to and between government officials, minutes of legislative meetings, and records of adopted policies. Figure \ref{screens} illustrates the web interfaces to this data for two such localities, Alachua County, Florida and the City of Corvallis Oregon. As can be seen from these intuitive and open web interfaces, ample data required to model the interrelationships among domain-specific corpora are readily available.
 
 
 

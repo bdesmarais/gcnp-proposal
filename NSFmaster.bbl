@@ -5,6 +5,12 @@ D.~Linders, ``From e-government to we-government: Defining a typology for
   citizen coproduction in the age of social media,'' {\em Government
   Information Quarterly}, vol.~29, no.~4, pp.~446 -- 454, 2012.
 
+\bibitem{Kavanaugh2010}
+A.~Kavanaugh, M.~Perez-Quinones, J.~Tedesco, and W.~Sanders, ``Toward a virtual
+  town square in the era of web 2.0,'' in {\em International Handbook of
+  Internet Research} (J.~Hunsinger, L.~Klastrup, and M.~Allen, eds.),
+  pp.~279--294, Springer Netherlands, 2010.
+
 \bibitem{Blei2003}
 D.~Blei, A.~Ng, and M.~Jordan, ``{Latent Dirichlet allocation},'' {\em {JOURNAL
   OF MACHINE LEARNING RESEARCH}}, vol.~{3}, no.~{4-5}, pp.~{993--1022}, {2003}.
@@ -37,25 +43,39 @@ D.~M. Blei and J.~D. Lafferty, ``Dynamic topic models,'' in {\em Proceedings of
   the 23rd international conference on Machine learning}, ICML '06,
   pp.~113--120, 2006.
 
+\bibitem{Tatkeiho2002}
+A.~Tat-Kei~Ho, ``Reinventing local governments and the e-government
+  initiative,'' {\em Public Administration Review}, vol.~62, no.~4,
+  pp.~434--444, 2002.
+
+\bibitem{Andersen2006}
+K.~V. Andersen and H.~Z. Henriksen, ``E-government maturity models: Extension
+  of the layne and lee model,'' {\em Government Information Quarterly},
+  vol.~23, no.~2, pp.~236 -- 248, 2006.
+
 \bibitem{Yildiz2007}
 M.~Yildiz, ``E-government research: Reviewing the literature, limitations, and
   ways forward,'' {\em Government Information Quarterly}, vol.~24, no.~3,
   pp.~646 -- 665, 2007.
+
+\bibitem{MIller1963}
+W.~E. Miller and D.~E. Stokes, ``Constituency influence in congress,'' {\em
+  American Political Science Review}, vol.~57, pp.~45--56, 2 1963.
 
 \bibitem{Canes-Wrone2002}
 B.~Canes-Wrone, D.~W. Brady, and J.~F. Cogan, ``Out of step, out of office:
   Electoral accountability and {H}ouse members' voting,'' {\em American
   Political Science Review}, vol.~96, no.~1, pp.~127--140, 2002.
 
-\bibitem{Baumgartner1993}
-F.~R. Baumgartner and B.~D. Jones, {\em Agendas and Instability in American
-  Politics}.
-\newblock Chicago: University of Chicago Press, 1993.
-
 \bibitem{Levendusky2008}
 M.~S. Levendusky, J.~C. Pope, and S.~D. Jackman, ``Measuring district-level
   partisanship with implications for the analysis of u.s. elections,'' {\em The
   Journal of Politics}, vol.~70, no.~3, pp.~pp. 736--753, 2008.
+
+\bibitem{Baumgartner1993}
+F.~R. Baumgartner and B.~D. Jones, {\em Agendas and Instability in American
+  Politics}.
+\newblock Chicago: University of Chicago Press, 1993.
 
 \bibitem{Wood1991}
 B.~D. Wood and R.~W. Waterman, ``The dynamics of political control of the
@@ -86,6 +106,15 @@ S.~J. Balla and B.~M. Daniels, ``Information technology and public commenting
 S.~Borins, ``From online candidate to online president,'' {\em International
   Journal of Public Administration}, vol.~32, no.~9, pp.~753--758, 2009.
 
+\bibitem{Mason2012}
+W.~Mason and D.~Watts, ``Collaborative learning in networks,'' {\em Proceedings
+  of the National Academy of Sciences}, vol.~109, no.~3, pp.~764--769, 2012.
+
+\bibitem{Mason2008}
+W.~A. Mason, A.~Jones, and R.~L. Goldstone, ``Propogation of innovations in
+  networked groups,'' {\em Journal of Experimental Psychology: General},
+  vol.~137, no.~3, pp.~422--433, 2008.
+
 \bibitem{Halstuk2006}
 M.~E. Halstuk and B.~F. Chamberlin, ``The freedom of information act
   1966–2006: A retrospective on the rise of privacy protection over the
@@ -96,14 +125,10 @@ M.~E. Halstuk and B.~F. Chamberlin, ``The freedom of information act
 B.~Braverman and W.~Heppler, ``Practical review of state open records laws,''
   {\em Geo. Wash. L. Rev.}, vol.~49, pp.~720--760, 1980.
 
-\bibitem{Mason2012}
-W.~Mason and D.~Watts, ``Collaborative learning in networks,'' {\em Proceedings
-  of the National Academy of Sciences}, vol.~109, no.~3, pp.~764--769, 2012.
-
-\bibitem{Mason2008}
-W.~A. Mason, A.~Jones, and R.~L. Goldstone, ``Propogation of innovations in
-  networked groups,'' {\em Journal of Experimental Psychology: General},
-  vol.~137, no.~3, pp.~422--433, 2008.
+\bibitem{Byrne2010}
+D.~S. Byrne, ``Access to online local government public records: The privacy
+  paradox,'' {\em Legal Reference Services Quarterly}, vol.~29, no.~1,
+  pp.~1--21, 2010.
 
 \bibitem{Banbura2010}
 M.~Banbura, D.~Giannone, and L.~Reichlin, ``Large bayesian vector auto

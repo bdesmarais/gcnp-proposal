@@ -1,4 +1,5 @@
-This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2010)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: NSFmaster.aux
 A level-1 auxiliary file: NSFsumm.aux
 A level-1 auxiliary file: NSFdesc.aux
@@ -8,44 +9,44 @@ A level-1 auxiliary file: NSF-DMP.aux
 A level-1 auxiliary file: NSFbioDesmarais.aux
 A level-1 auxiliary file: NSFjustification.aux
 Database file #1: nsfbib.bib
-You've used 31 entries,
+You've used 36 entries,
             1876 wiz_defined-function locations,
-            701 strings with 8825 characters,
-and the built_in function-call counts, 9003 in all, are:
-= -- 932
-> -- 258
+            735 strings with 9647 characters,
+and the built_in function-call counts, 10625 in all, are:
+= -- 1101
+> -- 307
 < -- 0
-+ -- 99
-- -- 68
-* -- 595
-:= -- 1195
-add.period$ -- 34
-call.type$ -- 31
-change.case$ -- 28
++ -- 117
+- -- 81
+* -- 713
+:= -- 1414
+add.period$ -- 39
+call.type$ -- 36
+change.case$ -- 33
 chr.to.int$ -- 0
-cite$ -- 31
-duplicate$ -- 505
-empty$ -- 888
-format.name$ -- 68
-if$ -- 2266
+cite$ -- 36
+duplicate$ -- 588
+empty$ -- 1041
+format.name$ -- 81
+if$ -- 2673
 int.to.chr$ -- 0
-int.to.str$ -- 31
-missing$ -- 32
-newline$ -- 99
-num.names$ -- 31
-pop$ -- 99
+int.to.str$ -- 36
+missing$ -- 37
+newline$ -- 114
+num.names$ -- 38
+pop$ -- 108
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 370
+skip$ -- 437
 stack$ -- 0
-substring$ -- 688
-swap$ -- 225
+substring$ -- 823
+swap$ -- 266
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 84
-width$ -- 33
-write$ -- 312
+while$ -- 102
+width$ -- 38
+write$ -- 365
