@@ -44,7 +44,7 @@ Statistical topic models automatically infer groups of semantically-related word
 
 Figure \ref{cycle} illustrates the cycle of organizational responsiveness that we intend to model through the guise of co-evolving textual streams. The black arrows indicate the normal progress of an issue from an external stimulus to a formal policy implementation. However, virtually any domain-domain connection is possible, and to understand the whole process of external-internal relations, it is critical to simultaneously incorporate all pathways of topical flow. Considering the case of governance, substantial research exists that focuses on parts of this cycle. For example, a large body of research exists that documents recent developments in tools for citizens to provide precise, timely and voluminous input to government officials  \cite{Tatkeiho2002,Andersen2006,Yildiz2007}. There is also a large body of research focusing on legislative adaptation to broad ideological trends among constituents \cite{MIller1963,Canes-Wrone2002,Levendusky2008}.  And yet another literature that addresses the processes by which topics rise from informal awareness among officials (i.e., bureaucratic agency employees) and outside parties to the legislative agenda \cite{Baumgartner1993,Wood1991,Furlong1998}. However, little -- indeed, as far as we are aware, no -- research has endeavored to build a complete model of the democratic process. The disadvantage of analyzing relationships between domains in a separate, pairwise manner is that it is impossible to reconstruct a complete picture of the cycle of input, response and feedback relevant to an organization.  For instance, in the example of governance, analysis of public input and any one government domain could provide a misleading account of government responsiveness. It may be the case that legislative meeting minutes document consideration of issues that are the subject of considerable public input. However, if final legislation is not responsive, democratic representation has not run its complete course. More practically, if common input topics arise in several corners of government, but internal officials do not connect regarding those topics, an issue may never rise to the legislative agenda. And, initial research indicates that even the most advanced designs for encouraging direct input (i.e., e-petitions that trigger mandatory legislative attention) may end up having little to no policy influence \cite{Hough2012}.
 
-In this project we will develop and apply a framework for deriving a complete, multivariate, and interdependent model of external input, internal deliberation and organizational response.  We will use topics represented in texts related to each domain of governance as the binding substance - building bridges between stages of organizational activity and decision-making. The advantage of our approach will be that we will tap multi-channel input and response processes. This will allow us to identify fast-tracks and bottlenecks in the representation cycle. Identifying the dynamics of the entire system would inform those interested in providing outside input, those seeking to understand the overall responsiveness of an organization and those interested in affecting the organization's responsiveness.
+In this project we will develop and apply a framework for deriving a complete, multivariate, and interdependent model of external input, internal deliberation and organizational response.  We will use topics represented in texts related to each domain of governance as the binding substance - building bridges between stages of organizational activity and decision-making. The advantage of our approach will be that we will tap multi-channel input and response processes. This will allow us to identify fast-tracks and bottlenecks in the representation cycle. Identifying the dynamics of the entire system would inform those interested in providing outside input, those seeking to understand the overall responsiveness of an organization and those interested in affecting the organization's responsiveness. 
 
 
 
@@ -113,7 +113,17 @@ As an initial phase of research for this project, we endeavored to leverage our 
 \label{Figure:LatentSpace}
 \end{figure*}
 
-Our pilot research addresses this problem \cite{Krafft2012}. Noting that email constitutes the cornerstone of most organizations' electronic communications, we focused on measuring and analyzing topic-specific communication networks using email archives. Using a public records request, we collected one month's worth of in and out-box contents for all managerial-level employees of New Hanover County, North Carolina. We then developed a model that combined statistical topic modeling and the latent space model of social networks (a model that projects a network into a Euclidean space, within which actors who are close are more likely to connect than those who are far apart). Specifically, the model learns topic-specific latent spaces. This produces a coherent probabilistic generative model of corpus of messages annotated with sender-receiver information that permits intuitive visualization and analysis of the underlying topic-specific communication networks.
+Our pilot research addresses this problem \cite{Krafft2012}. Noting that email constitutes the cornerstone of most organizations' electronic communications, we focused on measuring and analyzing topic-specific communication networks using email archives. Using a public records request, we collected one month's worth of in and out-box contents for all managerial-level employees of New Hanover County, North Carolina. We then developed a model that combined statistical topic modeling and the latent space model of social networks (a model that projects a network into a Euclidean space, within which actors who are close are more likely to connect than those who are far apart). Specifically, the model learns topic-specific latent spaces. This produces a coherent probabilistic generative model of corpus of messages annotated with sender-receiver information that permits intuitive visualization and analysis of the underlying topic-specific communication networks. Figure
+\ref{Figure:LatentSpace} illustrates the results from our pilot
+topic-partitioned communication network analysis. These
+are four selected topic-network-spaces. The word types listed at the
+top of the plots are the five most likely for the respective
+topic. Nodes are placed closer together in the inferred latent space
+if they are more likely to exchange emails on the respective
+topic. This modeling approach provides estimates that permit intuitive
+exploration of the structure of a communication network within a given
+topic.
+
 
 \section{Public Records Data Collection}
 
@@ -409,19 +419,7 @@ networks are projected in to Euclidean spaces to facilitate
 visualization and exploration. The topic dynamics will again be
 modeled using a logistic-normal specification. This characterization
 will permit us to understand how the content and network context of
-intra-governmental communications evolve. Figure
-\ref{Figure:LatentSpace} illustrates the results from our pilot
-topic-partitioned communication network analysis. The dataset under
-analysis is a corpus of all emails among department managers from New
-Hanover County, North Carolina in the month of February, 2011. These
-are four selected topic-network-spaces. The word types listed at the
-top of the plots are the five most likely for the respective
-topic. Nodes are placed closer together in the inferred latent space
-if they are more likely to exchange emails on the respective
-topic. This modeling approach provides estimates that permit intuitive
-exploration of the structure of a communication network within a given
-topic.
-
+intra-governmental communications evolve. 
 ~\\
 \noindent {\bf Computer science contribution:} The primary computer
 science contribution offered by this component is the development of a
@@ -573,7 +571,7 @@ The proposed project will offer broad impacts that advance the core societal mis
 
 \subsection{Societal Mission}
 
-The III program supports the development of computational tools and analytical approaches that enable the massive, diverse and complex streams of data to be efficiently utilized to produce scientific, technical and societal advances. Our proposed research addresses this mission, precisely. We will develop methods that enable organizations to assess their responsiveness to electronic open outside input using corpora of data that are already archived for other purposes (e.g., electronic messages, formal meeting records, distinct policy outputs). Also, on the more precise subject-matter of government responsiveness to outside input, we will assess the evidence for the effectiveness of 'we-government' style citizen contributions to the policymaking debate. In sum, this project will (1) offer computational tools that enhance the ability of organizations to remain responsiveness to outside input, (2) leverage large data archives already collected by countless organizations and (3) offer a critical assessment of a major new area of technological innovation for government.
+The III program supports the development of computational tools and analytical approaches that enable the massive, diverse and complex streams of data to be efficiently utilized to produce scientific, technical and societal advances. Our proposed research addresses this mission, precisely. We will develop methods that enable organizations to assess their responsiveness to electronic open outside input using corpora of data that are already archived for other purposes (e.g., electronic messages, formal meeting records, distinct policy outputs). Also, on the more precise subject-matter of government responsiveness to outside input, we will assess the evidence for the effectiveness of 'we-government' style citizen contributions to the policymaking debate. In sum, this project will (1) offer computational tools that enhance the ability of organizations to remain responsiveness to outside input, (2) leverage large data archives already collected by countless organizations and (3) offer a critical assessment of a major new area of technological innovation for government. We have recently established contact with the 
 
 \subsection{Education and Training}
 

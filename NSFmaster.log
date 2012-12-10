@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  10 DEC 2012 12:59
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  10 DEC 2012 13:46
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -653,16 +653,16 @@ Overfull \hbox (2.43332pt too wide) in paragraph at lines 82--112
 [5] [6 <./latent_space_15.pdf> <./latent_space_17.pdf> <./latent_space_31.pdf> 
 <./latent_space_63.pdf> <./department_key.pdf>]
 
-LaTeX Warning: Reference `screens' on page 7 undefined on input line 126.
+LaTeX Warning: Reference `screens' on page 7 undefined on input line 136.
 
-[7] <AlachuaBOCC.jpg, id=153, 967.615pt x 550.055pt>
+[7] [8] <AlachuaBOCC.jpg, id=157, 967.615pt x 550.055pt>
 File: AlachuaBOCC.jpg Graphic file (type jpg)
  <use AlachuaBOCC.jpg>
-<CorvallisOR.jpg, id=154, 966.61125pt x 473.77pt>
+<CorvallisOR.jpg, id=158, 966.61125pt x 473.77pt>
 File: CorvallisOR.jpg Graphic file (type jpg)
  <use CorvallisOR.jpg>
-[8] [9] [10 <./AlachuaBOCC.jpg> <./CorvallisOR.jpg>] [11] [12] [13] [14]
-[15]) [16]
+[9] [10 <./AlachuaBOCC.jpg> <./CorvallisOR.jpg>] [11] [12] [13] [14] [15])
+[16]
 \openout2 = `NSFrefs.aux'.
 
  (./NSFrefs.tex (./NSFmaster.bbl [1
@@ -675,14 +675,14 @@ Missing character: There is no “ in font cmr10!
  [2])) [3]
 \openout2 = `NSF-DMP.aux'.
 
- (./NSF-DMP.tex)
-[1
+ (./NSF-DMP.tex) [1
 
 
 ]
 \openout2 = `NSFbioDesmarais.aux'.
 
- (./NSFbioDesmarais.tex [1
+
+(./NSFbioDesmarais.tex [1
 
 
 ]) [2]
@@ -760,7 +760,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  11135 strings out of 493747
  204407 string characters out of 3143546
- 290006 words of memory out of 3000000
+ 288853 words of memory out of 3000000
  14090 multiletter control sequences out of 15000+200000
  12782 words of font info for 47 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
@@ -776,7 +776,7 @@ al/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
 l/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/
 texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/t
 exlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on NSFmaster.pdf (25 pages, 881833 bytes).
+Output written on NSFmaster.pdf (25 pages, 881811 bytes).
 PDF statistics:
  246 PDF objects out of 1000 (max. 8388607)
  190 compressed objects within 2 object streams
