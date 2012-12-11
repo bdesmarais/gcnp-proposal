@@ -48,7 +48,7 @@ In this project we will develop and apply a framework for deriving a complete, m
 
 
 
-\section{Open Outside Input and Governance}
+\section{Substantive Domain: Open Outside Input and Governance}
 
 At every level of government in the US, substantial resources have been dedicated to developing online platforms for citizen input to government. E-Rulemaking \cite{Coglianese2004} -- the process by which proposed regulations are posted to the internet and publicly deliberated on the web -- is the archetype of these efforts. US Federal agencies are required to post proposed rules to the website \texttt{regulations.gov} and provide a period for open commenting on the proposed regulation. Another mainstay of government operations in the information age is online tools to provide direct messages to public officials \cite{Balla2007}. Another recent example of open outside input was provided by President (elect) Obama in 2008. He established \texttt{Change.gov} during the transition to provide for direct citizen input to the administration's future priorities and activities \cite{Borins2009}. These developments mark a potential for rapid, massive and innovative ''citizen-sourcing'' of public policy - a form of democratic representation that is much more timely and rich than that realized through periodic elections and other forms of slower, less interactive input  \cite{Linders2012}.
 
@@ -63,7 +63,7 @@ At every level of government in the US, substantial resources have been dedicate
 We endeavor to answer these questions and more. Using fine-grained textual and socio-organizational contextual data on several stages of the input-response-feedback cycle, we will assess the dynamics of government responsiveness to open outside input on public policy. This will be made possible through the development of Bayesian latent variable models and corresponding inference algorithms that connect multiple textual streams and a massive database of US local government records. 
 
 
-\section{Project Team}
+\section{Contributions: Advancing Computational Social Science}
 
 The PIs in this project are global leaders in the emerging field of computational social science with substantial publication records in their respective disciplines of computer science and political science, as well as a robust collaborative agenda. The research will be lead by a computer scientist (Wallach) with background in developing machine learning methods for the statistical analysis of text and networks and a political scientist (Desmarais) with background in developing large scale statistical and network analytic models of political decision-making within US government institutions. The team is part of the UMass Amherst Computational Social Science Initiative and has already successfully completed and published pilot research that is highly relevant to the proposed project. This project will combine large-scale data collection, innovative methods development and social scientific analysis, resulting in the following contributions. These innovations will not only appeal to an audience of interdisciplinary scholars in computational social science, but will also constitute important central advancements in computer science and political science.
 
@@ -125,16 +125,6 @@ exploration of the structure of a communication network within a given
 topic.
 
 
-\section{Public Records Data Collection}
-
-\noindent {\bf Background:} At the national, state and local levels, the US is the global leader in the scope and reliability of laws that guarantee access to information on government \cite{Halstuk2006}. The seminal legislation in this area is the federal Freedom of Information Act, which marks all information produced by executive agencies as public, unless the information meets at least one of seven criteria for exemption. Most US states have laws that mimic the federal legislation \cite{Braverman1980}, and most state laws subject localities (i.e, cities and counties) to electronic public records archiving and disclosure requirements \cite{Byrne2010}. 
-
-\noindent {\bf Benefits:}  Public record disclosure requirements establish a treasure trove for researchers. Many government organizations post significant text streams - from email communications with elected officials to meeting minutes - directly on websites. For categories of information not posted to the web, it is possible to make requests for the data. At all stages of the democratic process, local governments are required to archive textual records and provide them to the public upon request \cite{Byrne2010}. This constitutes the primary advantage for focusing on government organizations in developing multi-stream models of the input-response-feedback cycle.
-
-\noindent {\bf Procedure:}  For most localities, legislative proceedings and legislative output are available on the city and county websites. Archives of external emails sent to government officials and internal emails are typically not posted on websites, though some counties and cities do indeed post them all. The single data source that we plan to use in this project, which requires government officials' compliance with public records requests is government email. We have had considerable success in gathering email corpora via public records requests for our pilot research (described below). For the pilot data collection, we have successfully gathered and processed one-month archives of government officials' in and out-box contents from North Carolina counties including New Hanover, McDowell, Transylvania, Columbus and Moore. With dedicated resources, we are confident we would collect data from most of the 100 counties in North Carolina as well as county and city governments in other states. 
-
-\noindent {\bf Robustness:} However unlikely, it is certainly within the realm of possibility that the demeanor of local governments toward large scale public records requests will change course. If this happens, we will still be able to gather more than enough data to carry out the project. This is because for many localities, including several counties in Florida and cities in North Carolina, California and Oregon, all of the communication records that are required for our research are available on government websites. These sources include emails to and between government officials, minutes of legislative meetings, and records of adopted policies. Figure \ref{screens} illustrates the web interfaces to this data for two such localities, Alachua County, Florida and the City of Corvallis Oregon. As can be seen from these intuitive and open web interfaces, ample data required to model the interrelationships among domain-specific corpora are readily available.
-
 
 \section{Proposed Research}
 
@@ -157,6 +147,30 @@ multi-component system. Then we describe our proposed data sources and
 outline some initial domain-specific model specifications. These model
 specifications serve to illustrate the kinds of models that we propose
 to develop and deploy over the course of the proposed project.
+
+\subsection{Public Records Data Collection}
+
+\noindent {\bf Background:} At the national, state and local levels, the US is the global leader in the scope and reliability of laws that guarantee access to information on government \cite{Halstuk2006}. The seminal legislation in this area is the federal Freedom of Information Act, which marks all information produced by executive agencies as public, unless the information meets at least one of seven criteria for exemption. Most US states have laws that mimic the federal legislation \cite{Braverman1980}, and most state laws subject localities (i.e, cities and counties) to electronic public records archiving and disclosure requirements \cite{Byrne2010}. 
+
+\noindent {\bf Benefits:}  Public record disclosure requirements establish a treasure trove for researchers. Many government organizations post significant text streams - from email communications with elected officials to meeting minutes - directly on websites. For categories of information not posted to the web, it is possible to make requests for the data. At all stages of the democratic process, local governments are required to archive textual records and provide them to the public upon request \cite{Byrne2010}. This constitutes the primary advantage for focusing on government organizations in developing multi-stream models of the input-response-feedback cycle.
+
+\noindent {\bf Procedure:}  For most localities, legislative proceedings and legislative output are available on the city and county websites. Archives of external emails sent to government officials and internal emails are typically not posted on websites, though some counties and cities do indeed post them all. The single data source that we plan to use in this project, which requires government officials' compliance with public records requests is government email. We have had considerable success in gathering email corpora via public records requests for our pilot research (described below). For the pilot data collection, we have successfully gathered and processed one-month archives of government officials' in and out-box contents from North Carolina counties including New Hanover, McDowell, Transylvania, Columbus and Moore. With dedicated resources, we are confident we would collect data from most of the 100 counties in North Carolina as well as county and city governments in other states. 
+
+
+
+\noindent {\bf Robustness:} However unlikely, it is certainly within the realm of possibility that the demeanor of local governments toward large scale public records requests will change course. If this happens, we will still be able to gather more than enough data to carry out the project. This is because for many localities, including several counties in Florida and cities in North Carolina, California and Oregon, all of the communication records that are required for our research are available on government websites. These sources include emails to and between government officials, minutes of legislative meetings, and records of adopted policies. Figure \ref{screens} illustrates the web interfaces to this data for two such localities, Alachua County, Florida and the City of Corvallis Oregon. As can be seen from these intuitive and open web interfaces, ample data required to model the interrelationships among domain-specific corpora are readily available.
+
+\begin{figure}[h]
+\begin{center}
+{\bf Alachua County, Florida} \\
+ {\bf url:} \texttt{http://www.alachuacounty.us/Depts/BOCC/Pages/CommissionerEmailArchive.aspx} \\
+ \includegraphics[scale=.45]{AlachuaBOCC.jpg} \\~\\
+% {\bf Corvallis, Oregon} \\
+ %{\bf url:} \texttt{http://www.corvallisoregon.gov/index.aspx?page=65} \\
+  %\includegraphics[scale=.45]{CorvallisOR.jpg}
+\end{center}
+\caption{Web Interface to Alachua County, FL email archive. Links to legislative deliberations (i.e., meeting minutes) and legislative outputs (i.e., ordinances and resolutions) are circled in yellow. Most local governments provide online access to meeting minutes and legsilation; several others provide direct open access to government emails (see, e.g. {\bf ADD IN COUNTY EMAILS} }
+\end{figure}
 
 \subsection{Integrating Domain-Specific Models}
 
@@ -347,18 +361,6 @@ summarized above.
 %A vector autoregression model is a classic linear regression model for time serial data. The estimated parameters of the vector autoregression model will be assessed in order to understand relationships across domains. This is a highly flexible framework for integrating domain-specific models. It works whenever a common set of topics is used to model the dynamic corpora across domains. Thus, this approach permits flexibility in tuning or possibly changing the form of the domain-specific models proposed above. Another major advantage of the vector autoregressive framework is that it constitutes an effective predictive forecasting model \cite{Banbura2010}. This would permit a forecast of, e.g., legislative attention to an issue in the future given current and past legislative, informal intra-governmental and outside input attention to an issue.
 
 
-\begin{figure}
-\begin{center}
-{\bf Alachua County, Florida} \\
- {\bf url:} \texttt{http://www.alachuacounty.us/Depts/BOCC/Pages/CommissionerEmailArchive.aspx} \\
- \includegraphics[scale=.45]{AlachuaBOCC.jpg} \\~\\
- {\bf Corvallis, Oregon} \\
- {\bf url:} \texttt{http://www.corvallisoregon.gov/index.aspx?page=65} \\
-  \includegraphics[scale=.45]{CorvallisOR.jpg}
-\end{center}
-\caption{Web Interfaces to local government email archives. Links to legislative deliberations (i.e., meeting minutes) and legislative outputs (i.e., ordinances and resolutions) are circled in yellow.}
-\end{figure}
-
 \subsection{Modeling Outside Input}
 
 \noindent {\bf Data description:} To define a model for citizen input it is important to first identify the form of the data we will gather on citizen input. Via public records requests, we will collect all emails sent to county government officials by those outside of government. Though some government organizations have experimented with different electronic input modes, the email message is still the workhorse of direct advocacy {\bf cite}. We actually do not need to submit a separate request for this data, as they come with the in and out-boxes of government officials.
@@ -531,6 +533,35 @@ The major social scientific contributions will come in the form of several analy
 %However unlikely, it is certainly within the realm of possibility that the demeanor of local governments toward large scale public records requests will change course. If this happens, we will still be able to gather more than enough data to carry out the project. This is because for many localities, including several counties in Florida and cities in North Carolina, California and Oregon, all of the communication records that are required for our research are available on government websites. These sources include emails to and between government officials, minutes of legislative meetings, and records of adopted policies. Figure \ref{screens} illustrates the web interfaces to this data for two such localities, Alachua County, Florida and the City of Corvallis Oregon. As can be seen from these intuitive and open web interfaces, ample data required to model the interrelationships among domain-specific corpora are readily available.
 
 
+\section{Broader Impacts}
+
+The proposed project will offer broad impacts that advance the core societal mission of the Information Integration and Informatics (III) program, directly enhance educational offerings at the University of Massachusetts and elsewhere and provide valuable interdisciplinary training opportunities related to an emerging area of research -- computational social science.
+
+\subsection{Societal Mission}
+
+The III program supports the development of computational tools and analytical approaches that enable the massive, diverse and complex streams of data to be efficiently utilized to produce scientific, technical and societal advances. Our proposed research addresses this mission, precisely. We will develop methods that enable organizations to assess their responsiveness to electronic open outside input using corpora of data that are already archived for other purposes (e.g., electronic messages, formal meeting records, distinct policy outputs). Also, on the more precise subject-matter of government responsiveness to outside input, we will assess the evidence for the effectiveness of 'we-government' style citizen contributions to the policymaking debate. In sum, this project will (1) offer computational tools that enhance the ability of organizations to remain responsiveness to outside input, (2) leverage large data archives already collected by countless organizations and (3) offer a critical assessment of a major new area of technological innovation for government. We have recently established contact with the 
+
+\subsection{Education and Training}
+
+Both PIs are strongly committed to bringing their research into the classroom. PI Wallach regularly teaches a graduate seminar titled, 'Computational Social Science' in which state-of-the art innovations in computational social science are studied at-length. The results of the proposed project would certainly be integrated into the curriculum. PI Desmarais teaches graduate courses in network analysis at the University of Massachusetts and the University of Michigan (summer program). These courses integrate up-to-date methodological innovations in his research. The course material will be updated to reflect the contributions of the proposed project. PI Desmarais has also contributed to the NSF-supported Online Portal for Social Science Education in Methodology (OPOSSEM) - an open source online archive of methodological instructional materials. Instructional materials related to the current project would be posted to OPOSSEM.
+
+The proposed project will support a graduate student in computer science and one in political science at the University of Massachusetts, as well as several undergraduate research assistants.  The proposed research represents a genuinely interdisciplinary research program in the emerging field of computational social science. Long-term focused training for graduate students will provide valuable research experience and socialization on interdisciplinary projects - a growing focus of the scientific community. Undergraduate RAs will also gain valuable complimentary experiences. Computer science students will have the opportunity to work on technical problems that address highly important sociopolitical problems, and political science students will be directly exposed to the ways in which technical analysis and innovation can enhance knowledge of the public policy process. Encouraging sincere interdisciplinary engagement is a central mission at UMass Amherst, signified by the establishment and growing prominence of the UMass Computational Social Science Initiative (cssi.umass.edu). Support of the current project will provide an important opportunity for graduate students to engage in a multi-year cross-disciplinary collaborative project.
+
+\subsection{Broadening Participation of Underrepresented Groups}
+
+Both PIs Wallach and Desmarais have records of making concerted
+efforts to broaden the participation of underrepresented groups. PI
+Wallach co-founded the Women in Machine Learning Workshop -- an
+ongoing annual meeting (and associated executive board) of scholars
+that bolsters the small network of female researchers in machine
+learning. In 2011, preceding the NSF-sponsored `Visions in
+Methodology' conference for women in political methodology at The Ohio
+State University, PI Desmarais offered a one day workshop on
+statistical inference with network data (featuring the methods he has
+developed and applied in his research). Given the results of the
+proposed projects, both PIs will continue to pursue training
+opportunities that focus on underrepresented groups.
+
 
 
 
@@ -564,35 +595,6 @@ Desmarais & social scientific analysis of integrated & Q9 -- Q12 \\
 \end{table}%
 
 
-
-\section{Broader Impacts}
-
-The proposed project will offer broad impacts that advance the core societal mission of the Information Integration and Informatics (III) program, directly enhance educational offerings at the University of Massachusetts and elsewhere and provide valuable interdisciplinary training opportunities related to an emerging area of research -- computational social science.
-
-\subsection{Societal Mission}
-
-The III program supports the development of computational tools and analytical approaches that enable the massive, diverse and complex streams of data to be efficiently utilized to produce scientific, technical and societal advances. Our proposed research addresses this mission, precisely. We will develop methods that enable organizations to assess their responsiveness to electronic open outside input using corpora of data that are already archived for other purposes (e.g., electronic messages, formal meeting records, distinct policy outputs). Also, on the more precise subject-matter of government responsiveness to outside input, we will assess the evidence for the effectiveness of 'we-government' style citizen contributions to the policymaking debate. In sum, this project will (1) offer computational tools that enhance the ability of organizations to remain responsiveness to outside input, (2) leverage large data archives already collected by countless organizations and (3) offer a critical assessment of a major new area of technological innovation for government. We have recently established contact with the 
-
-\subsection{Education and Training}
-
-Both PIs are strongly committed to bringing their research into the classroom. PI Wallach regularly teaches a graduate seminar titled, 'Computational Social Science' in which state-of-the art innovations in computational social science are studied at-length. The results of the proposed project would certainly be integrated into the curriculum. PI Desmarais teaches graduate courses in network analysis at the University of Massachusetts and the University of Michigan (summer program). These courses integrate up-to-date methodological innovations in his research. The course material will be updated to reflect the contributions of the proposed project. PI Desmarais has also contributed to the NSF-supported Online Portal for Social Science Education in Methodology (OPOSSEM) - an open source online archive of methodological instructional materials. Instructional materials related to the current project would be posted to OPOSSEM.
-
-The proposed project will support a graduate student in computer science and one in political science at the University of Massachusetts, as well as several undergraduate research assistants.  The proposed research represents a genuinely interdisciplinary research program in the emerging field of computational social science. Long-term focused training for graduate students will provide valuable research experience and socialization on interdisciplinary projects - a growing focus of the scientific community. Undergraduate RAs will also gain valuable complimentary experiences. Computer science students will have the opportunity to work on technical problems that address highly important sociopolitical problems, and political science students will be directly exposed to the ways in which technical analysis and innovation can enhance knowledge of the public policy process. Encouraging sincere interdisciplinary engagement is a central mission at UMass Amherst, signified by the establishment and growing prominence of the UMass Computational Social Science Initiative (cssi.umass.edu). Support of the current project will provide an important opportunity for graduate students to engage in a multi-year cross-disciplinary collaborative project.
-
-\subsection{Broadening Participation of Underrepresented Groups}
-
-Both PIs Wallach and Desmarais have records of making concerted
-efforts to broaden the participation of underrepresented groups. PI
-Wallach co-founded the Women in Machine Learning Workshop -- an
-ongoing annual meeting (and associated executive board) of scholars
-that bolsters the small network of female researchers in machine
-learning. In 2011, preceding the NSF-sponsored `Visions in
-Methodology' conference for women in political methodology at The Ohio
-State University, PI Desmarais offered a one day workshop on
-statistical inference with network data (featuring the methods he has
-developed and applied in his research). Given the results of the
-proposed projects, both PIs will continue to pursue training
-opportunities that focus on underrepresented groups.
 
 
 
