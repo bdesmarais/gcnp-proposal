@@ -78,7 +78,25 @@ The PIs in this project are global leaders in the emerging field of computationa
 
 \section{Description of Pilot Research}
 
-As an initial phase of research for this project, we endeavored to leverage our expertise in the computational and social sciences, as well as the availability of rich data sources through the public record to address a challenge in the study of communication networks. this work has been presented at a variety of computational social science workshops---including the Workshop on Information in Networks, New Directions in Analyzing Text as Data, and the Annual Political Networks Conference---and appeared at Neural Information Processing Systems conference (one of the top machine learning conferences) in late 2012. A substantial body of research finds that the structure of a communication network has a substantial influence on the problem-solving abilities of the network as a whole and the performance of the individuals in the network \cite{Mason2012}. Moreover, recent research indicates that the topic or context of communication is important, meaning the measurement of a communication network should involve topic-of-discussion specificity \cite{Mason2008}. Thus, in order for an organization to diagnose and design its internal communication network, it must first be able to discern topic-specific communication networks.
+As an initial phase of research for this project, we endeavored to
+leverage our expertise in the computational and social sciences, as
+well as the availability of rich data sources through the public
+record to address a challenge in the study of communication
+networks. this work has been presented at a variety of computational
+social science workshops---including the Workshop on Information in
+Networks, New Directions in Analyzing Text as Data, and the Annual
+Political Networks Conference---and appeared at Neural Information
+Processing Systems conference (one of the top machine learning
+conferences) in late 2012. A substantial body of research finds that
+the structure of a communication network has a substantial influence
+on the problem-solving abilities of the network as a whole and the
+performance of the individuals in the network
+\cite{Mason2012}. Moreover, recent research indicates that the topic
+or context of communication is important, meaning the measurement of a
+communication network should involve topic-of-discussion specificity
+\cite{Mason2008}. Thus, in order for an organization to diagnose and
+design its internal communication network, it must first be able to
+discern topic-specific communication networks.
 
 \begin{figure*}[t]
 \begin{minipage}[b]{0.5\linewidth}
@@ -129,37 +147,70 @@ topic.
 
 \section{Proposed Research}
 
-We will develop new machine learning methods and associated software
-for dynamic text analysis. These methods will be specifically intended
-to provide a novel and insightful analysis of democratic
-responsiveness at the county level of government in the US. Our
-methods and tools will be applicable to any level of government and
-other organization types. Our analysis of county governments will
-serve as a proof of concept and prototype for the use of our
-methods. We will also assemble a comprehensive multifaceted database
-of textual data on county governments that will prove useful to other
-researchers in machine learning, natural language processing, and the
-social sciences.
+%We will develop new machine learning methods and associated software
+%for dynamic text analysis. These methods will be specifically intended
+%to provide a novel and insightful analysis of democratic
+%responsiveness at the county level of government in the US. Our
+%methods and tools will be applicable to any level of government and
+%other organization types. Our analysis of county governments will
+%serve as a proof of concept and prototype for the use of our
+%methods. We will also assemble a comprehensive multifaceted database
+%of textual data on county governments that will prove useful to other
+%researchers in machine learning, natural language processing, and the
+%social sciences.
 
-In the following sections we describe our proposed approach to
-modeling the multi-domain cycle of input-response-feedback. First, we
-discuss our ideas for tying different domains together into a
-multi-component system. Then we describe our proposed data sources and
-outline some initial domain-specific model specifications. These model
-specifications serve to illustrate the kinds of models that we propose
-to develop and deploy over the course of the proposed project.
+In this section, we propose a new methodological framework for
+modeling the cyclic progression of topical foci through different
+domains of policy-making in organizations. Figure 1 depicts this
+multi-domain cycle of input, response and feedback. Our proposed work
+consists of two types of modeling contributions: 1) a broad framework
+for analyzing the cross-domain and cross-time dependence in topical
+foci and 2) a suite of domain-specific model classes, which can be
+tied together via our framework into a multi-component, multi-scale
+system. We propose to analyze and test our modeling contributions on
+large, novel, data sets consisting of the communications relating to
+local government organizations in the US. In section 5.1, we describe
+our proposed data sources. In section 5.2, we outline our integrated
+modeling framework. In sections 5.3 through 5.6 we outline some initial
+domain-specific model specifications, which serve to illustrate the
+kinds of models that we propose to develop and deploy over the course
+of the project.
 
 \subsection{Public Records Data Collection}
 
 \noindent {\bf Background:} At the national, state and local levels, the US is the global leader in the scope and reliability of laws that guarantee access to information on government \cite{Halstuk2006}. The seminal legislation in this area is the federal Freedom of Information Act, which marks all information produced by executive agencies as public, unless the information meets at least one of seven criteria for exemption. Most US states have laws that mimic the federal legislation \cite{Braverman1980}, and most state laws subject localities (i.e, cities and counties) to electronic public records archiving and disclosure requirements \cite{Byrne2010}.
 
-\noindent {\bf Benefits:}  Public record disclosure requirements establish a treasure trove for researchers. Many government organizations post significant text streams - from email communications with elected officials to meeting minutes - directly on websites. For categories of information not posted to the web, it is possible to make requests for the data. At all stages of the democratic process, local governments are required to archive textual records and provide them to the public upon request \cite{Byrne2010}. This constitutes the primary advantage for focusing on government organizations in developing multi-stream models of the input-response-feedback cycle.
+\noindent {\bf Benefits:} Public record disclosure requirements
+establish a treasure trove for researchers. Many government
+organizations post significant text streams---from email
+communications with elected officials to meeting minutes---directly on
+websites. For categories of information not posted to the web, it is
+possible to make requests for the data. At all stages of the
+democratic process, local governments are required to archive textual
+records and provide them to the public upon request
+\cite{Byrne2010}. This constitutes the primary advantage for focusing
+on government organizations in developing multi-domain temporal models
+of the input-response-feedback cycle.
 
 \noindent {\bf Procedure:}  For most localities, legislative proceedings and legislative output are available on the city and county websites. Archives of external emails sent to government officials and internal emails are typically not posted on websites, though some counties and cities do indeed post them all. The single data source that we plan to use in this project, which requires government officials' compliance with public records requests is government email. We have had considerable success in gathering email corpora via public records requests for our pilot research (described below). For the pilot data collection, we have successfully gathered and processed one-month archives of government officials' in and out-box contents from North Carolina counties including New Hanover, McDowell, Transylvania, Columbus and Moore. With dedicated resources, we are confident we would collect data from most of the 100 counties in North Carolina as well as county and city governments in other states.
 
 
 
-\noindent {\bf Robustness:} However unlikely, it is certainly within the realm of possibility that the demeanor of local governments toward large scale public records requests will change course. If this happens, we will still be able to gather more than enough data to carry out the project. This is because for many localities, including several counties in Florida and cities in North Carolina, California and Oregon, all of the communication records that are required for our research are available on government websites. These sources include emails to and between government officials, minutes of legislative meetings, and records of adopted policies. Figure \ref{screens} illustrates the web interfaces to this data for two such localities, Alachua County, Florida and the City of Corvallis Oregon. As can be seen from these intuitive and open web interfaces, ample data required to model the interrelationships among domain-specific corpora are readily available.
+\noindent {\bf Robustness:} However unlikely, it is certainly within
+the realm of possibility that the demeanor of local governments toward
+large scale public records requests will change course. If this
+happens, we will still be able to gather more than enough data to
+carry out the project: For many localities, including several counties
+in Florida and cities in North Carolina, California and Oregon, all of
+the communication records that are required for our research are
+available on government websites. These sources include emails to and
+between government officials, minutes of legislative meetings, and
+records of adopted policies. Figure \ref{screens} illustrates the web
+interfaces to this data for two such localities, Alachua County,
+Florida and the City of Corvallis Oregon. As can be seen from these
+open (and easy to scrape) web interfaces, ample data required to model
+the interrelationships among domain-specific corpora are readily
+available.
 
 \begin{figure}[h]
 \begin{center}
@@ -179,63 +230,56 @@ to develop and deploy over the course of the proposed project.
 
 In sections~\ref{sec:modeling_outside_input}
 through~\ref{sec:modeling_legislative_output}, we propose several
-types of domain-specific models that constitute innovative analytic
-representations of textual data connected to individual phases in the
-governance process. Before delving into domain-specific modeling
-frameworks, we describe a general approach to tying the domains
-together into an joint probabilistic model that incorporates
-cross-domain and over-time interdependence. Each of our proposed
-domain-specific model families draws upon ideas from statistical topic
-modeling in order to model domain-specific textual content. We seek to
-understand the relationships among the document-specific topic distributions,
-% DO YOU MEAN DISTRIBUTOINS OVER TOPICS or TOPIC-SPECIFIC
-% DISTRIBUTIONS OVER WORDS?
-which will provide insight into the ways in which topics progress
-through the different phases of governance.  In addition to textual
-content, each class of domain-specific models also represents the
-organizational structural context unique to that domain. This approach
-enables us to assess the relationships between textual content and
-structural context.
-
-
+classes of domain-specific models that constitute innovative analytic
+representations of textual data connected to individual domains in the
+governance process. Each of our proposed domain-specific model classes
+draws upon ideas from statistical topic modeling in order to model
+domain-specific textual content. In addition to textual content, each
+class of domain-specific models also represents the organizational
+structural context unique to that domain. This approach enables us to
+assess the relationships between textual content and structural
+context. Before delving into these domain-specific model classes, we
+describe a general framework for tying domain-specific models together
+into a joint probabilistic model that incorporates cross-domain and
+over-time interdependence. We seek to understand the relationships
+among the document-specific topic distributions, which will provide
+insight into the ways in which topic attention progress through the
+different domains of governance.
 
 We work through the description of our proposed integrated modeling
 framework using the graphical model shown in Figure \ref{plates}. Let
-$K$ be the number of topics. Each topic is characterized by a
+$K$ be the number of topics. Each topic $k$ is characterized by a
 multinomial distribution over words with natural parameter vector
-$\beta$. The multinomial distribution over topics (i.e., topic
-proportions) for each document, denoted by $\theta$, is given by the
-mean transformation of the natural parameter vector
-$\eta$. Inter-temporal and inter-domain dependence are captured by
-drawing $\eta$ from a natural parameter drawn from a Gaussian vector
-autoregression
-% IS THE ABOVE SENTENCE CORRECT?
-model~\cite{Banbura2010} (i.e., $\eta \sim
-\mathcal{N}\left(\alpha_t,a^2I \right)$ and $\alpha_t \sim
-\mathcal{N}(\mu_t,\sigma^2I)$). Given $M$ domains, the mean natural
-parameter corresponding to topic $k$ in domain $m$ at time $t$ is $$
-\mu_{(t,m,k)} = \lambda_{(0,m,k)} +
-\lambda_{(1,1,k)}\alpha_{(t-1,1,k)}+
-\lambda_{(2,m,k)}\alpha_{(t-1,2,k)}+\hdots+\lambda_{(M,m,k)}\alpha_{(t-1,M,k)}+\epsilon_{(t,m,k)},$$
-where $ \lambda_{(0,m,k)}$ is an over-time intercept for the natural
-parameter corresponding to topic $k$ in domain $m$,
-$\lambda_{(v,m,k)}$ is a real-valued parameter that gives the
-regression relationship between the natural parameter of topic $k$ in
-domain $v$ at time $t-1$ and the natural parameter of topic $k$ in
-domain $m$ at time $t$ and $\epsilon_{(t,m,k)} \sim
-\mathcal{N}(0,\sigma^2_{m,k})$ . This parameterization renders the
-natural parameter corresponding to a given topic (i.e., the prominence
-of a given topic) in a selected domain dependent upon the natural
-parameter of that same topic across all other domains in the immediate
-past. Through $\lambda$, this vector autoregressive model represents
-the dynamics of topic progression across domains.  This derivation
-constitutes the parameterization of over-time and cross-domain
-dependencies through the use of logistic-normal distributions
-\cite{Blei2006} with vector autoregressive means to define the natural
-parameters of the multinomial distribution over topics. We will
-investigate both variational and sampling-based inference algorithms
-for this framework, drawing on previous work of PI Wallach and
-others~\cite{Blei2006, Mimno08}.
+$\boldsymbol{\beta}_k$. The multinomial distribution over topics
+(i.e., topic proportions) for document $d$, denoted by
+$\bm{\theta}_d$, is defined by the natural parameter vector
+$\bm{\eta}_d$, such that $\theta_{k|d} = \exp{(\eta_{k|d})} \,/\,
+\sum_{k'=1}^K \exp{(\eta_{k'|d})}$. Inter-temporal and inter-domain
+dependence are captured by drawing $\bm{\eta}_d$ from a Gaussian
+vector autoregression model~\cite{Banbura2010} (i.e., $\bm{\eta}_d
+\sim \mathcal{N}\left(\bm{\alpha}_{t,m}, a^2 \mathbf{I} \right)$ and
+$\bm{\alpha}_{t,m} \sim \mathcal{N}(\bm{\mu}_{t,m},\sigma^2
+\mathbf{I})$ assuming document $d$ is associated with time $t$ and
+domain $m$). Given $M$ domains, $\mu_{k|t,m}$ is given by $$
+\mu_{k|t,m} = \lambda_{k|0,m} + \lambda_{k|1,1}\alpha_{k|t-1,1}+
+\lambda_{k|2,m}\alpha_{k|t-1,2}+\hdots+\lambda_{k|M,m}\alpha_{k|t-1,M},$$
+where $ \lambda_{k|0,m}$ is an intercept for the natural parameter
+corresponding to topic $k$ in domain $m$ and $\lambda_{k|m',m}$ is a
+real-valued regression parameter that gives the regression
+relationship between the natural parameter of topic $k$ in domain $m'$
+at time $t-1$ and the natural parameter of topic $k$ in domain $m$ at
+time $t$. This parameterization renders the prominence of topic $k$ in
+domain $m$ at time $t$ dependent on the prominence of that topic
+across all other domains at time $t-1$. Through the regression
+parameters, this vector autoregressive model represents the dynamics
+of topic progression across domains over time. This autoregressive
+framework draws upon ideas from Blei and Lafferty's logistic-normal
+topic modeling framework~\cite{Blei2006} to capture cross-domain and
+cross-time dependence. Developing and comparing efficient inference
+algorithms for this new framework represents a significant research
+contribution to the machine learning literature. We will investigate
+both variational and sampling-based approaches, drawing on previous
+work of PI Wallach and others~\cite{Blei2006, Mimno08}.
 
 
 \begin{wrapfigure}{r}{.45\textwidth}
@@ -246,11 +290,11 @@ others~\cite{Blei2006, Mimno08}.
 
 %%%%%% Time 1 %%%%%%%
 
-\node (theta1) at (0,.4) [circle, draw] {$\theta$};
-\node (z1) at (0,-.65) [circle, draw] {$z$};
-\node (y1) at (1.25,-.65) [circle, draw,fill=lightgray] {$y$};
-\node (x1) at (1.25,.4) [circle, draw,fill=lightgray] {$x$};
-\node (tau1) at (1.25,-1.55) [circle, draw] {$\tau$};
+\node (theta1) at (0,.4) [circle, draw] {$\bm{\theta}_d$};
+\node (z1) at (0,-.65) [circle, draw] {$z_n$};
+\node (y1) at (1.25,-.65) [circle, draw,fill=lightgray] {$\bm{y}_d$};
+\node (x1) at (1.25,.4) [circle, draw,fill=lightgray] {$\bm{x}_d$};
+\node (tau1) at (1.25,-1.55) [circle, draw] {$\boldsymol{\tau}$};
 \node (w1) at (0,-1.55)  [circle, draw,fill=lightgray] {$w$};
 \node (alpha1) at (0,1.6) [circle, draw] {$\alpha$};
 \node (b1) at (0,-4) [circle, draw] {$\beta$};
@@ -326,6 +370,13 @@ others~\cite{Blei2006, Mimno08}.
 %\vspace{-.5cm}
 \end{wrapfigure}
 
+NOWHERE DO EW SAY THAT FIGURE 4 is a CARTOON  OF HOW OUR INTEGRATED
+FRAMEWORK TIES TOGETHER THE DOMAIN-SPECIFIC MODELS IN SECTIONS
+5.3-5.6. WE SHOULD SAY THAT THE CONTENTS OF EACH M PLATE THEREFORE
+REPRESENTS A CARTOON OF THESE MODELS AND THEREFORE ONLY REPRESENTS
+BROAD, HIGH-LEVEL COMMONALITIES.
+
+MOVE TAU, ADD SUBSCRIPTS WHERE NECESSARY AND BOLD WHRE NECESSARY
 
 Another important feature of our framework is that each
 domain-specific model family incorporates two types of document
@@ -382,7 +433,7 @@ summarized above.
 %A vector autoregression model is a classic linear regression model for time serial data. The estimated parameters of the vector autoregression model will be assessed in order to understand relationships across domains. This is a highly flexible framework for integrating domain-specific models. It works whenever a common set of topics is used to model the dynamic corpora across domains. Thus, this approach permits flexibility in tuning or possibly changing the form of the domain-specific models proposed above. Another major advantage of the vector autoregressive framework is that it constitutes an effective predictive forecasting model \cite{Banbura2010}. This would permit a forecast of, e.g., legislative attention to an issue in the future given current and past legislative, informal intra-governmental and outside input attention to an issue.
 
 
-\subsection{Modeling Outside Input}
+\subsection{Modeling Open Outside Input}
 \label{sec:modeling_outside_input}
 
 \noindent {\bf Data description:} To define a model for citizen input it is important to first identify the form of the data we will gather on citizen input. Via public records requests, we will collect all emails sent to county government officials by those outside of government. Though some government organizations have experimented with different electronic input modes, the email message is still the workhorse of direct advocacy {\bf cite}. We actually do not need to submit a separate request for this data, as they come with the in and out-boxes of government officials.
@@ -424,7 +475,7 @@ dealing with author sparsity and identifying like-minded authors.
 ~\\
 \noindent {\bf Political Science contribution:} The primary political science contribution offered by the application of this model will be an analysis of issue (i.e., topic) factions. This will offer a partition of authors that is very consistent with the concepts of partisan faction. Moreover, this analysis will set the framework for differentiating the influence of different factions of authors on the legislative agenda.
 
-\subsection{Modeling Informal intra-governmental Communications}
+\subsection{Modeling Informal Internal Communications}
 
 \noindent {\bf Data description:} The data for informal
 intra-governmental communications will also utilize the email data
@@ -457,7 +508,7 @@ evolution in communication network structure. Recent work has shown that inferen
 
 
 
-\subsection{Modeling Formal intra-governmental Communications}
+\subsection{Modeling Formal Internal Deliberation}
 
 \noindent {\bf Data description:}  Policy development that takes place at the county level occurs within county legislatures. Digitized archives of legislative meeting minutes are typically (indeed in every locality that we have checked) available on the web, but are certainly accessible via public records requests. This data will offer a window into whether issues that are being communicated to the government from outside actors and/or topics that arise through informal intra-governmental communications make their way to the legislative agenda.
 
@@ -500,7 +551,7 @@ for which the minutes are recorded).
 \end{itemize}
 
 
-\subsection{Modeling Legislative Output}
+\subsection{Modeling Formal Policy Output}
 \label{sec:modeling_legislative_output}
 
 \noindent {\bf Data description:}  We will gather data on the statutes created by each county in order to examine implementation of topics that arise in the public, informal intra-governmental communications, and on the legislative agenda. These data are available on the web for most counties, and are certainly a matter of public record and would be available upon request. For some counties, it is straightforward to extract how legislators voted on a measure from the meeting minutes. For other counties, however, this is not as simple and may not be feasible.
