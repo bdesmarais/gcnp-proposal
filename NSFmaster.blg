@@ -9,44 +9,47 @@ A level-1 auxiliary file: NSF-DMP.aux
 A level-1 auxiliary file: NSFbioDesmarais.aux
 A level-1 auxiliary file: NSFjustification.aux
 Database file #1: nsfbib.bib
-You've used 37 entries,
+Warning--empty publisher in Hoffman2010
+Warning--empty publisher in Gopalan2012
+You've used 45 entries,
             1876 wiz_defined-function locations,
-            743 strings with 9848 characters,
-and the built_in function-call counts, 10957 in all, are:
-= -- 1139
-> -- 315
+            795 strings with 11478 characters,
+and the built_in function-call counts, 13492 in all, are:
+= -- 1378
+> -- 426
 < -- 0
-+ -- 120
-- -- 83
-* -- 736
-:= -- 1457
-add.period$ -- 40
-call.type$ -- 37
-change.case$ -- 34
++ -- 159
+- -- 114
+* -- 923
+:= -- 1808
+add.period$ -- 49
+call.type$ -- 45
+change.case$ -- 41
 chr.to.int$ -- 0
-cite$ -- 37
-duplicate$ -- 605
-empty$ -- 1071
-format.name$ -- 83
-if$ -- 2756
+cite$ -- 47
+duplicate$ -- 739
+empty$ -- 1314
+format.name$ -- 114
+if$ -- 3369
 int.to.chr$ -- 0
-int.to.str$ -- 37
-missing$ -- 38
-newline$ -- 117
-num.names$ -- 39
-pop$ -- 109
+int.to.str$ -- 45
+missing$ -- 45
+newline$ -- 142
+num.names$ -- 51
+pop$ -- 142
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 452
+skip$ -- 543
 stack$ -- 0
-substring$ -- 855
-swap$ -- 275
+substring$ -- 1035
+swap$ -- 329
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 106
-width$ -- 39
-write$ -- 376
+warning$ -- 2
+while$ -- 130
+width$ -- 47
+write$ -- 454
+(There were 2 warnings)

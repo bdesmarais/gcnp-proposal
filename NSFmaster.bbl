@@ -140,6 +140,38 @@ D.~Mimno, H.~Wallach, and A.~McCallum, ``Gibbs sampling for logistic normal
   topic models with graph-based priors,'' in {\em Proceedings of the NIPS
   Workshop on "Analyzing Graphs"}, 2008.
 
+\bibitem{Mimno2012}
+D.~Mimno, {\em Topic Regression}.
+\newblock PhD thesis, University of Massachusetts Amherst, 2012.
+
+\bibitem{Hoffman2010}
+M.~Hoffman, D.~Blei, and F.~Bach, ``Online learning for latent dirichlet
+  allocation,'' in {\em Advances in Neural Information Processing Systems 23}
+  (J.~Lafferty, C.~K.~I. Williams, J.~Shawe-Taylor, R.~Zemel, and A.~Culotta,
+  eds.), pp.~856--864, 2010.
+
+\bibitem{Mimno2012b}
+D.~Mimno, M.~Hoffman, and D.~Blei, ``Sparse stochastic inference for latent
+  dirichlet allocation,'' in {\em Proceedings of the 29th international
+  conference on Machine learning}, ICML '12, 2012.
+
+\bibitem{Gopalan2012}
+P.~Gopalan, D.~Mimno, S.~Gerrish, M.~Freedman, and D.~Blei, ``Scalable
+  inference of overlapping communities,'' in {\em Advances in Neural
+  Information Processing Systems 25} (P.~Bartlett, F.~Pereira, C.~Burges,
+  L.~Bottou, and K.~Weinberger, eds.), pp.~2258--2266, 2012.
+
+\bibitem{Sutton2007}
+C.~Sutton and A.~McCallum, ``Piecewise pseudolikelihood for efficient training
+  of conditional random fields,'' in {\em Proceedings of the 24th international
+  conference on Machine learning}, ICML '07, pp.~863--870, 2007.
+
+\bibitem{Desmarais2010}
+B.~A. Desmarais and S.~J. Cranmer, ``{Consistent Confidence Intervals for
+  Maximum Pseudolikelihood Estimators},'' {\em {Neural Information Processing
+  Systems 2010 Workshop on Computational Social Science and the Wisdom of
+  Crowds}}, {2010}.
+
 \bibitem{Wallach2008}
 H.~Wallach, {\em Structured Topic Models for Language}.
 \newblock PhD thesis, University of Cambridge, 2008.
@@ -153,6 +185,11 @@ H.~Wallach, S.~Jensen, L.~Dicker, and K.~Heller, ``An alternative prior process
 \bibitem{Sarkar2005}
 P.~Sarkar and A.~W. Moore, ``Dynamic social network analysis using latent space
   models,'' {\em SIGKDD Explorations}, vol.~7, pp.~31--40, Dec. 2005.
+
+\bibitem{SalterTownshend2013}
+M.~Salter-Townshend and T.~B. Murphy, ``Variational bayesian inference for the
+  latent position cluster model for network data,'' {\em Computational
+  Statistics \& Data Analysis}, vol.~57, no.~1, pp.~661 -- 671, 2013.
 
 \bibitem{Aldrich1995}
 J.~H. Aldrich, {\em Why Parties? The Origin and Transformation of Political
@@ -168,11 +205,15 @@ A.~Gunawardana and C.~Meek, ``Tied boltzmann machines for cold start
   recommendations,'' in {\em Proceedings of the 2008 ACM conference on
   Recommender systems}, RecSys '08, pp.~19--26, 2008.
 
-\bibitem{Desmarais2010}
-B.~A. Desmarais and S.~J. Cranmer, ``{Consistent Confidence Intervals for
-  Maximum Pseudolikelihood Estimators},'' {\em {Neural Information Processing
-  Systems 2010 Workshop on Computational Social Science and the Wisdom of
-  Crowds}}, {2010}.
+\bibitem{Hyvarinen2006}
+A.~Hyvarinen, ``Consistency of pseudolikelihood estimation of fully visible
+  boltzmann machines,'' {\em Neural Comput.}, vol.~18, no.~10, pp.~2283--2292,
+  2006.
+
+\bibitem{Wallach2009}
+H.~Wallach, I.~Murray, R.~Salakhutdinov, and D.~Mimno, ``Evaluation methods for
+  topic models.,'' in {\em Proceedings of the 26th international conference on
+  Machine learning}, ICML '09, 2009.
 
 \bibitem{Harbridge2011}
 L.~Harbridge and N.~Malhotra, ``Electoral incentives and partisan conflict in

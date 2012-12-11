@@ -238,28 +238,31 @@ others~\cite{Blei2006, Mimno08}.
 
 \begin{wrapfigure}{r}{.45\textwidth}
 %\includegraphics[scale=.25]{plates}
-\vspace{-.4cm}
+\vspace{-1cm}
 \begin{center}
 \begin{tikzpicture}
 
 %%%%%% Time 1 %%%%%%%
 
-\node (theta) at (0,.4) [circle, draw] {$\theta$};
-\node (z) at (0,-.65) [circle, draw] {$z$};
-\node (y) at (1.25,-.05) [circle, draw,fill=lightgray] {$y$};
-\node (tau) at (1.25,.-1.25) [circle, draw] {$\tau$};
-\node (w) at (0,-1.55)  [circle, draw,fill=lightgray] {$w$};
-\node (alpha) at (0,1.6) [circle, draw] {$\alpha$};
-\node (b) at (0,-4) [circle, draw] {$\beta$};
+\node (theta1) at (0,.4) [circle, draw] {$\theta$};
+\node (z1) at (0,-.65) [circle, draw] {$z$};
+\node (y1) at (1.25,-.65) [circle, draw,fill=lightgray] {$y$};
+\node (x1) at (1.25,.4) [circle, draw,fill=lightgray] {$x$};
+\node (tau1) at (1.25,-1.55) [circle, draw] {$\tau$};
+\node (w1) at (0,-1.55)  [circle, draw,fill=lightgray] {$w$};
+\node (alpha1) at (0,1.6) [circle, draw] {$\alpha$};
+\node (b1) at (0,-4) [circle, draw] {$\beta$};
 
-\draw[->] (alpha) -- (theta);
-\draw[->] (b.north) -- (w.south);
+\draw[->] (alpha1) -- (theta1);
+\draw[->] (b1.north) -- (w1.south);
 
-\draw[->] (theta.south) -- (z.north);
-\draw[->] (z.south) -- (w.north);
-\draw[->] (z.east) -- (y.west);
-\draw[->] (z.east) -- (tau.west);
-\draw[->] (tau.north) -- (y.south);
+\draw[->] (theta1.south) -- (z1.north);
+\draw[->] (z1.south) -- (w1.north);
+\draw[->] (x1.west) -- (z1.east);
+\draw[->] (x1.west) -- (theta1.east);
+\draw[->] (z1.east) -- (y1.west);
+\draw[->] (z1.east) -- (tau1.west);
+\draw[->] (tau1.north) -- (y1.south);
 
 \draw (-.8,-3) rectangle (2,2.15);
 \draw (-.7,-2.75) rectangle (1.85,1);
@@ -270,24 +273,27 @@ others~\cite{Blei2006, Mimno08}.
 \node at (.4,-2.05){$N$};
 \node at (1.75,1.95){$M$};
 
-%%%%%% Time 2 %%%%%%%
+%%%%%% Time 1 %%%%%%%
 
-\node (theta1) at (0+4,.4) [circle, draw] {$\theta$};
-\node (z1) at (0+4,-.65) [circle, draw] {$z$};
-\node (y1) at (1.25+4,-.05) [circle, draw,fill=lightgray] {$y$};
-\node (tau1) at (1.25+4,.-1.25) [circle, draw] {$\tau$};
-\node (w1) at (0+4,-1.55)  [circle, draw,fill=lightgray] {$w$};
-\node (alpha1) at (0+4,1.6) [circle, draw] {$\alpha$};
-\node (b1) at (0+4,-4) [circle, draw] {$\beta$};
+\node (theta) at (0+4,.4) [circle, draw] {$\theta$};
+\node (z) at (0+4,-.65) [circle, draw] {$z$};
+\node (y) at (1.25+4,-.65) [circle, draw,fill=lightgray] {$y$};
+\node (x) at (1.25+4,.4) [circle, draw,fill=lightgray] {$x$};
+\node (tau) at (1.25+4,-1.55) [circle, draw] {$\tau$};
+\node (w) at (0+4,-1.55)  [circle, draw,fill=lightgray] {$w$};
+\node (alpha) at (0+4,1.6) [circle, draw] {$\alpha$};
+\node (b) at (0+4,-4) [circle, draw] {$\beta$};
 
-\draw[->] (alpha1) -- (theta1);
-\draw[->] (b1.north) -- (w1.south);
+\draw[->] (alpha) -- (theta);
+\draw[->] (b.north) -- (w.south);
 
-\draw[->] (theta1.south) -- (z1.north);
-\draw[->] (z1.south) -- (w1.north);
-\draw[->] (z1.east) -- (y1.west);
-\draw[->] (z1.east) -- (tau1.west);
-\draw[->] (tau1.north) -- (y1.south);
+\draw[->] (theta.south) -- (z.north);
+\draw[->] (z.south) -- (w.north);
+\draw[->] (x.west) -- (z.east);
+\draw[->] (x.west) -- (theta.east);
+\draw[->] (z.east) -- (y.west);
+\draw[->] (z.east) -- (tau.west);
+\draw[->] (tau.north) -- (y.south);
 
 \draw (-.8+4,-3) rectangle (2+4,2.15);
 \draw (-.7+4,-2.75) rectangle (1.85+4,1);
@@ -298,9 +304,10 @@ others~\cite{Blei2006, Mimno08}.
 \node at (.4+4,-2.05){$N$};
 \node at (1.75+4,1.95){$M$};
 
+
 %%%%% Tying Together %%%%%
-\draw[->] (alpha) -- (alpha1);
-\draw[->] (b) -- (b1);
+\draw[->] (alpha1) -- (alpha);
+\draw[->] (b1) -- (b);
 
 \draw (-.8,-4.5) rectangle (.9+4,-3.5);
 \node at (.7+4,-4.25){$K$};
@@ -309,25 +316,25 @@ others~\cite{Blei2006, Mimno08}.
 \end{center}
 \vspace{-.3cm}
 \caption{Graphical representation of a dynamic multi-corpus model of text ($w$) and context ($y$) over two time periods. Each topic's natural parameters ($\beta$) evolve over time. The logistic normal determinants of topic proportions ($\alpha$) co-evolve across the $M$ domains.}
-\vspace{-.5cm}
+\vspace{-.15cm}
 
 \label{plates}
 
 
-\vspace{-1.6cm}
+%\vspace{-.5cm}
 \end{wrapfigure}
 
 
 Another important feature of our framework is that each
-domain-specific model family incorporates an integrated probabilistic
-representation of domain-specific metadata describing the
-organizational structural context ($y$) and a generic metadata
-$\tau$. Generally, $\tau$ will be topic-dependent (e.g.,
-topic-specific network structure, as in our pilot work); however, in
-figure~\ref{plates} we leave these two components without complete
+domain-specific model family incorporates two types of document metadata (i.e., associated organizational context). The first type ($x$) represents fixed data on which we condition the topic distributions. This is often referred to as 'upstream' conditioning of topic models on metadata \cite{Mimno2012,Mimno2008}. The other metadata type ($y$) is integrated into the model through a downstream probabilistic representation that conditions the generative model for metadata on the topic of the document via parameters $\tau$. In the interest of generality, we leave the way in which $x$ conditions the topic distribution and the way in which the topic assignment affects $\tau$  without complete
 specification, since the structure and parameterization
 will vary considerably over the $M$ domains, as described below. \vspace{.1cm}
 
+The successful implementation and application of this modeling framework will offer government organizations a complete picture of the flow of topical foci throughout different phases in the policymaking process. The biggest challenge to realizing these ends will be the development of scalable and efficient approaches to inference. As we describe in greater detail below, several aspects of the modeling frameworks we will apply pose distinct technical obstacles to implementation on large, real world datasets. Recent developments in stochastic variational \cite{Hoffman2010,Mimno2012b,Gopalan2012} and pseudolikelihood approximation \cite{Sutton2007,Desmarais2010} will be combined, compared and exhaustively vetted on the variety of datasets we will collect.
+
+
+
+\begin{comment}
 \noindent {\bf Generative Process}
 \begin{enumerate}
 \item Draw $\alpha_t | \alpha_{t-1} \sim  \mathcal{N}(\mu_t,\sigma^2I)$
@@ -347,11 +354,11 @@ will vary considerably over the $M$ domains, as described below. \vspace{.1cm}
 \end{enumerate}
 \end{enumerate}
 \end{enumerate}
-
 Although we will likely need to adapt this integrated modeling
 framework for each government organization, we anticipate that that
 the key properties of the generative process will be similar to those
 summarized above.
+\end{comment}
 
 
 %We will derive models with a common set of topics across domains, but varying attention to topics in each domain. The attention to each topic will be given by a logistic transformation of Gaussian-distributed attention parameters. For each topic $t$, there will be four domain-specific attentiveness parameters. The four Gaussian attention parameters will be modeled as a vector autoregression \cite{Banbura2010}. This will permit topics to be related across domains. Thus, the attention level to a topic in each domain will be related to the attention level to a topic in every other domain, up to a selected number of periods into the past.
@@ -383,8 +390,7 @@ with varying degrees. We intend to use nonparametric Bayesian
 clustering methods, which obviate the need to select the number of
 clusters a priori. PI Wallach has significant expertise in this
 area~\cite{Wallach2008,Wallach2010}. Within the domain of governance,
-this clustering approach maps very well onto the concept of partisan
-factions~\cite{}. The dynamic properties of the model will be handled using a
+this clustering approach maps very well onto the concept of partisanship. The dynamic properties of the model will be handled using a
 logistic--normal model of topic dynamics \cite{Blei2006}. This
 approach will permit us to understand (1) the overall content of
 citizen input, (2) source-specific peculiarities in the content of
@@ -396,9 +402,7 @@ the over-time change in the content of input.
 science contribution offered by work on this model will be the
 development of a new Bayesian latent variable framework for modeling
 directed communications (described above) and associated inference
-algorithms. This framework is related to both the author--recipient
-topic model and to Grimmer et al.'s work on modeling representational
-style. This multifaceted focus provides a coherent approach for
+algorithms.  This multifaceted focus provides a coherent approach for
 dealing with author sparsity and identifying like-minded authors.
 
 ~\\
@@ -429,7 +433,7 @@ upon the model developed by the PIs in their pilot research
 \cite{Krafft2012} to a dynamic context. We will extend this model to
 incorporate over-time (Markov) drift in the vertices' positions in the
 latent space \cite{Sarkar2005}, which will enable us to forecast
-evolution in communication network structure.
+evolution in communication network structure. Recent work has shown that inference via variational approximation drastically improves the scalability of the latent space model for social networks \cite{SalterTownshend2013}. We will develop and implement a version of variational approximation for use with our latent space topic model of communication networks.
 
 ~\\
 \noindent {\bf Political Science contribution:} The primary political science contribution offered by the application of this model will be an analysis of how government communication network structure and the content of communications co-evolve. This will provide an opportunity to understand when, in the lifecycle of topic attention, network structure changes. Given the literature on the optimal configuration of communication networks \cite{Mason2008,Mason2012}, these results will permit us to assess how long it takes  a government communication network structure around a given topic to configure into an efficient network.
@@ -506,7 +510,7 @@ legislators' final votes on policy.
 \noindent {\bf Computer science contribution:} The primary computer
 science contribution offered by work on this topic is the development
 of a statistical model that simultaneously models the content of a
-document annotated with a vector of choices. This model will be
+document annotated with a vector of choices and the associated inference algorithm. The model for this domain poses another distinct inference challenge. The problem of inference in Boltzmann Machines is substantially complicated by the intractability of the normalizing constant, with scalable inference being offered by pseudolikelihood approximation \cite{Hyvarinen2006}. PI Wallach has expertise in sampling based approaches to likelihood approximation \cite{Wallach2009}. We will offer an important contribution by developing scalable inference for this model. This model will be
 applicable to any context in which there is voting on a policy
 documented in text.
 
@@ -594,7 +598,7 @@ Desmarais & social scientific analysis of integrated & Q9 -- Q12 \\
 \end{table}%
 
 
-
+\vspace{-.75cm}
 
 \section{Results From Prior NSF Support}
 
