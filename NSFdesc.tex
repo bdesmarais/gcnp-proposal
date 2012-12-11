@@ -14,7 +14,7 @@
 
 \section{Introduction}
 
-Nearly every organization strives to respond in a timely and accurate manner to the needs and demands of some external constituency. Firms respond to customers, governments respond to citizens and educational institutions respond to students. The rapid advancement in communications technology over the last two decades has forever transformed the nature, volume and sources of input and feedback available to organizations. In addition, electronic communications have drastically improved the ability of organizations to document and communicate their internal proceedings. These complimentary developments have ushered into governance what has been termed 'we government' \cite{Linders2012}. Most elected officials can be directly contacted electronically through simple internet tools. Citizens can advertise and sign petitions on the web and attend internet 'town meetings' with their representatives \cite{Kavanaugh2010} . Regarding the internal activities of government, citizens can access electronic communications of their officials through public records requests, access meeting minutes on the web and, e.g., watch the floor activities of the US House of Representatives on HouseLive.gov.
+Nearly every organization strives to respond in a timely and accurate manner to the needs and demands of some external constituency. Firms respond to customers, governments respond to citizens and educational institutions respond to students. The rapid advancement in communications technology over the last two decades has forever transformed the nature, volume and sources of input and feedback available to organizations. In addition, electronic communications have drastically improved the ability of organizations to document and communicate their internal proceedings. These complimentary developments have ushered into governance what has been termed `we government' \cite{Linders2012}. Most elected officials can be directly contacted electronically through simple internet tools. Citizens can advertise and sign petitions on the web and attend internet `town meetings' with their representatives \cite{Kavanaugh2010} . Regarding the internal activities of government, citizens can access electronic communications of their officials through public records requests, access meeting minutes on the web and, e.g., watch the floor activities of the US House of Representatives on HouseLive.gov.
 
 The unprecedented scale, regularity and flexibility of external-internal relations available to contemporary organizations presents an enormous opportunity for systematic, real-time, deep analytics. The emerging field of computational social science seeks to address the most pressing social scientific problems through the development of computational and statistical methods that are ideally tailored to the research task at hand. We propose to develop machine learning methods that are precisely tailored to modeling the {\em complete} input, deliberation, policy formation and implementation cycle documented in the electronic record surrounding an organization. Critically, the models we develop will jointly represent the content of relevant streams of text (i.e., topics) and the socio-organizational structure surrounding text generation (i.e., networks). In this collaborative project, which brings together researchers from computer science and political science, we will develop novel methods and apply them to the analysis of government responsiveness to public input across many US county and city governments.
 
@@ -50,7 +50,7 @@ In this project we will develop and apply a framework for deriving a complete, m
 
 \section{Substantive Domain: Open Outside Input and Governance}
 
-At every level of government in the US, substantial resources have been dedicated to developing online platforms for citizen input to government. E-Rulemaking \cite{Coglianese2004} -- the process by which proposed regulations are posted to the internet and publicly deliberated on the web -- is the archetype of these efforts. US Federal agencies are required to post proposed rules to the website \texttt{regulations.gov} and provide a period for open commenting on the proposed regulation. Another mainstay of government operations in the information age is online tools to provide direct messages to public officials \cite{Balla2007}. Another recent example of open outside input was provided by President (elect) Obama in 2008. He established \texttt{Change.gov} during the transition to provide for direct citizen input to the administration's future priorities and activities \cite{Borins2009}. These developments mark a potential for rapid, massive and innovative ''citizen-sourcing'' of public policy - a form of democratic representation that is much more timely and rich than that realized through periodic elections and other forms of slower, less interactive input  \cite{Linders2012}.
+At every level of government in the US, substantial resources have been dedicated to developing online platforms for citizen input to government. E-Rulemaking \cite{Coglianese2004} -- the process by which proposed regulations are posted to the internet and publicly deliberated on the web -- is the archetype of these efforts. US Federal agencies are required to post proposed rules to the website \texttt{regulations.gov} and provide a period for open commenting on the proposed regulation. Another mainstay of government operations in the information age is online tools to provide direct messages to public officials \cite{Balla2007}. Another recent example of open outside input was provided by President (elect) Obama in 2008. He established \texttt{Change.gov} during the transition to provide for direct citizen input to the administration's future priorities and activities \cite{Borins2009}. These developments mark a potential for rapid, massive and innovative ``citizen-sourcing'' of public policy - a form of democratic representation that is much more timely and rich than that realized through periodic elections and other forms of slower, less interactive input  \cite{Linders2012}.
 
 
 ~\\
@@ -59,7 +59,7 @@ At every level of government in the US, substantial resources have been dedicate
 \item Do the actions of public officials and, ultimately, the content of public policy, reflect the inputs provided by citizens?
 \item Do public officials have the capacity to organize and summarize outside inputs?
 \item What characteristics of outside input predict the timely integration into public policy?
-\end{itemize} All of these questions are critical to determining the value of these e-government or 'we-government' technologies.
+\end{itemize} All of these questions are critical to determining the value of these e-government or `we-government' technologies.
 
 
 We endeavor to answer these questions and more. Using fine-grained textual and socio-organizational contextual data on several stages of the input-response-feedback cycle, we will assess the dynamics of government responsiveness to open outside input on public policy. This will be made possible through the development of Bayesian latent variable models and corresponding inference algorithms that connect multiple textual streams and a massive database of US local government records.
@@ -151,11 +151,11 @@ to develop and deploy over the course of the proposed project.
 
 \subsection{Public Records Data Collection}
 
-\noindent {\bf Background:} At the national, state and local levels, the US is the global leader in the scope and reliability of laws that guarantee access to information on government \cite{Halstuk2006}. The seminal legislation in this area is the federal Freedom of Information Act, which marks all information produced by executive agencies as public, unless the information meets at least one of seven criteria for exemption. Most US states have laws that mimic the federal legislation \cite{Braverman1980}, and most state laws subject localities (i.e, cities and counties) to electronic public records archiving and disclosure requirements \cite{Byrne2010}. 
+\noindent {\bf Background:} At the national, state and local levels, the US is the global leader in the scope and reliability of laws that guarantee access to information on government \cite{Halstuk2006}. The seminal legislation in this area is the federal Freedom of Information Act, which marks all information produced by executive agencies as public, unless the information meets at least one of seven criteria for exemption. Most US states have laws that mimic the federal legislation \cite{Braverman1980}, and most state laws subject localities (i.e, cities and counties) to electronic public records archiving and disclosure requirements \cite{Byrne2010}.
 
 \noindent {\bf Benefits:}  Public record disclosure requirements establish a treasure trove for researchers. Many government organizations post significant text streams - from email communications with elected officials to meeting minutes - directly on websites. For categories of information not posted to the web, it is possible to make requests for the data. At all stages of the democratic process, local governments are required to archive textual records and provide them to the public upon request \cite{Byrne2010}. This constitutes the primary advantage for focusing on government organizations in developing multi-stream models of the input-response-feedback cycle.
 
-\noindent {\bf Procedure:}  For most localities, legislative proceedings and legislative output are available on the city and county websites. Archives of external emails sent to government officials and internal emails are typically not posted on websites, though some counties and cities do indeed post them all. The single data source that we plan to use in this project, which requires government officials' compliance with public records requests is government email. We have had considerable success in gathering email corpora via public records requests for our pilot research (described below). For the pilot data collection, we have successfully gathered and processed one-month archives of government officials' in and out-box contents from North Carolina counties including New Hanover, McDowell, Transylvania, Columbus and Moore. With dedicated resources, we are confident we would collect data from most of the 100 counties in North Carolina as well as county and city governments in other states. 
+\noindent {\bf Procedure:}  For most localities, legislative proceedings and legislative output are available on the city and county websites. Archives of external emails sent to government officials and internal emails are typically not posted on websites, though some counties and cities do indeed post them all. The single data source that we plan to use in this project, which requires government officials' compliance with public records requests is government email. We have had considerable success in gathering email corpora via public records requests for our pilot research (described below). For the pilot data collection, we have successfully gathered and processed one-month archives of government officials' in and out-box contents from North Carolina counties including New Hanover, McDowell, Transylvania, Columbus and Moore. With dedicated resources, we are confident we would collect data from most of the 100 counties in North Carolina as well as county and city governments in other states.
 
 
 
@@ -170,23 +170,24 @@ to develop and deploy over the course of the proposed project.
  %{\bf url:} \texttt{http://www.corvallisoregon.gov/index.aspx?page=65} \\
   %\includegraphics[scale=.45]{CorvallisOR.jpg}
 \end{center} \vspace{-1cm}
-\caption{Web Interface to Alachua County, FL email archive. Links to legislative deliberations (i.e., meeting minutes) and legislative outputs (i.e., ordinances and resolutions) are circled in yellow. Most local governments provide online access to meeting minutes and legsilation; several others provide direct open access to government emails. See, e.g.,}  Corvallis, Oregon -- \texttt{http://www.corvallisoregon.gov/index.aspx?page=65} \\ Menlo Park, California -- \texttt{http://ccin.menlopark.org:81/}  \\ Sarasota, Florida -- \texttt{https://www.scgov.net/email/Pages/default.aspx} 
+\caption{Web Interface to Alachua County, FL email archive. Links to legislative deliberations (i.e., meeting minutes) and legislative outputs (i.e., ordinances and resolutions) are circled in yellow. Most local governments provide online access to meeting minutes and legsilation; several others provide direct open access to government emails. See, e.g.,}  Corvallis, Oregon -- \texttt{http://www.corvallisoregon.gov/index.aspx?page=65} \\ Menlo Park, California -- \texttt{http://ccin.menlopark.org:81/}  \\ Sarasota, Florida -- \texttt{https://www.scgov.net/email/Pages/default.aspx}
 
 \label{screens}
 \end{figure}
 
 \subsection{Integrating Domain-Specific Models}
 
-Below we describe several types of domain-specific models that
-constitute innovative analytic representations of textual data
-connected to individual phases in the governance process. Before
-delving into domain-specific modeling frameworks, we describe a
-general approach to tying the domains together into an joint
-probabilistic model that incorporates cross-domain and over-time
-interdependence. Each of our proposed domain-specific model families
-draws upon ideas from statistical topic modeling in order to model
-domain-specific textual content. We seek to understand the
-relationships among the topic distributions,
+In sections~\ref{sec:modeling_outside_input}
+through~\ref{sec:modeling_legislative_output}, we propose several
+types of domain-specific models that constitute innovative analytic
+representations of textual data connected to individual phases in the
+governance process. Before delving into domain-specific modeling
+frameworks, we describe a general approach to tying the domains
+together into an joint probabilistic model that incorporates
+cross-domain and over-time interdependence. Each of our proposed
+domain-specific model families draws upon ideas from statistical topic
+modeling in order to model domain-specific textual content. We seek to
+understand the relationships among the document-specific topic distributions,
 % DO YOU MEAN DISTRIBUTOINS OVER TOPICS or TOPIC-SPECIFIC
 % DISTRIBUTIONS OVER WORDS?
 which will provide insight into the ways in which topics progress
@@ -327,7 +328,9 @@ others~\cite{Blei2006, Mimno08}.
 
 
 Another important feature of our framework is that each
-domain-specific model family incorporates two types of document metadata (i.e., associated organizational context). The first type ($x$) represents fixed data on which we condition the topic distributions. This is often referred to as 'upstream' conditioning of topic models on metadata \cite{Mimno2012,Mimno2008}. The other metadata type ($y$) is integrated into the model through a downstream probabilistic representation that conditions the generative model for metadata on the topic of the document via parameters $\tau$. In the interest of generality, we leave the way in which $x$ conditions the topic distribution and the way in which the topic assignment affects $\tau$  without complete
+domain-specific model family incorporates two types of document
+metadata (i.e., associated organizational context). The first type
+($x$) represents fixed metadata upon which the topic proportions are conditioned. This is often referred to as `upstream' conditioning of topic models on metadata \cite{Mimno2012,Mimno2008}. The other metadata type ($y$) is integrated into the model through a `downstream' probabilistic representation that conditions the generative model for metadata on the topic of the document via parameters $\tau$. In the interest of generality, we leave the way in which $x$ conditions the topic distribution and the way in which the topic assignment affects $\tau$  without complete
 specification, since the structure and parameterization
 will vary considerably over the $M$ domains, as described below. \vspace{.1cm}
 
@@ -369,6 +372,7 @@ summarized above.
 
 
 \subsection{Modeling Outside Input}
+\label{sec:modeling_outside_input}
 
 \noindent {\bf Data description:} To define a model for citizen input it is important to first identify the form of the data we will gather on citizen input. Via public records requests, we will collect all emails sent to county government officials by those outside of government. Though some government organizations have experimented with different electronic input modes, the email message is still the workhorse of direct advocacy {\bf cite}. We actually do not need to submit a separate request for this data, as they come with the in and out-boxes of government officials.
 
@@ -486,7 +490,7 @@ for which the minutes are recorded).
 
 
 \subsection{Modeling Legislative Output}
-
+\label{sec:modeling_legislative_output}
 
 \noindent {\bf Data description:}  We will gather data on the statutes created by each county in order to examine implementation of topics that arise in the public, informal intra-governmental communications, and on the legislative agenda. These data are available on the web for most counties, and are certainly a matter of public record and would be available upon request. For some counties, it is straightforward to extract how legislators voted on a measure from the meeting minutes. For other counties, however, this is not as simple and may not be feasible.
 
@@ -498,7 +502,7 @@ legislation. If the votes are available, we will augment the dynamic
 topic model with a topic-specific network structure. The network will,
 however, take on a different form. The fully-visible Boltzmann Machine
 constitutes a probability model of jointly observed binary switches
-that is parameterized to model the tendency for each switch to be 'on'
+that is parameterized to model the tendency for each switch to be `on'
 as well as the pairwise association between the states of each dyad of
 switches \cite{Gunawardana2008}. This can be used to model binary
 votes with voters akin to switches, as illustrated by work co-authored
@@ -547,7 +551,7 @@ The III program supports the development of computational tools and analytical a
 
 \subsection{Education and Training}
 
-Both PIs are strongly committed to bringing their research into the classroom. PI Wallach regularly teaches a graduate seminar titled, 'Computational Social Science' in which state-of-the art innovations in computational social science are studied at-length. The results of the proposed project would certainly be integrated into the curriculum. PI Desmarais teaches graduate courses in network analysis at the University of Massachusetts and the University of Michigan (summer program). These courses integrate up-to-date methodological innovations in his research. The course material will be updated to reflect the contributions of the proposed project. PI Desmarais has also contributed to the NSF-supported Online Portal for Social Science Education in Methodology (OPOSSEM) - an open source online archive of methodological instructional materials. Instructional materials related to the current project would be posted to OPOSSEM.
+Both PIs are strongly committed to bringing their research into the classroom. PI Wallach regularly teaches a graduate seminar titled, `Computational Social Science' in which state-of-the art innovations in computational social science are studied at-length. The results of the proposed project would certainly be integrated into the curriculum. PI Desmarais teaches graduate courses in network analysis at the University of Massachusetts and the University of Michigan (summer program). These courses integrate up-to-date methodological innovations in his research. The course material will be updated to reflect the contributions of the proposed project. PI Desmarais has also contributed to the NSF-supported Online Portal for Social Science Education in Methodology (OPOSSEM) - an open source online archive of methodological instructional materials. Instructional materials related to the current project would be posted to OPOSSEM.
 
 The proposed project will support a graduate student in computer science and one in political science at the University of Massachusetts, as well as several undergraduate research assistants.  The proposed research represents a genuinely interdisciplinary research program in the emerging field of computational social science. Long-term focused training for graduate students will provide valuable research experience and socialization on interdisciplinary projects - a growing focus of the scientific community. Undergraduate RAs will also gain valuable complimentary experiences. Computer science students will have the opportunity to work on technical problems that address highly important sociopolitical problems, and political science students will be directly exposed to the ways in which technical analysis and innovation can enhance knowledge of the public policy process. Encouraging sincere interdisciplinary engagement is a central mission at UMass Amherst, signified by the establishment and growing prominence of the UMass Computational Social Science Initiative (cssi.umass.edu). Support of the current project will provide an important opportunity for graduate students to engage in a multi-year cross-disciplinary collaborative project.
 
