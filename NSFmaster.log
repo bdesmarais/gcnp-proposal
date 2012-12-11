@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  10 DEC 2012 19:14
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  10 DEC 2012 20:13
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -653,7 +653,7 @@ Overfull \hbox (2.43332pt too wide) in paragraph at lines 82--112
 [5] [6 <./latent_space_15.pdf> <./latent_space_17.pdf> <./latent_space_31.pdf> 
 <./latent_space_63.pdf> <./department_key.pdf>]
 
-LaTeX Warning: Reference `screens' on page 7 undefined on input line 161.
+LaTeX Warning: Reference `screens' on page 7 undefined on input line 160.
 
 <AlachuaBOCC.jpg, id=150, 967.615pt x 550.055pt>
 File: AlachuaBOCC.jpg Graphic file (type jpg)
@@ -779,7 +779,7 @@ al/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
 l/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/
 texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/t
 exlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on NSFmaster.pdf (24 pages, 639950 bytes).
+Output written on NSFmaster.pdf (24 pages, 640196 bytes).
 PDF statistics:
  241 PDF objects out of 1000 (max. 8388607)
  187 compressed objects within 2 object streams
