@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  11 DEC 2012 01:49
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  11 DEC 2012 08:23
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -672,10 +672,10 @@ Missing character: There is no “ in font cmr10!
  [2])) [3]
 \openout2 = `NSF-DMP.aux'.
 
- (./NSF-DMP.tex) [1
+ (./NSF-DMP.tex [1
 
 
-]
+]) [2]
 \openout2 = `NSFbioDesmarais.aux'.
 
  (./NSFbioDesmarais.tex
@@ -751,10 +751,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--32
 ) [2] (./NSFmaster.aux (./NSFsumm.aux) (./NSFdesc.aux) (./NSFrefs.aux)
 (./NSF-DMP.aux) (./NSFbioDesmarais.aux) (./NSFjustification.aux)) ) 
 Here is how much of TeX's memory you used:
- 11150 strings out of 493747
- 204561 string characters out of 3143546
- 289137 words of memory out of 3000000
- 14106 multiletter control sequences out of 15000+200000
+ 11151 strings out of 493747
+ 204575 string characters out of 3143546
+ 289163 words of memory out of 3000000
+ 14107 multiletter control sequences out of 15000+200000
  12782 words of font info for 47 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  47i,17n,56p,2450b,575s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -770,10 +770,10 @@ e/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2010/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2010/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on NSFmaster.pdf (24 pages, 642636 bytes).
+Output written on NSFmaster.pdf (25 pages, 646677 bytes).
 PDF statistics:
- 241 PDF objects out of 1000 (max. 8388607)
- 187 compressed objects within 2 object streams
+ 245 PDF objects out of 1000 (max. 8388607)
+ 190 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  72 words of extra memory for PDF output out of 10000 (max. 10000000)
 
