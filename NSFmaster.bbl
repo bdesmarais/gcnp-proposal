@@ -8,8 +8,7 @@ D.~Linders, ``From e-government to we-government: Defining a typology for
 \bibitem{Kavanaugh2010}
 A.~Kavanaugh, M.~Perez-Quinones, J.~Tedesco, and W.~Sanders, ``Toward a virtual
   town square in the era of web 2.0,'' in {\em International Handbook of
-  Internet Research} (J.~Hunsinger, L.~Klastrup, and M.~Allen, eds.),
-  pp.~279--294, Springer Netherlands, 2010.
+  Internet Research}, pp.~279--294, Springer Netherlands, 2010.
 
 \bibitem{Blei2003}
 D.~Blei, A.~Ng, and M.~Jordan, ``{Latent Dirichlet allocation},'' {\em {JOURNAL
@@ -135,20 +134,19 @@ M.~Banbura, D.~Giannone, and L.~Reichlin, ``Large bayesian vector auto
   regressions,'' {\em Journal of Applied Econometrics}, vol.~25, no.~1,
   pp.~71--92, 2010.
 
+\bibitem{Mimno2012}
+D.~Mimno, {\em Topic Regression}.
+\newblock PhD thesis, University of Massachusetts Amherst, 2012.
+
 \bibitem{Mimno08}
 D.~Mimno, H.~Wallach, and A.~McCallum, ``Gibbs sampling for logistic normal
   topic models with graph-based priors,'' in {\em Proceedings of the NIPS
   Workshop on "Analyzing Graphs"}, 2008.
 
-\bibitem{Mimno2012}
-D.~Mimno, {\em Topic Regression}.
-\newblock PhD thesis, University of Massachusetts Amherst, 2012.
-
 \bibitem{Hoffman2010}
 M.~Hoffman, D.~Blei, and F.~Bach, ``Online learning for latent dirichlet
-  allocation,'' in {\em Advances in Neural Information Processing Systems 23}
-  (J.~Lafferty, C.~K.~I. Williams, J.~Shawe-Taylor, R.~Zemel, and A.~Culotta,
-  eds.), pp.~856--864, 2010.
+  allocation,'' in {\em Advances in Neural Information Processing Systems 23},
+  pp.~856--864, 2010.
 
 \bibitem{Mimno2012b}
 D.~Mimno, M.~Hoffman, and D.~Blei, ``Sparse stochastic inference for latent
@@ -158,8 +156,7 @@ D.~Mimno, M.~Hoffman, and D.~Blei, ``Sparse stochastic inference for latent
 \bibitem{Gopalan2012}
 P.~Gopalan, D.~Mimno, S.~Gerrish, M.~Freedman, and D.~Blei, ``Scalable
   inference of overlapping communities,'' in {\em Advances in Neural
-  Information Processing Systems 25} (P.~Bartlett, F.~Pereira, C.~Burges,
-  L.~Bottou, and K.~Weinberger, eds.), pp.~2258--2266, 2012.
+  Information Processing Systems 25}, pp.~2258--2266, 2012.
 
 \bibitem{Sutton2007}
 C.~Sutton and A.~McCallum, ``Piecewise pseudolikelihood for efficient training
@@ -181,6 +178,11 @@ H.~Wallach, S.~Jensen, L.~Dicker, and K.~Heller, ``An alternative prior process
   for nonparametric bayesian clustering,'' in {\em Proceedings of the
   Thirteenth International Conference on Artificial Intelligence and
   Statistics}, 2010.
+
+\bibitem{Mucha2010}
+P.~J. Mucha, T.~Richardson, K.~Macon, M.~A. Porter, and J.-P. Onnela,
+  ``Community structure in time-dependent, multiscale, and multiplex
+  networks,'' {\em Science}, vol.~328, no.~5980, pp.~876--878, 2010.
 
 \bibitem{Sarkar2005}
 P.~Sarkar and A.~W. Moore, ``Dynamic social network analysis using latent space

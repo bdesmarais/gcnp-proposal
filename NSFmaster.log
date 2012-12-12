@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  11 DEC 2012 08:58
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  12 DEC 2012 11:59
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -611,18 +611,12 @@ Overfull \hbox (20.64038pt too wide) in paragraph at lines 65--66
 fine-grained tex-tual and socio-organizational
  []
 
-
-Overfull \hbox (15.57397pt too wide) in paragraph at lines 73--74
-\OT1/cmr/m/n/10.95 ter-iz-ing the re-la-tion-ships be-tween top-ics in sep-a-ra
-te dy-namic cor-pora and the socio-organizational
- []
-
 [4]
-LaTeX Font Info:    Try loading font information for U+msa on input line 86.
+LaTeX Font Info:    Try loading font information for U+msa on input line 104.
  (/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 86.
+LaTeX Font Info:    Try loading font information for U+msb on input line 104.
 
 (/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
@@ -639,14 +633,14 @@ File: latent_space_31.pdf Graphic file (type pdf)
 <latent_space_63.pdf, id=34, 505.89pt x 505.89pt>
 File: latent_space_63.pdf Graphic file (type pdf)
  <use latent_space_63.pdf>
-Overfull \hbox (120.15088pt too wide) in paragraph at lines 86--100
+Overfull \hbox (120.15088pt too wide) in paragraph at lines 104--118
  [][] 
  []
 
 <department_key.pdf, id=36, 126.4725pt x 289.08pt>
 File: department_key.pdf Graphic file (type pdf)
  <use department_key.pdf>
-Overfull \hbox (2.43332pt too wide) in paragraph at lines 84--114
+Overfull \hbox (2.43332pt too wide) in paragraph at lines 102--132
 [][] $[]$ 
  []
 
@@ -658,21 +652,25 @@ File: AlachuaBOCC.jpg Graphic file (type jpg)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7] [8 <./AlachuaBOCC.jpg>] [9] [10] [11] [12] [13] [14]) [15]
+[7] [8 <./AlachuaBOCC.jpg>] [9] [10] [11] [12] [13]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[14]) [15]
 \openout2 = `NSFrefs.aux'.
 
- (./NSFrefs.tex
-(./NSFmaster.bbl [1
+ (./NSFrefs.tex (./NSFmaster.bbl [1
 
 
 ]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
- [2])) [3]
+ [2] [3])) [4]
 \openout2 = `NSF-DMP.aux'.
 
- (./NSF-DMP.tex [1
+ (./NSF-DMP.tex
+[1
 
 
 ]
@@ -757,29 +755,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--32
 ) [2] (./NSFmaster.aux (./NSFsumm.aux) (./NSFdesc.aux) (./NSFrefs.aux)
 (./NSF-DMP.aux) (./NSFbioDesmarais.aux) (./NSFjustification.aux)) ) 
 Here is how much of TeX's memory you used:
- 11151 strings out of 493747
- 204575 string characters out of 3143546
- 289163 words of memory out of 3000000
- 14107 multiletter control sequences out of 15000+200000
+ 11040 strings out of 493747
+ 203118 string characters out of 3143546
+ 285840 words of memory out of 3000000
+ 13996 multiletter control sequences out of 15000+200000
  12782 words of font info for 47 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 47i,17n,56p,2450b,575s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 47i,17n,56p,2450b,369s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/
 texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/t
 exlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/te
 xlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/tex
 live/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texl
 ive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texliv
+e/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texliv
 e/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/
 2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/201
 0/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2010
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2010/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2010/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on NSFmaster.pdf (25 pages, 646396 bytes).
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2010/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2010/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2010/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on NSFmaster.pdf (26 pages, 658683 bytes).
 PDF statistics:
- 245 PDF objects out of 1000 (max. 8388607)
- 190 compressed objects within 2 object streams
+ 256 PDF objects out of 1000 (max. 8388607)
+ 198 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  72 words of extra memory for PDF output out of 10000 (max. 10000000)
 

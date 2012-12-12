@@ -24,7 +24,7 @@ In this project we will develop and apply novel quantitative methods for identif
 
 
 
-We frame this project by associating four different phases in the cycle of governance -- illustrated in Figure \ref{cycle} -- with four different types of textual streams and sociopolitical organizational contexts: public input (e.g., emails from citizens to government officials, informal internal communications (e.g., emails among officials), formal deliberations (e.g., legislative meeting minutes) and policy outputs (e.g., regulations, laws). We seek to understand these textual themes through the lens of multi-scale multi-corpora dynamic Bayesian latent variable models of textual content (i.e., topics \cite{Blei2003}) and organizational structural contexts (i.e., networks). We will develop (1) several domain-specific models of dynamic content and structure that are tailored to the unique characteristics of each corpus and (2) develop a flexible framework for constructing multi-corpora dynamic models that tie the individual domains together within a modular, extensible framework. The result will be an analytical approach that enables the systematic investigation of the dynamics of input, responsiveness and feedback surrounding an organization through a common framework of statistical text analysis.  The methods we develop will offer answers regarding several pertinent questions about organizational management of outside input, e.g., does organizational attention to a topic respond to outside input, how does an organization adapt to the rise of issues that are novel relative to its current foci, is external input being routed to those in the organization who focus on the topics of the input, are those within the organization who talk about the same topics talking to each other?
+We frame this project by associating four different domains in the cycle of governance -- illustrated in Figure \ref{cycle} -- with four different types of textual streams and sociopolitical organizational contexts: public input (e.g., emails from citizens to government officials, informal internal communications (e.g., emails among officials), formal deliberations (e.g., legislative meeting minutes) and policy outputs (e.g., regulations, laws). We seek to understand these textual themes through the lens of multi-scale multi-corpora dynamic Bayesian latent variable models of textual content (i.e., topics \cite{Blei2003}) and organizational structural contexts (i.e., networks). We will develop (1) several domain-specific models of dynamic content and structure that are tailored to the unique characteristics of each corpus and (2) develop a flexible framework for constructing multi-corpora dynamic models that tie the individual domains together within a modular, extensible framework. The result will be an analytical approach that enables the systematic investigation of the dynamics of input, responsiveness and feedback surrounding an organization through a common framework of statistical text analysis.  The methods we develop will offer answers regarding several pertinent questions about organizational management of outside input, e.g., does organizational attention to a topic respond to outside input, how does an organization adapt to the rise of issues that are novel relative to its current foci, is external input being routed to those in the organization who focus on the topics of the input, are those within the organization who talk about the same topics talking to each other?
 
 \begin{wrapfigure}{r}{.5\textwidth}
 \vspace{-.5cm}
@@ -70,7 +70,7 @@ We endeavor to answer these questions and more. Using fine-grained textual and s
 The PIs in this project are global leaders in the emerging field of computational social science with substantial publication records in their respective disciplines of computer science and political science, as well as a robust collaborative agenda. The research will be lead by a computer scientist (Wallach) with background in developing machine learning methods for the statistical analysis of text and networks and a political scientist (Desmarais) with background in developing large scale statistical and network analytic models of political decision-making within US government institutions. The team is part of the UMass Amherst Computational Social Science Initiative and has already successfully completed and published pilot research that is highly relevant to the proposed project. This project will combine large-scale data collection, innovative methods development and social scientific analysis, resulting in the following contributions. These innovations will not only appeal to an audience of interdisciplinary scholars in computational social science, but will also constitute important central advancements in computer science and political science.
 
 \begin{itemize}
-\item {\bf Central computer science contributions:} Offering substantial contributions to the field of machine learning, we will develop novel Bayesian latent variable models capable of characterizing the relationships between topics in separate dynamic corpora and the socio-organizational contexts within which the text was generated. The contributions offered by these innovations will be of two types: (1) domain-specific dynamic Bayesian latent variable models of textual content and socio-organizational context and (2) the development and implementation of a flexible and extensible approach to building models that represent dynamic interdependence across corpora. These methods will provide a comprehensive textual and contextual data modeling framework that captures cross-domain migration of topics.
+\item {\bf Central computer science contributions:} Offering substantial contributions to the field of machine learning, we will develop novel Bayesian latent variable models capable of characterizing the relationships between topics in separate dynamic corpora and the organizational contexts within which the text was generated. The contributions offered by these innovations will be of two types: (1) domain-specific dynamic Bayesian latent variable models of textual content and socio-organizational context and (2) the development and implementation of a flexible and extensible approach to building models that represent dynamic interdependence across corpora. These methods will provide a comprehensive textual and contextual data modeling framework that captures cross-domain migration of topics.
 \item {\bf Central social science contributions:} We will provide a first-of-its kind, exhaustive micro-level assessment of the function of  democratic representation at the local level. The research we have on democratic responsiveness in the US focuses mainly on the federal or state governments. Our research will address local politics. Also, existing research on democratic representation addresses highly aggregated measures: e.g., showing that legislators from highly conservative districts vote, on average, more conservatively than those from more liberal districts. Our work will provide a fine-grained characterization of government responsiveness to the rise of public demands for action on specific public policy topics.
 \end{itemize}
 
@@ -246,21 +246,18 @@ among the document-specific topic distributions, which will provide
 insight into the ways in which topic attention progress through the
 different domains of governance.
 
-We work through the description of our proposed integrated modeling
-framework using the graphical model shown in Figure \ref{plates}. Let
+We integrate domain-specific models by connecting the attention to a topic across time and domains using a vector autoregression model ~\cite{Banbura2010}. Let
 $K$ be the number of topics. Each topic $k$ is characterized by a
-multinomial distribution over words with natural parameter vector
-$\boldsymbol{\beta}_k$. The multinomial distribution over topics
+multinomial distribution over words with mean parameter vector
+$\bm{\phi}_k$. The multinomial distribution over topics
 (i.e., topic proportions) for document $d$, denoted by
 $\bm{\theta}_d$, is defined by the natural parameter vector
 $\bm{\eta}_d$, such that $\theta_{k|d} = \exp{(\eta_{k|d})} \,/\,
-\sum_{k'=1}^K \exp{(\eta_{k'|d})}$. Inter-temporal and inter-domain
-dependence are captured by drawing $\bm{\eta}_d$ from a Gaussian
-vector autoregression model~\cite{Banbura2010} (i.e., $\bm{\eta}_d
-\sim \mathcal{N}\left(\bm{\alpha}_{t,m}, a^2 \mathbf{I} \right)$ and
-$\bm{\alpha}_{t,m} \sim \mathcal{N}(\bm{\mu}_{t,m},\sigma^2
-\mathbf{I})$ assuming document $d$ is associated with time $t$ and
-domain $m$). Given $M$ domains, $\mu_{k|t,m}$ is given by $$
+\sum_{k'=1}^K \exp{(\eta_{k'|d})}$. We specify the model for $\bm{\eta}_d$ to capture inter-temporal and inter-domain dependence in topic attention as well as the effects of document-specific fixed (i.e., upstream \cite{Mimno2012}) metadata associated with document $d$, which we denote $\bm{x}_d$. We draw $\bm{\eta}_d$ from a Gaussian
+vector autoregression model~\cite{Banbura2010}. That is,  given that document $d$ is associated with time $t$ and domain $m$, $\bm{\eta}_d
+\sim \mathcal{N}\left(\bm{\alpha}_{t,m}+\bm{\gamma}_d, a^2 \mathbf{I} \right)$,
+where $\bm{\alpha}_{t,m} \sim \mathcal{N}(\bm{\mu}_{t,m},\sigma^2
+\mathbf{I})$, $\bm{\gamma}_{d} = f(\bm{x}_d)$, and $f(\cdot)$ is a function that conditions the topic distribution on $\bm{x}_d$ (e.g., Dirichlet multinomial regression \cite{Mimno2012}). In this section, we do not describe the specific structure of $f$ since it will be different for each domain. We do, however, give the complete specification of the model for $\bm{\mu}_{t,m}$. Given $M$ domains, $\mu_{k|t,m}$ is given by $$
 \mu_{k|t,m} = \lambda_{k|0,m} + \lambda_{k|1,1}\alpha_{k|t-1,1}+
 \lambda_{k|2,m}\alpha_{k|t-1,2}+\hdots+\lambda_{k|M,m}\alpha_{k|t-1,M},$$
 where $ \lambda_{k|0,m}$ is an intercept for the natural parameter
@@ -282,6 +279,7 @@ both variational and sampling-based approaches, drawing on previous
 work of PI Wallach and others~\cite{Blei2006, Mimno08}.
 
 
+\begin{comment}
 \begin{wrapfigure}{r}{.45\textwidth}
 %\includegraphics[scale=.25]{plates}
 \vspace{-1cm}
@@ -290,78 +288,48 @@ work of PI Wallach and others~\cite{Blei2006, Mimno08}.
 
 %%%%%% Time 1 %%%%%%%
 
-\node (theta1) at (0,.4) [circle, draw] {$\bm{\theta}_d$};
-\node (z1) at (0,-.65) [circle, draw] {$z_n$};
-\node (y1) at (1.25,-.65) [circle, draw,fill=lightgray] {$\bm{y}_d$};
-\node (x1) at (1.25,.4) [circle, draw,fill=lightgray] {$\bm{x}_d$};
-\node (tau1) at (1.25,-1.55) [circle, draw] {$\boldsymol{\tau}$};
-\node (w1) at (0,-1.55)  [circle, draw,fill=lightgray] {$w$};
-\node (alpha1) at (0,1.6) [circle, draw] {$\alpha$};
-\node (b1) at (0,-4) [circle, draw] {$\beta$};
-
-\draw[->] (alpha1) -- (theta1);
-\draw[->] (b1.north) -- (w1.south);
-
-\draw[->] (theta1.south) -- (z1.north);
-\draw[->] (z1.south) -- (w1.north);
-\draw[->] (x1.west) -- (z1.east);
-\draw[->] (x1.west) -- (theta1.east);
-\draw[->] (z1.east) -- (y1.west);
-\draw[->] (z1.east) -- (tau1.west);
-\draw[->] (tau1.north) -- (y1.south);
-
-\draw (-.8,-3) rectangle (2,2.15);
-\draw (-.7,-2.75) rectangle (1.85,1);
-\draw (-.6,-2.25) rectangle (.6,-.15);
+\node (theta) at (1.25,.75) [circle, draw] {$\bm{\theta}_d$};
+\node (z) at (0,-.45) [circle, draw] {$z_n$};
+\node (y) at (1.25,-1.55) [circle, draw,fill=lightgray] {$\bm{y}_d$};
+\node (x) at (0,.75) [circle, draw,fill=lightgray] {$\bm{x}_d$};
+\node (gamma) at (1.25,-2.9) [circle, draw] {$\bm{\gamma_t}$};
+\node (w) at (0,-1.55)  [circle, draw,fill=lightgray] {$w$};
+\node(alpha) at (0,1.9) [circle, draw] {$\bm{\alpha}$};
+\node (phi) at (-1.5-.2,-1.55) [circle, draw] {$\bm{\phi}$};
 
 
-\node at (1.6,-2.5) {$D$};
-\node at (.4,-2.05){$N$};
-\node at (1.75,1.95){$M$};
+\draw[-latex] (alpha) -- (theta);
+\draw[-latex] (phi) -- (w);
 
-%%%%%% Time 1 %%%%%%%
+\draw[-latex] (theta) -- (z);
+\draw[-latex] (z) -- (w);
+\draw[-latex] (x) -- (theta);
+%\draw[-latex] (x1.west) -- (theta1.east);
+\draw[-latex] (z) -- (y);
+%\draw[-latex] (z1.east) -- (tau1.west);
+\draw[-latex] (gamma) -- (y);
 
-\node (theta) at (0+4,.4) [circle, draw] {$\theta$};
-\node (z) at (0+4,-.65) [circle, draw] {$z$};
-\node (y) at (1.25+4,-.65) [circle, draw,fill=lightgray] {$y$};
-\node (x) at (1.25+4,.4) [circle, draw,fill=lightgray] {$x$};
-\node (tau) at (1.25+4,-1.55) [circle, draw] {$\tau$};
-\node (w) at (0+4,-1.55)  [circle, draw,fill=lightgray] {$w$};
-\node (alpha) at (0+4,1.6) [circle, draw] {$\alpha$};
-\node (b) at (0+4,-4) [circle, draw] {$\beta$};
-
-\draw[->] (alpha) -- (theta);
-\draw[->] (b.north) -- (w.south);
-
-\draw[->] (theta.south) -- (z.north);
-\draw[->] (z.south) -- (w.north);
-\draw[->] (x.west) -- (z.east);
-\draw[->] (x.west) -- (theta.east);
-\draw[->] (z.east) -- (y.west);
-\draw[->] (z.east) -- (tau.west);
-\draw[->] (tau.north) -- (y.south);
-
-\draw (-.8+4,-3) rectangle (2+4,2.15);
-\draw (-.7+4,-2.75) rectangle (1.85+4,1);
-\draw (-.6+4,-2.25) rectangle (.6+4,-.15);
+%\draw (-.8,-3.35) rectangle (2,2.35);
+\draw (-.7,-2.3) rectangle (1.85,1.4);
+\draw (-.6,-2.25) rectangle (.625,.2);
 
 
-\node at (1.6+4,-2.5) {$D$};
-\node at (.4+4,-2.05){$N$};
-\node at (1.75+4,1.95){$M$};
+\node at (1.6,-2.1) {$D$};
+\node at (.375,-2.05){$N_d$};
+\node at (1.75,2.15){$M$};
 
 
 %%%%% Tying Together %%%%%
-\draw[->] (alpha1) -- (alpha);
-\draw[->] (b1) -- (b);
+%\draw[->] (alpha1) -- (alpha);
+%\draw[->] (b1) -- (b);
 
-\draw (-.8,-4.5) rectangle (.9+4,-3.5);
-\node at (.7+4,-4.25){$K$};
+\draw (-2.2-.2,-2.3) rectangle (-.8-.2,-1);
+\node at (-1.1-.2,-2.1){$K$};
 
 \end{tikzpicture}
 \end{center}
 \vspace{-.3cm}
-\caption{Graphical representation of a dynamic multi-corpus model of text ($w$) and context ($y$ and $x$) over two time periods. Each topic's natural parameters ($\beta$) evolve over time. The logistic normal determinants of topic proportions ($\alpha$) co-evolve across the $M$ domains.}
+\caption{Graphical representation of a dynamic multi-corpus model of text ($w$) and context ($y$ and $x$) over two time periods. Each topic's natural parameters ($\bm{\phi}$) evolve over time. The logistic normal determinants of topic proportions ($\alpha$) co-evolve across the $M$ domains.}
 \vspace{-.15cm}
 
 \label{plates}
@@ -370,24 +338,16 @@ work of PI Wallach and others~\cite{Blei2006, Mimno08}.
 %\vspace{-.5cm}
 \end{wrapfigure}
 
-NOWHERE DO EW SAY THAT FIGURE 4 is a CARTOON  OF HOW OUR INTEGRATED
-FRAMEWORK TIES TOGETHER THE DOMAIN-SPECIFIC MODELS IN SECTIONS
-5.3-5.6. WE SHOULD SAY THAT THE CONTENTS OF EACH M PLATE THEREFORE
-REPRESENTS A CARTOON OF THESE MODELS AND THEREFORE ONLY REPRESENTS
-BROAD, HIGH-LEVEL COMMONALITIES.
+\end{comment}
 
-MOVE TAU, ADD SUBSCRIPTS WHERE NECESSARY AND BOLD WHRE NECESSARY
 
 Another important feature of our framework is that each
-domain-specific model family incorporates two types of document
-metadata (i.e., associated organizational context). The first type
-($x$) represents fixed metadata upon which the topic proportions are conditioned. This is often referred to as `upstream' conditioning of topic models on metadata \cite{Mimno2012,Mimno2008}. The other metadata type ($y$) is integrated into the model through a `downstream' probabilistic representation that conditions the generative model for metadata on the topic of the document via parameters $\tau$. In the interest of generality, we leave the way in which $x$ conditions the topic distribution and the way in which the topic assignment affects $\tau$  without complete
-specification, since the structure and parameterization
-will vary considerably over the $M$ domains, as described below. \vspace{.1cm}
+domain-specific model family will incorporate downstream metadata associated with each document. Unlike the fixed, upstream metadata ($\bm{x}_d$), on which the topic proportions are conditioned,
+the upstream data, which we denote $\bm{y}_d$, are conditioned on topic attention and modeled according to an associated metadata model. To illustrate the difference between upstream and downstream models that incorporate metadata, we can contrast the author-recipient topic model \cite{McCallum2005} with the topic-partitioned latent space model from our pilot research; both of which constitute appropriate generative models for emails. In the author-recipient topic model, there is a different multinomial distribution over topics for each author-recipient pair, but there is no generative model for the authors or the recipients. Our topic-partitioned latent space model incorporates a topic-dependent generative social network model of author-recipient connections. Thus, the author-recipient topic model (i.e., the upstream model) predicts the topic of a message based on the author-recipient metadata, and the topic-partitioned latent space model (i.e., downstream) predicts author-recipient connections based on the content in a message. Each domain-specific model will incorporate some combination of upstream and downstream metadata, and we anticipate that important insights will be drawn from the comparison of upstream and downstream models for the same metadata. \vspace{.1cm}
 
 The successful implementation and application of this modeling
 framework will offer government organizations a complete picture of
-the flow of topical foci throughout different phases in the
+the flow of topical foci throughout different domains in the
 policymaking process. The biggest challenge to realizing these ends
 will be the development of scalable and efficient approaches to
 inference. As we describe in greater detail below, several aspects of
@@ -404,7 +364,7 @@ variety of datasets we will collect.
 \noindent {\bf Generative Process}
 \begin{enumerate}
 \item Draw $\alpha_t | \alpha_{t-1} \sim  \mathcal{N}(\mu_t,\sigma^2I)$
-\item Draw topics $\beta_t|\beta_{t-1}\sim \mathcal{N}\left(\beta_{t-1},\delta^2I \right)$
+\item Draw topics $\bm{\phi}_t|\bm{\phi}_{t-1}\sim \mathcal{N}\left(\bm{\phi}_{t-1},\delta^2I \right)$
 \item For each domain $m$:
 \begin{enumerate}[a.]
 \item For each document in $m$:
@@ -413,7 +373,7 @@ variety of datasets we will collect.
 \item For each word:
 \begin{enumerate}[i.]
 \item Draw $Z \sim \text{Mult}(\pi(\eta))$
-\item Draw $W \sim \text{Mult}(\pi(\beta_{t,z}))$
+\item Draw $W \sim \text{Mult}(\pi(\bm{\phi}_{t,z}))$
 \end{enumerate}
 
 
@@ -439,7 +399,7 @@ summarized above.
 \noindent {\bf Data description:} To define a model for citizen input it is important to first identify the form of the data we will gather on citizen input. Via public records requests, we will collect all emails sent to county government officials by those outside of government. Though some government organizations have experimented with different electronic input modes, the email message is still the workhorse of direct advocacy {\bf cite}. We actually do not need to submit a separate request for this data, as they come with the in and out-boxes of government officials.
 
 ~\\
-\noindent {\bf Model description:} We will model citizen input by
+\noindent {\bf Modeling Contributions:} We will model citizen input by
 developing a new dynamic cluster--recipient topic model. This model
 will draw upon ideas from dynamic topic modeling \cite{Blei2006}, as
 well as previous work on modeling email \cite{McCallum2005}, including
@@ -448,8 +408,8 @@ author--recipient topic model learns shared topics for the entire
 corpus as well as different levels of attention to each topic for each
 author--recipient pair \cite{McCallum2005}. For our data, learning
 specific author--recipient distributions is not appropriate as many of
-the authors of outside input messages will send only a handful of
-emails. It will therefore be advantageous to aggregate over several
+the authors of outside input messages will send only a few
+emails. To deal with author sparsity, it will be advantageous to aggregate over several
 like-minded authors. We will group outside contacts into clusters such
 that each author belongs to one of the clusters with some probability
 (i.e., a mixture model) and each cluster is attentive to each topic
@@ -457,20 +417,11 @@ with varying degrees. We intend to use nonparametric Bayesian
 clustering methods, which obviate the need to select the number of
 clusters a priori. PI Wallach has significant expertise in this
 area~\cite{Wallach2008,Wallach2010}. Within the domain of governance,
-this clustering approach maps very well onto the concept of partisanship. The dynamic properties of the model will be handled using a
-logistic--normal model of topic dynamics \cite{Blei2006}. This
+this clustering approach maps very well onto the concept of partisanship. This
 approach will permit us to understand (1) the overall content of
 citizen input, (2) source-specific peculiarities in the content of
-input, (3) recipient-specific peculiarities of input content and (4)
-the over-time change in the content of input.
-
-~\\
-\noindent {\bf Computer science contribution:} The primary computer
-science contribution offered by work on this model will be the
-development of a new Bayesian latent variable framework for modeling
-directed communications (described above) and associated inference
-algorithms.  This multifaceted focus provides a coherent approach for
-dealing with author sparsity and identifying like-minded authors.
+input,  and (3) recipient-specific peculiarities of input content and (via the cross-time, cross-domain  vector autoregressive topic model) (4)
+the over-time change in the content of input. A fascinating challenge in the development of this model class will be managing cluster dynamics. The problems of actor re-labeling, cluster creation and cluster elimination are open problems that must be confronted to use cluster models in a dynamic context \cite{Mucha2010}. 
 
 ~\\
 \noindent {\bf Political Science contribution:} The primary political science contribution offered by the application of this model will be an analysis of issue (i.e., topic) factions. This will offer a partition of authors that is very consistent with the concepts of partisan faction. Moreover, this analysis will set the framework for differentiating the influence of different factions of authors on the legislative agenda.
@@ -484,23 +435,15 @@ email for the officials, we will be able to model the complete
 communication network over time.
 
 ~\\
-\noindent {\bf Model description:} In this phase, we will make the
+\noindent {\bf Modeling contributions:} In this domain, we will make the
 most explicit use of the team's pilot research. We will develop a new
 dynamic topic-specific model of communication networks, in which the
 networks are projected in to Euclidean spaces to facilitate
-visualization and exploration. The topic dynamics will again be
-modeled using a logistic-normal specification. This characterization
+visualization and exploration.  This specification
 will permit us to understand how the content and network context of
-intra-governmental communications evolve.
-~\\
-\noindent {\bf Computer science contribution:} The primary computer
-science contribution offered by this component is the development of a
-new dynamic model (and associated inference algorithm) that builds
-upon the model developed by the PIs in their pilot research
-\cite{Krafft2012} to a dynamic context. We will extend this model to
-incorporate over-time (Markov) drift in the vertices' positions in the
-latent space \cite{Sarkar2005}, which will enable us to forecast
-evolution in communication network structure. Recent work has shown that inference via variational approximation drastically improves the scalability of the latent space model for social networks \cite{SalterTownshend2013}. We will develop and implement a version of variational approximation for use with our latent space topic model of communication networks.
+intra-governmental communications co-evolve. We will improve upon the model class developed in our pilot research in two ways. First, we will incorporate over-time (Markov) drift in the vertices' positions in the
+latent space using the framework proposed by Sarkar and Moore for modeling latent space dynamics with dichotomous dynamic networks \cite{Sarkar2005}. This will enable us to forecast
+evolution in communication network structure. Second, recent work has shown that inference via variational approximation drastically improves the scalability of the latent space model for social networks \cite{SalterTownshend2013}. We will develop and implement a version of variational approximation for use with our topic-partitioned latent space model of communication networks.
 
 ~\\
 \noindent {\bf Political Science contribution:} The primary political science contribution offered by the application of this model will be an analysis of how government communication network structure and the content of communications co-evolve. This will provide an opportunity to understand when, in the lifecycle of topic attention, network structure changes. Given the literature on the optimal configuration of communication networks \cite{Mason2008,Mason2012}, these results will permit us to assess how long it takes  a government communication network structure around a given topic to configure into an efficient network.
@@ -513,7 +456,7 @@ evolution in communication network structure. Recent work has shown that inferen
 \noindent {\bf Data description:}  Policy development that takes place at the county level occurs within county legislatures. Digitized archives of legislative meeting minutes are typically (indeed in every locality that we have checked) available on the web, but are certainly accessible via public records requests. This data will offer a window into whether issues that are being communicated to the government from outside actors and/or topics that arise through informal intra-governmental communications make their way to the legislative agenda.
 
 ~\\
-\noindent {\bf Model description:} Our modeling approach with regard to legislative meeting minutes is informed by the political science literature on decision-making in legislatures. Most of this research focuses on the process of coalition-building in legislative processes \cite{Aldrich1995}. Since the vast majority of legislatures require majority support to establish policy, the primary task of a legislator is to lobby, placate and persuade his or her colleagues regarding proposed legislation. The coalition-building process gives rise to factionalism, which induces high positive association between the priorities of those in the same faction and high negative association between the priorities of those in different factions.
+\noindent {\bf Modeling contributions:} Our modeling approach with regard to legislative meeting minutes is informed by the political science literature on decision-making in legislatures. Most of this research focuses on the process of coalition-building in legislative processes \cite{Aldrich1995}. Since the vast majority of legislatures require majority support to establish policy, the primary task of a legislator is to lobby, placate and persuade his or her colleagues regarding proposed legislation. The coalition-building process gives rise to factionalism, which induces high positive association between the priorities of those in the same faction and high negative association between the priorities of those in different factions.
 
 We will develop new statistical topic models that build upon the
 correlated topic model \cite{Blei2005} and the author--topic model
@@ -530,15 +473,9 @@ fit a logistic--normal parameterization of the author--topic model that
 estimates a covariance matrix over legislators regarding their
 attention to topics in each meeting. This will capture the varying
 priorities among legislators and the correlations among them that
-arise through the legislative bargaining process.
-
-~\\
-\noindent {\bf Computer science contribution:} The primary computer
-science contribution offered by work on this model will be the
-development of a statistical topic model (and associated inference
-algorithm) that incorporates interdependence among authors. This will
+arise through the legislative bargaining process. This will
 constitute an indispensable component of our input-response-feedback
-modeling, but would also be independently applicable to countless
+modeling, but would also be applicable to countless
 real-world contexts involving contemporaneous text generated by the
 same authors over many instances in time (e.g., any sort of meeting
 for which the minutes are recorded).
@@ -557,11 +494,8 @@ for which the minutes are recorded).
 \noindent {\bf Data description:}  We will gather data on the statutes created by each county in order to examine implementation of topics that arise in the public, informal intra-governmental communications, and on the legislative agenda. These data are available on the web for most counties, and are certainly a matter of public record and would be available upon request. For some counties, it is straightforward to extract how legislators voted on a measure from the meeting minutes. For other counties, however, this is not as simple and may not be feasible.
 
 ~\\
-\noindent {\bf Model description:} Regardless of whether we can
-extract votes on legislation, we will use a dynamic topic model with a
-logistic--normal autocorrelation structure to model the content of
-legislation. If the votes are available, we will augment the dynamic
-topic model with a topic-specific network structure. The network will,
+\noindent {\bf Modeling contributions:} We will augment the dynamic
+topic model with a topic-specific network structure, whereby legislators are connected to positions on legislation (e.g., yea, nay, abstain). The network will,
 however, take on a different form. The fully-visible Boltzmann Machine
 constitutes a probability model of jointly observed binary switches
 that is parameterized to model the tendency for each switch to be `on'
@@ -571,13 +505,9 @@ votes with voters akin to switches, as illustrated by work co-authored
 by PI Desmarais that analyzes voting on the US Supreme Court
 \cite{Desmarais2010}. This will allow us to jointly model the
 attention to topics in legislation as well as the associations among
-legislators' final votes on policy.
-
-~\\
-\noindent {\bf Computer science contribution:} The primary computer
-science contribution offered by work on this topic is the development
+legislators' final votes on policy. The primary contribution offered by work on this modeling framework will be the development
 of a statistical model that simultaneously models the content of a
-document annotated with a vector of choices and the associated inference algorithm. The model for this domain poses another distinct inference challenge. The problem of inference in Boltzmann Machines is substantially complicated by the intractability of the normalizing constant, with scalable inference being offered by pseudolikelihood approximation \cite{Hyvarinen2006}. PI Wallach has expertise in sampling based approaches to likelihood approximation \cite{Wallach2009}. We will offer an important contribution by developing scalable inference for this model. This model will be
+document annotated with a vector of choices issued by actors and the associated inference algorithm. The model for this domain poses another distinct inference challenge. The problem of inference in Boltzmann Machines is substantially complicated by the intractability of the normalizing constant, with scalable inference being offered by pseudolikelihood approximation \cite{Hyvarinen2006}. PI Wallach has expertise in sampling based approaches to likelihood approximation \cite{Wallach2009}. We will offer an important contribution by developing scalable inference for this model. This model will be
 applicable to any context in which there is voting on a policy
 documented in text.
 
@@ -589,7 +519,7 @@ documented in text.
 
 \subsection{Overall Project Outputs}
 
-Each of the modeling phases described above constitutes a novel contribution to the literature on natural language processing. The four domain-specific models have not appeared in the literature in their proposed form. Each would therefore constitute a publishable innovation that might appear in such venues as NIPS, AISTATS, and ICML. Decisions about whether to include multiple innovations in the same discrete papers will depend upon the results of empirical experiments, overlap in inferential strategies and several other factors that cannot be perfectly anticipated at this point.
+Each of the domain-specific model classes described above constitutes a novel contribution to the literature on natural language processing. The four domain-specific models have not appeared in the literature in their proposed form. Each would therefore constitute a publishable innovation that might appear in such venues as NIPS, AISTATS, and ICML. Decisions about whether to include multiple innovations in the same discrete papers will depend upon the results of empirical experiments, overlap in inferential strategies and several other factors that cannot be perfectly anticipated at this point.
 
 Another, particularly notable, machine learning contribution of this project will be the development of our vector autoregressive framework for building multi-corpora dynamic models of text and context. The framework will be motivated with the problem of modeling organizational responsiveness to outside input and illustrated through the combination of our domain-specific models to model the input-response-feedback cycle in local governments. This will constitute standalone research that is publishable in high profile machine learning conferences.
 
@@ -635,7 +565,7 @@ opportunities that focus on underrepresented groups.
 
 
 
-\section{Timeline and Division of Labor}  \vspace{-.2cm}
+\section{Timeline and Division of Labor}  
 
 We propose to complete this research within a period of three years. The four major tasks will be (1) development and implementation of new statistical models, (2) data collection and cleaning, (3) application of methods and assessment on empirical data, (4) social scientific analysis of results. We divide the project period into quarters and in Table 1, we provide a breakdown of the primary activities of the project, along with an assessment of when the tasks will be completed.
 \vspace{-.25cm}
@@ -665,9 +595,9 @@ Desmarais & social scientific analysis of integrated & Q9 -- Q12 \\
 \end{table}%
 
 
-\vspace{-1cm}
 
-\section{Results From Prior NSF Support}   \vspace{-.2cm}
+
+\section{Results From Prior NSF Support}   
 
 % 5 pages or fewer of the 15 pages for entire description document.
 % include results from NSF grants received in the past 5 years.

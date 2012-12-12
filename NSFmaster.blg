@@ -11,45 +11,45 @@ A level-1 auxiliary file: NSFjustification.aux
 Database file #1: nsfbib.bib
 Warning--empty publisher in Hoffman2010
 Warning--empty publisher in Gopalan2012
-You've used 46 entries,
+You've used 47 entries,
             1876 wiz_defined-function locations,
-            801 strings with 11560 characters,
-and the built_in function-call counts, 13760 in all, are:
-= -- 1409
-> -- 430
+            806 strings with 11549 characters,
+and the built_in function-call counts, 13904 in all, are:
+= -- 1441
+> -- 402
 < -- 0
-+ -- 161
-- -- 115
-* -- 942
++ -- 154
+- -- 107
+* -- 936
 := -- 1844
-add.period$ -- 50
-call.type$ -- 46
-change.case$ -- 42
+add.period$ -- 51
+call.type$ -- 47
+change.case$ -- 43
 chr.to.int$ -- 0
-cite$ -- 48
-duplicate$ -- 753
-empty$ -- 1339
-format.name$ -- 115
-if$ -- 3435
+cite$ -- 49
+duplicate$ -- 770
+empty$ -- 1366
+format.name$ -- 107
+if$ -- 3489
 int.to.chr$ -- 0
-int.to.str$ -- 46
-missing$ -- 46
-newline$ -- 145
-num.names$ -- 52
-pop$ -- 143
+int.to.str$ -- 47
+missing$ -- 47
+newline$ -- 148
+num.names$ -- 47
+pop$ -- 144
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 555
+skip$ -- 572
 stack$ -- 0
-substring$ -- 1059
-swap$ -- 336
+substring$ -- 1087
+swap$ -- 345
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
 while$ -- 134
-width$ -- 48
-write$ -- 464
+width$ -- 49
+write$ -- 475
 (There were 2 warnings)
